@@ -138,7 +138,7 @@
     <ErrorType>error</ErrorType>
     <ErrorCode>V512</ErrorCode>
     <Message>A call of the 'memset' function will lead to underflow of the buffer 'buf_fold'.</Message>
-    <Line>2897</Line>
+    <Line>2909</Line>
     <File>./src/nvim/screen.c</File>
     <CWECode>CWE-682</CWECode>
   </PVS-Studio_Analysis_Log>
@@ -147,7 +147,7 @@
     <ErrorType>warning</ErrorType>
     <ErrorCode>V560</ErrorCode>
     <Message>A part of conditional expression is always true: eol_hl_off == 0.</Message>
-    <Line>3777</Line>
+    <Line>3789</Line>
     <File>./src/nvim/screen.c</File>
     <CWECode>CWE-571</CWECode>
   </PVS-Studio_Analysis_Log>
@@ -163,13 +163,5 @@
     </Positions>
     <CWECode>CWE-20</CWECode>
     <SAST>CERT-API00-C</SAST>
-  </PVS-Studio_Analysis_Log>
-  <PVS-Studio_Analysis_Log>
-    <Level>2</Level>
-    <ErrorType>warning</ErrorType>
-    <ErrorCode>V1071</ErrorCode>
-    <Message>Consider inspecting the 'win_comp_pos' function. The return value is not always used. Total calls: 20, discarded results: 1.</Message>
-    <Line>80</Line>
-    <File>./build/include/window.h.generated.h</File>
   </PVS-Studio_Analysis_Log>
 </NewDataSet>
