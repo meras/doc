@@ -1,0 +1,3 @@
+["src/nvim/memory.c", ["", "/*", " * Avoid repeating the error message many times (they take 1 second each)."], "readability/old_style_comment"]
+["src/nvim/memory.c", ["", "    /* Must come first to avoid coming back here when printing the error", "     * message fails, e.g. when setting v:errmsg. */"], "readability/old_style_comment"]
+["src/nvim/memory.c", ["", "/*", " * Free everything that we allocated."], "readability/old_style_comment"]

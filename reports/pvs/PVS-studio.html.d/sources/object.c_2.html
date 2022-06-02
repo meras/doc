@@ -1,0 +1,245 @@
+
+<html>
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+  <title>object.c</title>
+
+  <link rel="stylesheet" href="../style.css"/>
+  <script src="../jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+<pre><code class = "cpp">
+<a name="ln1">// This is an open source non-commercial project. Dear PVS-Studio, please check</a>
+<a name="ln2">// it. PVS-Studio Static Code Analyzer for C, C++ and C#: http://www.viva64.com</a>
+<a name="ln3"> </a>
+<a name="ln4">#include &lt;string.h&gt;</a>
+<a name="ln5"> </a>
+<a name="ln6">#include &quot;object.h&quot;</a>
+<a name="ln7"> </a>
+<a name="ln8">static int mpack_parser_full(mpack_parser_t *w);</a>
+<a name="ln9">static mpack_node_t *mpack_parser_push(mpack_parser_t *w);</a>
+<a name="ln10">static mpack_node_t *mpack_parser_pop(mpack_parser_t *w);</a>
+<a name="ln11"> </a>
+<a name="ln12">MPACK_API void mpack_parser_init(mpack_parser_t *parser,</a>
+<a name="ln13">    mpack_uint32_t capacity)</a>
+<a name="ln14">{</a>
+<a name="ln15">  mpack_tokbuf_init(&amp;parser-&gt;tokbuf);</a>
+<a name="ln16">  parser-&gt;data.p = NULL;</a>
+<a name="ln17">  parser-&gt;capacity = capacity ? capacity : MPACK_MAX_OBJECT_DEPTH;</a>
+<a name="ln18">  parser-&gt;size = 0;</a>
+<a name="ln19">  parser-&gt;exiting = 0;</a>
+<a name="ln20">  memset(parser-&gt;items, 0, sizeof(mpack_node_t) * (parser-&gt;capacity + 1));</a>
+<a name="ln21">  parser-&gt;items[0].pos = (size_t)-1;</a>
+<a name="ln22">  parser-&gt;status = 0;</a>
+<a name="ln23">}</a>
+<a name="ln24"> </a>
+<a name="ln25">#define MPACK_EXCEPTION_CHECK(parser)                                           \</a>
+<a name="ln26">  do {                                                                      \</a>
+<a name="ln27">    if (parser-&gt;status == MPACK_EXCEPTION) {                                    \</a>
+<a name="ln28">      return MPACK_EXCEPTION;                                                   \</a>
+<a name="ln29">    }                                                                       \</a>
+<a name="ln30">  } while (0)</a>
+<a name="ln31"> </a>
+<a name="ln32">#define MPACK_WALK(action)                                                  \</a>
+<a name="ln33">  do {                                                                      \</a>
+<a name="ln34">    mpack_node_t *n;                                                        \</a>
+<a name="ln35">                                                                            \</a>
+<a name="ln36">    if (parser-&gt;exiting) goto exit;                                         \</a>
+<a name="ln37">    if (mpack_parser_full(parser)) return MPACK_NOMEM;                      \</a>
+<a name="ln38">    n = mpack_parser_push(parser);                                          \</a>
+<a name="ln39">    action;                                                                 \</a>
+<a name="ln40">    MPACK_EXCEPTION_CHECK(parser);                                              \</a>
+<a name="ln41">    parser-&gt;exiting = 1;                                                    \</a>
+<a name="ln42">    return MPACK_EOF;                                                       \</a>
+<a name="ln43">                                                                            \</a>
+<a name="ln44">exit:                                                                       \</a>
+<a name="ln45">    parser-&gt;exiting = 0;                                                    \</a>
+<a name="ln46">    while ((n = mpack_parser_pop(parser))) {                                \</a>
+<a name="ln47">      exit_cb(parser, n);                                                   \</a>
+<a name="ln48">      MPACK_EXCEPTION_CHECK(parser);                                            \</a>
+<a name="ln49">      if (!parser-&gt;size) return MPACK_OK;                                   \</a>
+<a name="ln50">    }                                                                       \</a>
+<a name="ln51">                                                                            \</a>
+<a name="ln52">    return MPACK_EOF;                                                       \</a>
+<a name="ln53">  } while (0)</a>
+<a name="ln54"> </a>
+<a name="ln55">MPACK_API int mpack_parse_tok(mpack_parser_t *parser, mpack_token_t tok,</a>
+<a name="ln56">    mpack_walk_cb enter_cb, mpack_walk_cb exit_cb)</a>
+<a name="ln57">{</a>
+<a name="ln58">  MPACK_EXCEPTION_CHECK(parser);</a>
+<a name="ln59">  MPACK_WALK({n-&gt;tok = tok; enter_cb(parser, n);});</a>
+<a name="ln60">}</a>
+<a name="ln61"> </a>
+<a name="ln62">MPACK_API int mpack_unparse_tok(mpack_parser_t *parser, mpack_token_t *tok,</a>
+<a name="ln63">    mpack_walk_cb enter_cb, mpack_walk_cb exit_cb)</a>
+<a name="ln64">{</a>
+<a name="ln65">  MPACK_EXCEPTION_CHECK(parser);</a>
+<a name="ln66">  MPACK_WALK({enter_cb(parser, n); *tok = n-&gt;tok;});</a>
+<a name="ln67">}</a>
+<a name="ln68"> </a>
+<a name="ln69">MPACK_API int mpack_parse(mpack_parser_t *parser, const char **buf,</a>
+<a name="ln70">    size_t *buflen, mpack_walk_cb enter_cb, mpack_walk_cb exit_cb)</a>
+<a name="ln71">{</a>
+<a name="ln72">  int status = MPACK_EOF;</a>
+<a name="ln73">  MPACK_EXCEPTION_CHECK(parser);</a>
+<a name="ln74"> </a>
+<a name="ln75">  while (*buflen &amp;&amp; status) {</a>
+<a name="ln76">    mpack_token_t tok;</a>
+<a name="ln77">    mpack_tokbuf_t *tb = &amp;parser-&gt;tokbuf;</a>
+<a name="ln78">    const char *buf_save = *buf;</a>
+<a name="ln79">    size_t buflen_save = *buflen;</a>
+<a name="ln80"> </a>
+<a name="ln81">    if ((status = mpack_read(tb, buf, buflen, &amp;tok)) == MPACK_EOF) continue;</a>
+<a name="ln82">    else if (status == MPACK_ERROR) goto rollback;</a>
+<a name="ln83"> </a>
+<a name="ln84">    do {</a>
+<a name="ln85">      status = mpack_parse_tok(parser, tok, enter_cb, exit_cb);</a>
+<a name="ln86">      MPACK_EXCEPTION_CHECK(parser);</a>
+<a name="ln87">    } while (parser-&gt;exiting);</a>
+<a name="ln88"> </a>
+<a name="ln89">    if (status != MPACK_NOMEM) continue;</a>
+<a name="ln90"> </a>
+<a name="ln91">rollback:</a>
+<a name="ln92">    /* restore buf/buflen so the next call will try to read the same token */</a>
+<a name="ln93">    *buf = buf_save;</a>
+<a name="ln94">    *buflen = buflen_save;</a>
+<a name="ln95">    break;</a>
+<a name="ln96">  }</a>
+<a name="ln97"> </a>
+<a name="ln98">  return status;</a>
+<a name="ln99">}</a>
+<a name="ln100"> </a>
+<a name="ln101">MPACK_API int mpack_unparse(mpack_parser_t *parser, char **buf, size_t *buflen,</a>
+<a name="ln102">    mpack_walk_cb enter_cb, mpack_walk_cb exit_cb)</a>
+<a name="ln103">{</a>
+<a name="ln104">  int status = MPACK_EOF;</a>
+<a name="ln105">  MPACK_EXCEPTION_CHECK(parser);</a>
+<a name="ln106"> </a>
+<a name="ln107">  while (*buflen &amp;&amp; status) {</a>
+<a name="ln108">    int write_status;</a>
+<a name="ln109">    mpack_token_t tok;</a>
+<a name="ln110">    mpack_tokbuf_t *tb = &amp;parser-&gt;tokbuf;</a>
+<a name="ln111"> </a>
+<a name="ln112">    if (!tb-&gt;plen)</a>
+<a name="ln113">      parser-&gt;status = mpack_unparse_tok(parser, &amp;tok, enter_cb, exit_cb);</a>
+<a name="ln114"> </a>
+<a name="ln115">    MPACK_EXCEPTION_CHECK(parser);</a>
+<a name="ln116"> </a>
+<a name="ln117">    status = parser-&gt;status;</a>
+<a name="ln118"> </a>
+<a name="ln119">    if (status == MPACK_NOMEM)</a>
+<a name="ln120">      break;</a>
+<a name="ln121"> </a>
+<a name="ln122">    if (parser-&gt;exiting) {</a>
+<a name="ln123">      write_status = mpack_write(tb, buf, buflen, &amp;tok);</a>
+<a name="ln124">      status = write_status ? write_status : status;</a>
+<a name="ln125">    }</a>
+<a name="ln126">  }</a>
+<a name="ln127"> </a>
+<a name="ln128">  return status;</a>
+<a name="ln129">}</a>
+<a name="ln130"> </a>
+<a name="ln131">MPACK_API void mpack_parser_copy(mpack_parser_t *dst, mpack_parser_t *src)</a>
+<a name="ln132">{</a>
+<a name="ln133">  mpack_uint32_t i;</a>
+<a name="ln134">  mpack_uint32_t dst_capacity = dst-&gt;capacity; </a>
+<a name="ln135">  assert(src-&gt;capacity &lt;= dst_capacity);</a>
+<a name="ln136">  /* copy all fields except the stack */</a>
+<a name="ln137">  memcpy(dst, src, sizeof(mpack_one_parser_t) - sizeof(mpack_node_t));</a>
+<a name="ln138">  /* reset capacity */</a>
+<a name="ln139">  dst-&gt;capacity = dst_capacity;</a>
+<a name="ln140">  /* copy the stack */</a>
+<a name="ln141">  for (i = 0; i &lt;= src-&gt;capacity; i++) {</a>
+<a name="ln142">    dst-&gt;items[i] = src-&gt;items[i];</a>
+<a name="ln143">  }</a>
+<a name="ln144">}</a>
+<a name="ln145"> </a>
+<a name="ln146">static int mpack_parser_full(mpack_parser_t *parser)</a>
+<a name="ln147">{</a>
+<a name="ln148">  return parser-&gt;size == parser-&gt;capacity;</a>
+<a name="ln149">}</a>
+<a name="ln150"> </a>
+<a name="ln151">static mpack_node_t *mpack_parser_push(mpack_parser_t *parser)</a>
+<a name="ln152">{</a>
+<a name="ln153">  mpack_node_t *top;</a>
+<a name="ln154">  assert(parser-&gt;size &lt; parser-&gt;capacity);</a>
+<a name="ln155">  top = parser-&gt;items + parser-&gt;size + 1;</a>
+<a name="ln156">  top-&gt;data[0].p = NULL;</a>
+<a name="ln157">  top-&gt;data[1].p = NULL;</a>
+<a name="ln158">  top-&gt;pos = 0;</a>
+<a name="ln159">  top-&gt;key_visited = 0;</a>
+<a name="ln160">  /* increase size and invoke callback, passing parent node if any */</a>
+<a name="ln161">  parser-&gt;size++;</a>
+<a name="ln162">  return top;</a>
+<a name="ln163">}</a>
+<a name="ln164"> </a>
+<a name="ln165">static mpack_node_t *mpack_parser_pop(mpack_parser_t *parser)</a>
+<a name="ln166">{</a>
+<a name="ln167">  mpack_node_t *top, *parent;</a>
+<a name="ln168">  assert(parser-&gt;size);</a>
+<a name="ln169">  top = parser-&gt;items + parser-&gt;size;</a>
+<a name="ln170"> </a>
+<a name="ln171">  if (top-&gt;tok.type &gt; MPACK_TOKEN_CHUNK &amp;&amp; top-&gt;pos &lt; top-&gt;tok.length) {</a>
+<a name="ln172">    /* continue processing children */</a>
+<a name="ln173">    return NULL;</a>
+<a name="ln174">  }</a>
+<a name="ln175"> </a>
+<a name="ln176">  parent = MPACK_PARENT_NODE(top);</a>
+<a name="ln177">  if (parent) {</a>
+<a name="ln178">    /* we use parent-&gt;tok.length to keep track of how many children remain.</a>
+<a name="ln179">     * update it to reflect the processed node. */</a>
+<a name="ln180">    if (top-&gt;tok.type == MPACK_TOKEN_CHUNK) {</a>
+<a name="ln181">      parent-&gt;pos += top-&gt;tok.length;</a>
+<a name="ln182">    } else if (parent-&gt;tok.type == MPACK_TOKEN_MAP) {</a>
+<a name="ln183">      /* maps allow up to 2^32 - 1 pairs, so to allow this many items in a</a>
+<a name="ln184">       * 32-bit length variable we use an additional flag to determine if the</a>
+<a name="ln185">       * key of a certain position was visited */</a>
+<a name="ln186">      if (parent-&gt;key_visited) {</a>
+<a name="ln187">        parent-&gt;pos++;</a>
+<a name="ln188">      }</a>
+<a name="ln189">      parent-&gt;key_visited = !parent-&gt;key_visited;</a>
+<a name="ln190">    } else {</a>
+<a name="ln191">      parent-&gt;pos++;</a>
+<a name="ln192">    }</a>
+<a name="ln193">  }</a>
+<a name="ln194"> </a>
+<a name="ln195">  parser-&gt;size--;</a>
+<a name="ln196">  return top;</a>
+<a name="ln197">}</a>
+<a name="ln198"> </a>
+
+</code></pre>
+<div class="balloon" rel="137"><p><span style="font-size:18px">&uarr;</span> <a href="https://pvs-studio.com/en/docs/warnings/v512/" target="_blank">V512</a> A call of the 'memcpy' function will lead to underflow of the buffer 'dst'.</p></div>
+<div class="balloon" rel="137"><p><span style="font-size:18px">&uarr;</span> <a href="https://pvs-studio.com/en/docs/warnings/v512/" target="_blank">V512</a> A call of the 'memcpy' function will lead to underflow of the buffer 'src'.</p></div>
+
+<link rel="stylesheet" href="highlight.css">
+<script src="highlight.pack.js"></script>
+<script src="highlightjs-line-numbers.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.initLineNumbersOnLoad();</script>
+<script>
+  $(document).ready(function() {
+      $('.balloon').each(function () {
+          var bl = $(this);
+          var line = bl.attr('rel');
+          var text = $('a[name="ln'+line+'"]').text();
+
+          var space_count = 0;
+          for(var i = 0; i<text.length; i++){
+              var char = text[i];
+              if((char !== ' ')&&(char !== '\t'))break;
+              if(char === '\t')space_count++;
+              space_count++;
+          }
+
+          bl.css('margin-left', space_count*8);
+          $('a[name="ln'+line+'"]').after(bl);
+      });
+
+      window.location = window.location;
+  });
+</script>
+</body>
+</html>

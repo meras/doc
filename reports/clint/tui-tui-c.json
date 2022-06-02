@@ -1,0 +1,4 @@
+["src/nvim/tui/tui.c", ["  default:", "    abort(); break;", "  case SHAPE_BLOCK:"], "whitespace/newline"]
+["src/nvim/tui/tui.c", ["  case SHAPE_BLOCK:", "    shape = 1; break;", "  case SHAPE_HOR:"], "whitespace/newline"]
+["src/nvim/tui/tui.c", ["  case SHAPE_HOR:", "    shape = 3; break;", "  case SHAPE_VER:"], "whitespace/newline"]
+["src/nvim/tui/tui.c", ["  case SHAPE_VER:", "    shape = 5; break;", "  }"], "whitespace/newline"]

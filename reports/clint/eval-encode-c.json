@@ -1,0 +1,4 @@
+["src/nvim/eval/encode.c", ["      const int idx = (v.data.l.li == tv_list_first(v.data.l.list)", "                         ? 0", "                         : (v.data.l.li == NULL"], "whitespace/alignment"]
+["src/nvim/eval/encode.c", ["                         ? 0", "                         : (v.data.l.li == NULL", "                            ? tv_list_len(v.data.l.list) - 1"], "whitespace/alignment"]
+["src/nvim/eval/encode.c", ["      const listitem_T *const li = (v.data.l.li == NULL", "                                      ? tv_list_last(v.data.l.list)", "                                      : TV_LIST_ITEM_PREV(v.data.l.list,"], "whitespace/alignment"]
+["src/nvim/eval/encode.c", ["                                      ? tv_list_last(v.data.l.list)", "                                      : TV_LIST_ITEM_PREV(v.data.l.list,", "                                                          v.data.l.li));"], "whitespace/alignment"]

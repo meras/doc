@@ -1,0 +1,6 @@
+["src/nvim/option_defs.h", ["", "#endif // NVIM_OPTION_DEFS_H", ""], "build/header_guard"]
+["src/nvim/option_defs.h", ["    0, \\", "  })", ""], "whitespace/indent"]
+["src/nvim/option_defs.h", ["    0, \\", "  })", ""], "whitespace/indent"]
+["src/nvim/option_defs.h", ["", "/*", " * The following are actual variables for the options"], "readability/old_style_comment"]
+["src/nvim/option_defs.h", ["", "/*", " * \"indir\" values for window-local options."], "readability/old_style_comment"]
+["src/nvim/option_defs.h", ["", "#endif // NVIM_OPTION_DEFS_H", ""], "whitespace/comments"]

@@ -1,0 +1,6 @@
+["src/nvim/globals.h", ["#define FOR_ALL_WINDOWS_IN_TAB(wp, tp) \\", "  for (win_T *wp = ((tp) == curtab) \\", "              ? firstwin : (tp)->tp_firstwin; wp != NULL; wp = wp->w_next)"], "readability/braces"]
+["src/nvim/globals.h", ["  for (win_T *wp = ((tp) == curtab) \\", "              ? firstwin : (tp)->tp_firstwin; wp != NULL; wp = wp->w_next)", ""], "whitespace/alignment"]
+["src/nvim/globals.h", ["#define FOR_ALL_BUFFERS(buf) \\", "  for (buf_T *buf = firstbuf; buf != NULL; buf = buf->b_next)", "#define FOR_ALL_BUFFERS_BACKWARDS(buf) \\"], "readability/braces"]
+["src/nvim/globals.h", ["#define FOR_ALL_BUFFERS_BACKWARDS(buf) \\", "  for (buf_T *buf = lastbuf; buf != NULL; buf = buf->b_prev)", ""], "readability/braces"]
+["src/nvim/globals.h", ["#if MAXPATHL > IOSIZE", "                                            MAXPATHL", "#else"], "whitespace/indent"]
+["src/nvim/globals.h", ["#else", "                                            IOSIZE", "#endif"], "whitespace/indent"]

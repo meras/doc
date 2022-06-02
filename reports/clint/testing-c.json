@@ -1,0 +1,7 @@
+["src/nvim/testing.c", ["    case BS:", "      ga_concat(gap, \"\\\\b\"); break;", "    case ESC:"], "whitespace/newline"]
+["src/nvim/testing.c", ["    case ESC:", "      ga_concat(gap, \"\\\\e\"); break;", "    case FF:"], "whitespace/newline"]
+["src/nvim/testing.c", ["    case FF:", "      ga_concat(gap, \"\\\\f\"); break;", "    case NL:"], "whitespace/newline"]
+["src/nvim/testing.c", ["    case NL:", "      ga_concat(gap, \"\\\\n\"); break;", "    case TAB:"], "whitespace/newline"]
+["src/nvim/testing.c", ["    case TAB:", "      ga_concat(gap, \"\\\\t\"); break;", "    case CAR:"], "whitespace/newline"]
+["src/nvim/testing.c", ["    case CAR:", "      ga_concat(gap, \"\\\\r\"); break;", "    case '\\\\':"], "whitespace/newline"]
+["src/nvim/testing.c", ["    case '\\\\':", "      ga_concat(gap, \"\\\\\\\\\"); break;", "    default:"], "whitespace/newline"]

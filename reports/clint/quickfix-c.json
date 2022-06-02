@@ -1,0 +1,8 @@
+["src/nvim/quickfix.c", ["", "  for (i = 0; *p != NUL && i < bufsize - 1; ++i) {", "    if (*p == '\\n') {"], "readability/increment"]
+["src/nvim/quickfix.c", ["      }", "      --qi->qf_curlist;", "    } else {"], "readability/increment"]
+["src/nvim/quickfix.c", ["      }", "      ++qi->qf_curlist;", "    }"], "readability/increment"]
+["src/nvim/quickfix.c", ["            if (amount == MAXLNUM) {", "              qfp->qf_cleared = TRUE;", "            } else {"], "readability/bool"]
+["src/nvim/quickfix.c", ["", "  for (p = p_mef; *p; ++p) {", "    if (p[0] == '#' && p[1] == '#') {"], "readability/increment"]
+["src/nvim/quickfix.c", ["        && !(curbuf->b_flags & BF_NEW)) {", "      failed = FALSE;", "      if (curbuf != newbuf) {"], "readability/bool"]
+["src/nvim/quickfix.c", ["  case CMD_helpgrep:", "    au_name = \"helpgrep\"; break;", "  case CMD_lhelpgrep:"], "whitespace/newline"]
+["src/nvim/quickfix.c", ["  case CMD_lhelpgrep:", "    au_name = \"lhelpgrep\"; break;", "  default:"], "whitespace/newline"]

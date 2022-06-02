@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['data_5fblock_12491',['data_block',['../structdata__block.html',1,'']]],
+  ['dbg_5fstuff_12492',['dbg_stuff',['../structdbg__stuff.html',1,'']]],
+  ['debuggy_12493',['debuggy',['../structdebuggy.html',1,'']]],
+  ['decomp_5ft_12494',['decomp_T',['../structdecomp__T.html',1,'']]],
+  ['decoration_12495',['Decoration',['../structDecoration.html',1,'']]],
+  ['decorprovider_12496',['DecorProvider',['../structDecorProvider.html',1,'']]],
+  ['decorrange_12497',['DecorRange',['../structDecorRange.html',1,'']]],
+  ['decorstate_12498',['DecorState',['../structDecorState.html',1,'']]],
+  ['dg_5fheader_5fentry_12499',['dg_header_entry',['../structdg__header__entry.html',1,'']]],
+  ['dict_5ft_12500',['dict_T',['../structdict__T.html',1,'']]],
+  ['dict_5fwatcher_12501',['dict_watcher',['../structdict__watcher.html',1,'']]],
+  ['dictionary_12502',['Dictionary',['../structDictionary.html',1,'']]],
+  ['dictitem_5ft_12503',['dictitem_T',['../structdictitem__T.html',1,'']]],
+  ['dictvar_5fs_12504',['dictvar_S',['../structdictvar__S.html',1,'']]],
+  ['diffblock_5fs_12505',['diffblock_S',['../structdiffblock__S.html',1,'']]],
+  ['diffhunk_5ft_12506',['diffhunk_T',['../structdiffhunk__T.html',1,'']]],
+  ['diffin_5ft_12507',['diffin_T',['../structdiffin__T.html',1,'']]],
+  ['diffio_5ft_12508',['diffio_T',['../structdiffio__T.html',1,'']]],
+  ['diffout_5ft_12509',['diffout_T',['../structdiffout__T.html',1,'']]],
+  ['digraph_12510',['digraph',['../structdigraph.html',1,'']]],
+  ['dir_5fstack_5ft_12511',['dir_stack_T',['../structdir__stack__T.html',1,'']]],
+  ['directory_12512',['Directory',['../structDirectory.html',1,'']]],
+  ['dynamicbuffer_12513',['DynamicBuffer',['../structDynamicBuffer.html',1,'']]]
+];

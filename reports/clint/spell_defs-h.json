@@ -1,0 +1,2 @@
+["src/nvim/spell_defs.h", ["  idx_T ts_arridx;              // index in tree array, start of node", "  short ts_curi;                // index in list of child nodes", "  char_u ts_fidx;               // index in fword[], case-folded bad word"], "runtime/int"]
+["src/nvim/spell_defs.h", ["#define SPELL_TOUPPER(c) ((c) >= 128 ? mb_toupper(c) \\", "                                     : (int)spelltab.st_upper[c])", ""], "whitespace/alignment"]

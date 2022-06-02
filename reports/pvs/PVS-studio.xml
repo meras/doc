@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<NewDataSet>
+  <PVS-Studio_Analysis_Log>
+    <Level>2</Level>
+    <ErrorType>warning</ErrorType>
+    <ErrorCode>V1048</ErrorCode>
+    <Message>The 'rv.lo' variable was assigned the same value.</Message>
+    <Line>330</Line>
+    <File>./src/mpack/conv.c</File>
+    <CWECode>CWE-1164</CWECode>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>1</Level>
+    <ErrorType>error</ErrorType>
+    <ErrorCode>V610</ErrorCode>
+    <Message>Undefined behavior. Check the shift operator '&lt;&lt;'. The right operand is negative ('(t - 0xdb)' = [-27..4]).</Message>
+    <Line>238</Line>
+    <File>./src/mpack/mpack_core.c</File>
+    <CWECode>CWE-758</CWECode>
+    <SAST>CERT-INT34-C</SAST>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>2</Level>
+    <ErrorType>warning</ErrorType>
+    <ErrorCode>V1071</ErrorCode>
+    <Message>Consider inspecting the 'mpack_w1' function. The return value is not always used. Total calls: 48, discarded results: 5.</Message>
+    <Line>33</Line>
+    <File>./src/mpack/mpack_core.c</File>
+    <Positions>
+      <Position lines="33,482,483,484,485,481">./src/mpack/mpack_core.c</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>1</Level>
+    <ErrorType>error</ErrorType>
+    <ErrorCode>V512</ErrorCode>
+    <Message>A call of the 'memcpy' function will lead to underflow of the buffer 'dst'.</Message>
+    <Line>137</Line>
+    <File>./src/mpack/object.c</File>
+    <CWECode>CWE-682</CWECode>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>1</Level>
+    <ErrorType>error</ErrorType>
+    <ErrorCode>V512</ErrorCode>
+    <Message>A call of the 'memcpy' function will lead to underflow of the buffer 'src'.</Message>
+    <Line>137</Line>
+    <File>./src/mpack/object.c</File>
+    <CWECode>CWE-682</CWECode>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>1</Level>
+    <ErrorType>error</ErrorType>
+    <ErrorCode>V512</ErrorCode>
+    <Message>A call of the 'memcpy' function will lead to underflow of the buffer 'dst'.</Message>
+    <Line>248</Line>
+    <File>./src/mpack/rpc.c</File>
+    <CWECode>CWE-682</CWECode>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>1</Level>
+    <ErrorType>error</ErrorType>
+    <ErrorCode>V512</ErrorCode>
+    <Message>A call of the 'memcpy' function will lead to underflow of the buffer 'src'.</Message>
+    <Line>248</Line>
+    <File>./src/mpack/rpc.c</File>
+    <CWECode>CWE-682</CWECode>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>1</Level>
+    <ErrorType>error</ErrorType>
+    <ErrorCode>V595</ErrorCode>
+    <Message>The 'current_funccal' pointer was utilized before it was verified against nullptr. Check lines: 1271, 1272.</Message>
+    <Line>1271</Line>
+    <File>./src/nvim/eval/userfunc.c</File>
+    <Positions>
+      <Position lines="1271,1272">./src/nvim/eval/userfunc.c</Position>
+    </Positions>
+    <CWECode>CWE-476</CWECode>
+    <SAST>CERT-EXP12-C</SAST>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>1</Level>
+    <ErrorType>error</ErrorType>
+    <ErrorCode>V595</ErrorCode>
+    <Message>The 'name' pointer was utilized before it was verified against nullptr. Check lines: 2076, 2104.</Message>
+    <Line>2076</Line>
+    <File>./src/nvim/eval/userfunc.c</File>
+    <Positions>
+      <Position lines="2076,2104">./src/nvim/eval/userfunc.c</Position>
+    </Positions>
+    <CWECode>CWE-476</CWECode>
+    <SAST>CERT-EXP12-C</SAST>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>2</Level>
+    <ErrorType>warning</ErrorType>
+    <ErrorCode>V560</ErrorCode>
+    <Message>A part of conditional expression is always true: theline[0] != '{'.</Message>
+    <Line>3573</Line>
+    <File>./src/nvim/indent_c.c</File>
+    <CWECode>CWE-571</CWECode>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>1</Level>
+    <ErrorType>error</ErrorType>
+    <ErrorCode>V512</ErrorCode>
+    <Message>A call of the 'memcpy' function will lead to underflow of the buffer 'z-&gt;key'.</Message>
+    <Line>160</Line>
+    <File>./src/nvim/marktree.c</File>
+    <CWECode>CWE-682</CWECode>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>1</Level>
+    <ErrorType>error</ErrorType>
+    <ErrorCode>V569</ErrorCode>
+    <Message>Truncation of constant value -128. The value range of unsigned char type: [0, 255].</Message>
+    <Line>1417</Line>
+    <File>./src/nvim/message.c</File>
+    <CWECode>CWE-197</CWECode>
+    <SAST>CERT-INT31-C</SAST>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>1</Level>
+    <ErrorType>error</ErrorType>
+    <ErrorCode>V781</ErrorCode>
+    <Message>The value of the 'col' index is checked after it was used. Perhaps there is a mistake in program logic.</Message>
+    <Line>2429</Line>
+    <File>./src/nvim/normal.c</File>
+    <Positions>
+      <Position lines="2429,2434">./src/nvim/normal.c</Position>
+    </Positions>
+    <CWECode>CWE-20</CWECode>
+    <SAST>CERT-API00-C</SAST>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>1</Level>
+    <ErrorType>error</ErrorType>
+    <ErrorCode>V512</ErrorCode>
+    <Message>A call of the 'memset' function will lead to underflow of the buffer 'buf_fold'.</Message>
+    <Line>2897</Line>
+    <File>./src/nvim/screen.c</File>
+    <CWECode>CWE-682</CWECode>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>2</Level>
+    <ErrorType>warning</ErrorType>
+    <ErrorCode>V560</ErrorCode>
+    <Message>A part of conditional expression is always true: eol_hl_off == 0.</Message>
+    <Line>3777</Line>
+    <File>./src/nvim/screen.c</File>
+    <CWECode>CWE-571</CWECode>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>1</Level>
+    <ErrorType>error</ErrorType>
+    <ErrorCode>V781</ErrorCode>
+    <Message>The value of the 'i' index is checked after it was used. Perhaps there is a mistake in program logic.</Message>
+    <Line>6158</Line>
+    <File>./src/nvim/spell.c</File>
+    <Positions>
+      <Position lines="6158,6160,6164">./src/nvim/spell.c</Position>
+    </Positions>
+    <CWECode>CWE-20</CWECode>
+    <SAST>CERT-API00-C</SAST>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>2</Level>
+    <ErrorType>warning</ErrorType>
+    <ErrorCode>V1071</ErrorCode>
+    <Message>Consider inspecting the 'win_comp_pos' function. The return value is not always used. Total calls: 20, discarded results: 1.</Message>
+    <Line>80</Line>
+    <File>./build/include/window.h.generated.h</File>
+  </PVS-Studio_Analysis_Log>
+</NewDataSet>

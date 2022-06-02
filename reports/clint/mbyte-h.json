@@ -1,0 +1,1 @@
+["src/nvim/mbyte.h", ["", "/*", " * Return byte length of character that starts with byte \"b\"."], "readability/old_style_comment"]

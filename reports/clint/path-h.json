@@ -1,0 +1,2 @@
+["src/nvim/path.h", ["#endif", "#endif", ""], "build/header_guard"]
+["src/nvim/path.h", ["#define EW_KEEPDOLLAR   0x800   // do not escape $, $var is expanded", "/* Note: mostly EW_NOTFOUND and EW_SILENT are mutually exclusive: EW_NOTFOUND", "* is used when executing commands and EW_SILENT for interactive expanding. */"], "readability/old_style_comment"]

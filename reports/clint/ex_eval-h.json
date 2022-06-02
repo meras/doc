@@ -1,0 +1,5 @@
+["src/nvim/ex_eval.h", ["", "/* There is no CSF_IF, the lack of CSF_WHILE, CSF_FOR and CSF_TRY means \":if\"", " * was used. */"], "readability/old_style_comment"]
+["src/nvim/ex_eval.h", ["", "/*", " * What's pending for being reactivated at the \":endtry\" of this try"], "readability/old_style_comment"]
+["src/nvim/ex_eval.h", ["", "/*", " * A list of error messages that can be converted to an exception.  \"throw_msg\""], "readability/old_style_comment"]
+["src/nvim/ex_eval.h", ["", "/*", " * Structure describing an exception."], "readability/old_style_comment"]
+["src/nvim/ex_eval.h", ["", "/*", " * Structure to save the error/interrupt/exception state between calls to"], "readability/old_style_comment"]

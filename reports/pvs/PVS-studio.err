@@ -1,0 +1,18 @@
+pvs-studio.com/en/docs/warnings/:1:1: error: Help: The documentation for all analyzer warnings is available here: https://pvs-studio.com/en/docs/warnings/.
+./src/mpack/conv.c:330:1: warning: V1048 The 'rv.lo' variable was assigned the same value.
+./src/mpack/mpack_core.c:238:1: error: V610 Undefined behavior. Check the shift operator '<<'. The right operand is negative ('(t - 0xdb)' = [-27..4]).
+./src/mpack/mpack_core.c:33:1: warning: V1071 Consider inspecting the 'mpack_w1' function. The return value is not always used. Total calls: 48, discarded results: 5.
+./src/mpack/object.c:137:1: error: V512 A call of the 'memcpy' function will lead to underflow of the buffer 'dst'.
+./src/mpack/object.c:137:1: error: V512 A call of the 'memcpy' function will lead to underflow of the buffer 'src'.
+./src/mpack/rpc.c:248:1: error: V512 A call of the 'memcpy' function will lead to underflow of the buffer 'dst'.
+./src/mpack/rpc.c:248:1: error: V512 A call of the 'memcpy' function will lead to underflow of the buffer 'src'.
+./src/nvim/eval/userfunc.c:1271:1: error: V595 The 'current_funccal' pointer was utilized before it was verified against nullptr. Check lines: 1271, 1272.
+./src/nvim/eval/userfunc.c:2076:1: error: V595 The 'name' pointer was utilized before it was verified against nullptr. Check lines: 2076, 2104.
+./src/nvim/indent_c.c:3573:1: warning: V560 A part of conditional expression is always true: theline[0] != '{'.
+./src/nvim/marktree.c:160:1: error: V512 A call of the 'memcpy' function will lead to underflow of the buffer 'z->key'.
+./src/nvim/message.c:1417:1: error: V569 Truncation of constant value -128. The value range of unsigned char type: [0, 255].
+./src/nvim/normal.c:2429:1: error: V781 The value of the 'col' index is checked after it was used. Perhaps there is a mistake in program logic.
+./src/nvim/screen.c:2897:1: error: V512 A call of the 'memset' function will lead to underflow of the buffer 'buf_fold'.
+./src/nvim/screen.c:3777:1: warning: V560 A part of conditional expression is always true: eol_hl_off == 0.
+./src/nvim/spell.c:6158:1: error: V781 The value of the 'i' index is checked after it was used. Perhaps there is a mistake in program logic.
+./build/include/window.h.generated.h:80:1: warning: V1071 Consider inspecting the 'win_comp_pos' function. The return value is not always used. Total calls: 20, discarded results: 1.

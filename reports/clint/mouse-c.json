@@ -1,0 +1,3 @@
+["src/nvim/mouse.c", ["        } else {", "          --curwin->w_topline;", "          curwin->w_topfill = 0;"], "readability/increment"]
+["src/nvim/mouse.c", ["        if (curwin->w_topfill > 0) {", "          ++count;", "        } else {"], "readability/increment"]
+["src/nvim/mouse.c", ["    row -= count;", "    ++lnum;", "  }"], "readability/increment"]

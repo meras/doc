@@ -1,0 +1,3 @@
+["src/nvim/api/vimscript.c", ["    case 'm':", "      pflags |= kExprFlagsMulti; break;", "    case 'E':"], "whitespace/newline"]
+["src/nvim/api/vimscript.c", ["    case 'E':", "      pflags |= kExprFlagsDisallowEOC; break;", "    case 'l':"], "whitespace/newline"]
+["src/nvim/api/vimscript.c", ["    case 'l':", "      pflags |= kExprFlagsParseLet; break;", "    case NUL:"], "whitespace/newline"]

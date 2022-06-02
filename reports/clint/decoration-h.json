@@ -1,0 +1,1 @@
+["src/nvim/decoration.h", ["", "typedef kvec_t(struct virt_line { VirtText line; bool left_col; }) VirtLines;", ""], "whitespace/newline"]

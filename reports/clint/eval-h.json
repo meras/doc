@@ -1,0 +1,1 @@
+["src/nvim/eval.h", ["", "/*", " * Structure returned by get_lval() and used by set_var_lval()."], "readability/old_style_comment"]

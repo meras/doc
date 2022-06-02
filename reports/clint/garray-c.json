@@ -1,0 +1,2 @@
+["src/nvim/garray.c", ["", "      --gap->ga_len;", "    }"], "readability/increment"]
+["src/nvim/garray.c", ["  }", "  strcpy(s, strings[nelem - 1]);", ""], "runtime/printf"]

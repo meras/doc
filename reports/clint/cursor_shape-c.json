@@ -1,0 +1,3 @@
+["src/nvim/cursor_shape.c", ["      case SHAPE_BLOCK:", "        shape_str = cstr_to_string(\"block\"); break;", "      case SHAPE_VER:"], "whitespace/newline"]
+["src/nvim/cursor_shape.c", ["      case SHAPE_VER:", "        shape_str = cstr_to_string(\"vertical\"); break;", "      case SHAPE_HOR:"], "whitespace/newline"]
+["src/nvim/cursor_shape.c", ["      case SHAPE_HOR:", "        shape_str = cstr_to_string(\"horizontal\"); break;", "      default:"], "whitespace/newline"]
