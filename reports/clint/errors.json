@@ -3824,7 +3824,6 @@
 ["src/nvim/screen.c", ["", "/*", " * Mark all windows to be redrawn later."], "readability/old_style_comment"]
 ["src/nvim/screen.c", ["", "/*", " * Mark all windows that are editing the current buffer to be updated later."], "readability/old_style_comment"]
 ["src/nvim/screen.c", ["", "/*", " * Changed something in the current window, at buffer line \"lnum\", that"], "readability/old_style_comment"]
-["src/nvim/screen.c", ["", "    /* must_redraw is reset here, so that when we run into some weird", "    * reason to redraw while busy redrawing (e.g., asynchronous"], "readability/old_style_comment"]
 ["src/nvim/screen.c", ["", "  /* Postpone the redrawing when it's not needed and when being called", "   * recursively. */"], "readability/old_style_comment"]
 ["src/nvim/screen.c", ["", "  /* Force redraw when width of 'number' or 'relativenumber' column", "   * changes. */"], "readability/old_style_comment"]
 ["src/nvim/screen.c", ["", "  /*", "   * Only start redrawing if there is really something to do."], "readability/old_style_comment"]
