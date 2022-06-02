@@ -25,17 +25,7 @@ generate_user_docu() {
   cp runtime/doc/*.html ${DOC_DIR}/user
 
   # Modify HTML to match Neovim's layout
-  modify_user_docu
-}
-
-# Helper function to modify user documentation HTML
-# to use Neovim layout
-modify_user_docu() {
-  for file in ${DOC_DIR}/user/*.html; do
-    local title="$(extract_title ${file})"
-    local body="$(echo "$(extract_body ${file})" | sed -e 's/color="purple"/color="#3A6F2B"/Ig')"
-    generate_report "${title}" "${body}" "${file}"
-  done
+  # modify_user_docu
 }
 
 DOC_SUBTREE="/user/"
