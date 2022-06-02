@@ -59,8 +59,8 @@ jobs:
           git commit -m 'user docu: Automatic update'
 
 
-      # - name: Push update
-      #   run: |
-      #     cd "$DOC_DIR"
-      #     ${GITHUB_WORKSPACE}/ci/truncate-history.sh
-      #     git push --force https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
+      - name: Push update
+        run: |
+          cd "$DOC_DIR"
+          ${GITHUB_WORKSPACE}/ci/truncate-history.sh
+          git push --force https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
