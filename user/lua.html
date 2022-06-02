@@ -1,82 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Nvim documentation: lua</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-    <link href="/css/normalize.min.css" rel="stylesheet">
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <header class="container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a href="/" class="navbar-brand" aria-label="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" width="173" height="50" viewBox="0 0 742 214" aria-label="Neovim">
-              <title>Neovim</title>
-              <defs>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
-                  <stop stop-color="#16B0ED" stop-opacity=".8" offset="0%" />
-                  <stop stop-color="#0F59B2" stop-opacity=".837" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="b">
-                  <stop stop-color="#7DB643" offset="0%" />
-                  <stop stop-color="#367533" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="c">
-                  <stop stop-color="#88C649" stop-opacity=".8" offset="0%" />
-                  <stop stop-color="#439240" stop-opacity=".84" offset="100%" />
-                </linearGradient>
-              </defs>
-              <g fill="none" fill-rule="evenodd">
-                <path
-                  d="M.027 45.459L45.224-.173v212.171L.027 166.894V45.459z"
-                  fill="url(#a)"
-                  transform="translate(1 1)"
-                />
-                <path
-                  d="M129.337 45.89L175.152-.149l-.928 212.146-45.197-45.104.31-121.005z"
-                  fill="url(#b)"
-                  transform="matrix(-1 0 0 1 305 1)"
-                />
-                <path
-                  d="M45.194-.137L162.7 179.173l-32.882 32.881L12.25 33.141 45.194-.137z"
-                  fill="url(#c)"
-                  transform="translate(1 1)"
-                />
-                <path
-                  d="M46.234 84.032l-.063 7.063-36.28-53.563 3.36-3.422 32.983 49.922z"
-                  fill-opacity=".13"
-                  fill="#000"
-                />
-                <g fill="#444">
-                  <path
-                    d="M227 154V64.44h4.655c1.55 0 2.445.75 2.685 2.25l.806 13.502c4.058-5.16 8.786-9.316 14.188-12.466 5.4-3.15 11.413-4.726 18.037-4.726 4.893 0 9.205.781 12.935 2.34 3.729 1.561 6.817 3.811 9.264 6.751 2.448 2.942 4.297 6.48 5.55 10.621 1.253 4.14 1.88 8.821 1.88 14.042V154h-8.504V96.754c0-8.402-1.91-14.987-5.729-19.757-3.82-4.771-9.667-7.156-17.544-7.156-5.851 0-11.28 1.516-16.292 4.545-5.013 3.032-9.489 7.187-13.427 12.467V154H227zM350.624 63c5.066 0 9.755.868 14.069 2.605 4.312 1.738 8.052 4.268 11.219 7.592s5.638 7.412 7.419 12.264C385.11 90.313 386 95.883 386 102.17c0 1.318-.195 2.216-.588 2.696-.393.48-1.01.719-1.851.719h-64.966v1.70c0 6.708.784 12.609 2.353 17.7 1.567 5.09 3.8 9.357 6.695 12.802 2.895 3.445 6.393 6.034 10.495 7.771 4.1 1.738 8.686 2.606 13.752 2.606 4.524 0 8.446-.494 11.762-1.483 3.317-.988 6.108-2.097 8.37-3.324 2.261-1.227 4.056-2.336 5.383-3.324 1.326-.988 2.292-1.482 2.895-1.482.784 0 1.388.3 1.81.898l2.352 2.875c-1.448 1.797-3.362 3.475-5.745 5.031-2.383 1.558-5.038 2.891-7.962 3.998-2.926 1.109-6.062 1.991-9.41 2.65a52.21 52.21 0 01-10.088.989c-6.152 0-11.762-1.064-16.828-3.19-5.067-2.125-9.415-5.225-13.043-9.298-3.63-4.074-6.435-9.06-8.415-14.96C310.99 121.655 310 114.9 310 107.294c0-6.408.92-12.323 2.76-17.744 1.84-5.421 4.493-10.093 7.961-14.016 3.467-3.922 7.72-6.991 12.758-9.209C338.513 64.11 344.229 63 350.624 63zm.573 6c-4.696 0-8.904.702-12.623 2.105-3.721 1.404-6.936 3.421-9.65 6.053-2.713 2.631-4.908 5.79-6.586 9.474S319.55 94.439 319 99h60c0-4.679-.672-8.874-2.013-12.588-1.343-3.712-3.232-6.856-5.67-9.43-2.44-2.571-5.367-4.545-8.782-5.92-3.413-1.374-7.192-2.062-11.338-2.062zM435.546 63c6.526 0 12.368 1.093 17.524 3.28 5.154 2.186 9.5 5.286 13.04 9.298 3.538 4.013 6.238 8.85 8.099 14.51 1.861 5.66 2.791 11.994 2.791 19.002 0 7.008-.932 13.327-2.791 18.957-1.861 5.631-4.561 10.452-8.099 14.465-3.54 4.012-7.886 7.097-13.04 9.254-5.156 2.156-10.998 3.234-17.524 3.234-6.529 0-12.369-1.078-17.525-3.234-5.155-2.157-9.517-5.242-13.085-9.254-3.57-4.013-6.285-8.836-8.145-14.465-1.861-5.63-2.791-11.95-2.791-18.957 0-7.008.93-13.342 2.791-19.002 1.861-5.66 4.576-10.496 8.145-14.51 3.568-4.012 7.93-7.112 13.085-9.299C423.177 64.094 429.017 63 435.546 63zm-.501 86c5.341 0 10.006-.918 13.997-2.757 3.99-1.838 7.32-4.474 9.992-7.909 2.67-3.435 4.664-7.576 5.986-12.428 1.317-4.85 1.98-10.288 1.98-16.316 0-5.965-.66-11.389-1.98-16.27-1.322-4.88-3.316-9.053-5.986-12.519-2.67-3.463-6-6.13-9.992-7.999-3.991-1.867-8.657-2.802-13.997-2.802s-10.008.935-13.997 2.802c-3.991 1.87-7.322 4.536-9.992 8-2.671 3.465-4.68 7.637-6.03 12.518-1.35 4.881-2.026 10.305-2.026 16.27 0 6.026.675 11.465 2.025 16.316 1.35 4.852 3.36 8.993 6.031 12.428 2.67 3.435 6 6.07 9.992 7.91 3.99 1.838 8.656 2.756 13.997 2.756z"
-                    fill="currentColor"
-                  />
-                  <path
-                    d="M530.57 152h-20.05L474 60h18.35c1.61 0 2.967.39 4.072 1.166 1.103.778 1.865 1.763 2.283 2.959l17.722 49.138a92.762 92.762 0 012.551 8.429c.686 2.751 1.298 5.5 1.835 8.25.537-2.75 1.148-5.499 1.835-8.25a77.713 77.713 0 012.64-8.429l18.171-49.138c.417-1.196 1.164-2.181 2.238-2.96 1.074-.776 2.356-1.165 3.849-1.165H567l-36.43 92zM572 61h23v92h-23zM610 153V60.443h13.624c2.887 0 4.78 1.354 5.682 4.06l1.443 6.856a52.7 52.7 0 015.097-4.962 32.732 32.732 0 015.683-3.879 30.731 30.731 0 016.496-2.57c2.314-.632 4.855-.948 7.624-.948 5.832 0 10.63 1.579 14.39 4.736 3.758 3.157 6.57 7.352 8.434 12.585 1.444-3.068 3.248-5.698 5.413-7.894 2.165-2.194 4.541-3.984 7.127-5.367a32.848 32.848 0 018.254-3.068 39.597 39.597 0 018.796-.992c5.111 0 9.653.783 13.622 2.345 3.97 1.565 7.307 3.849 10.014 6.857 2.706 3.007 4.766 6.675 6.18 11.005C739.29 83.537 740 88.5 740 94.092V153h-22.284V94.092c0-5.894-1.294-10.329-3.878-13.306-2.587-2.977-6.376-4.465-11.368-4.465-2.286 0-4.404.391-6.358 1.172a15.189 15.189 0 00-5.144 3.383c-1.473 1.474-2.631 3.324-3.474 5.548-.842 2.225-1.263 4.781-1.263 7.668V153h-22.37V94.092c0-6.194-1.249-10.704-3.744-13.532-2.497-2.825-6.18-4.24-11.051-4.24-3.19 0-6.18.798-8.976 2.391-2.799 1.593-5.399 3.775-7.804 6.54V153H610zM572 30h23v19h-23z"
-                    fill="currentColor"
-                    fill-opacity=".8"
-                  />
-                </g>
-              </g>
-            </svg>
-          </a>
-        </div>
-      </nav>
-    </header>
-
-    <div class="container">
-      <h1>Nvim documentation: lua</h1>
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-type" content="text/html; charset=ISO-8859-1">
+<TITLE>Nvim documentation: lua</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H1>Nvim documentation: lua</H1>
 <A NAME="top"></A>
 <A HREF="index.html">main help file</A>
 
@@ -768,7 +696,7 @@ vim.highlight.range({bufnr}, {ns}, {hlgroup}, {start}, {finish}, {opts})
 
         Apply highlight group to range of text.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {bufnr}   buffer number
                     {ns}      <A HREF="api.html#namespace">namespace</A> for highlights
                     {hlgroup} highlight group name
@@ -849,7 +777,7 @@ vim.diff({a}, {b}, {opts})                                        *<A NAME="vim.
 <B>                        {1, 1, 1, 2}</B>
 <B>                    }</B>
  
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {a}      First <A HREF="eval.html#string">string</A> to compare
                     {b}      Second <A HREF="eval.html#string">string</A> to compare
                     {opts}   Optional parameters:
@@ -891,7 +819,7 @@ vim.diff({a}, {b}, {opts})                                        *<A NAME="vim.
                                Use the indent heuristic for the internal
                                <A HREF="diff.html#diff">diff</A> library.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     See {opts.result_type}. nil if {opts.on_hunk} is given.
 
 ------------------------------------------------------------------------------
@@ -931,10 +859,10 @@ vim.spell.check({str})                                     *<A NAME="vim.spell.c
 <B>                {'quik', 'bad', 4}</B>
 <B>            }</B>
  
-<B><FONT color="#54A23D">        Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">        Parameters: </FONT></B>
             {str}    <A HREF="eval.html#String">String</A> to <A HREF="spell.html#spell">spell</A> check.
 
-<B><FONT color="#54A23D">        Return: </FONT></B>
+<B><FONT COLOR="PURPLE">        Return: </FONT></B>
           <A HREF="eval.html#List">List</A> of tuples with three items:
             - The badly spelled <A HREF="motion.html#word">word</A>.
             - The type of the spelling error:
@@ -1038,11 +966,11 @@ vim.defer_fn({fn}, {timeout})                                   *<A NAME="vim.de
     Note: The {fn} is |schedule_wrap|ped automatically, so <A HREF="api.html#API">API</A> <A HREF="eval.html#functions">functions</A> are
     safe to call.
 
-<B><FONT color="#54A23D">    Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">    Parameters: </FONT></B>
         {fn}        Callback to call once {timeout} expires
         {timeout}   Time in ms to wait before calling {fn}
 
-<B><FONT color="#54A23D">    Returns: </FONT></B>
+<B><FONT COLOR="PURPLE">    Returns: </FONT></B>
         |<A HREF="vim.html">vim.loop</A>|.new_timer() object
 
 
@@ -1053,7 +981,7 @@ vim.wait({time} [, {callback}, {interval}, {fast_only}])          *<A NAME="vim.
         milliseconds (default 200). Nvim still processes other <A HREF="autocmd.html#events">events</A> during
         this time.
 
-<B><FONT color="#54A23D">    Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">    Parameters: </FONT></B>
         {time}      <A HREF="eval.html#Number">Number</A> of milliseconds to wait
         {callback}  Optional callback. Waits until {callback} returns true
         {interval}  (Approximate) number of milliseconds to wait between polls
@@ -1061,7 +989,7 @@ vim.wait({time} [, {callback}, {interval}, {fast_only}])          *<A NAME="vim.
                         If called from while in an |<A HREF="api.html#api-fast">api-fast</A>| event, will
                         automatically be set to `true`.
 
-<B><FONT color="#54A23D">    Returns: </FONT></B>
+<B><FONT COLOR="PURPLE">    Returns: </FONT></B>
         If {callback} returns `true` during the {time}:
             `true, nil`
 
@@ -1253,7 +1181,7 @@ corresponding <A HREF="eval.html#method">method</A> is `vim.opt`.
 `vim.opt` provides several conveniences for setting and controlling <A HREF="options.html#options">options</A>
 from within <A HREF="#Lua">Lua</A>.
 
-<B><FONT color="#54A23D">    Examples: </FONT></B>
+<B><FONT COLOR="PURPLE">    Examples: </FONT></B>
 
     To set a <A HREF="options.html#boolean">boolean</A> toggle:
         In Vimscript:
@@ -1402,7 +1330,7 @@ The behavior of |<A HREF="#vim.o">vim.o</A>|, |<A HREF="#vim.bo">vim.bo</A>|, |<
 follow that of |<A HREF="options.html#:set">:set</A>|, |<A HREF="options.html#:setlocal">:setlocal</A>|, and |<A HREF="options.html#:setglobal">:setglobal</A>| which can be seen in the
 table below:
 
-<B><FONT color="#54A23D">    lua            command      global_value       local_value </FONT></B>
+<B><FONT COLOR="PURPLE">    lua            command      global_value       local_value </FONT></B>
 <A HREF="#vim.o">vim.o</A>           <A HREF="options.html#:set">:set</A>                set                set
 vim.bo/vim.wo   <A HREF="options.html#:setlocal">:setlocal</A>            -                 set
 <A HREF="#vim.go">vim.go</A>          <A HREF="options.html#:setglobal">:setglobal</A>          set                 -
@@ -1469,7 +1397,7 @@ cmd({command})                                                     *<A NAME="vim
 <B>                   vim.cmd({ cmd = 'echo', args = { '"foo"' } })</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {command}  string|table Command(s) to execute. If a
                                <A HREF="eval.html#string">string</A>, executes multiple lines of Vim <A HREF="usr_41.html#script">script</A>
                                at once. In this <A HREF="change.html#case">case</A>, <A HREF="motion.html#it">it</A> is an alias to
@@ -1479,7 +1407,7 @@ cmd({command})                                                     *<A NAME="vim
                                <A HREF="motion.html#it">it</A> is an alias to |<A HREF="api.html#nvim_cmd()">nvim_cmd()</A>| where `opts` is
                                empty.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="vimindex.html#ex-cmd-index">ex-cmd-index</A>|
 
 
@@ -1494,12 +1422,12 @@ defer_fn({fn}, {timeout})                                     *<A NAME="vim.defe
                 Use to <A HREF="diff.html#do">do</A> a one-shot <A HREF="builtin.html#timer">timer</A> that calls `fn` Note: The {fn} is |schedule_wrap|ped automatically, so <A HREF="api.html#API">API</A>
                 <A HREF="eval.html#functions">functions</A> are safe to call.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {fn}       Callback to call once `timeout` expires
                     {timeout}  <A HREF="eval.html#Number">Number</A> of milliseconds to wait before calling
                                `fn`
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="builtin.html#timer">timer</A> luv <A HREF="builtin.html#timer">timer</A> object
 
 
@@ -1507,7 +1435,7 @@ defer_fn({fn}, {timeout})                                     *<A NAME="vim.defe
 deprecate({name}, {alternative}, {version}, {plugin}, {backtrace})
                 Display a deprecation notification to the user.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}         <A HREF="eval.html#string">string</A> Deprecated function.
                     {alternative}  (string|nil) Preferred alternative
                                    function.
@@ -1522,7 +1450,7 @@ deprecate({name}, {alternative}, {version}, {plugin}, {backtrace})
 inspect({object}, {options})                                   *<A NAME="vim.inspect()"></A><B>vim.inspect()</B>*
                 Return a human-readable representation of the given object.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     https://github.com/kikito/inspect.lua
                     https://github.com/mpeterv/vinspect
 
@@ -1534,7 +1462,7 @@ notify({msg}, {level}, {opts})                                  *<A NAME="vim.no
                 notifications using a custom <A HREF="provider.html#provider">provider</A> (such <A HREF="motion.html#as">as</A> the system
                 notification <A HREF="provider.html#provider">provider</A>). By default, writes to |<A HREF="message.html#:messages">:messages</A>|.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {msg}    (string) Content of the notification to show to
                              the user.
                     {level}  (number|nil) One of the values from
@@ -1549,7 +1477,7 @@ notify_once({msg}, {level}, {opts})                        *<A NAME="vim.notify_
                 Like |<A HREF="vim.html">vim.notify()</A>|, but subsequent calls with the same
                 message will not display a notification.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {msg}    (string) Content of the notification to show to
                              the user.
                     {level}  (number|nil) One of the values from
@@ -1557,7 +1485,7 @@ notify_once({msg}, {level}, {opts})                        *<A NAME="vim.notify_
                     {opts}   (table|nil) Optional parameters. Unused by
                              default.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (boolean) true if message was displayed, else false
 
 
@@ -1575,7 +1503,7 @@ on_key({fn}, {ns_id})                                           *<A NAME="vim.on
                     {fn} will receive the keys after mappings have been
                     evaluated
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {fn}     function: Callback function. It should take one
                              <A HREF="eval.html#string">string</A> argument. On each key press, Nvim passes
                              the key char to fn(). |<A HREF="insert.html#i_CTRL-V">i_CTRL-V</A>| If {fn} is nil,
@@ -1584,7 +1512,7 @@ on_key({fn}, {ns_id})                                           *<A NAME="vim.on
                     {ns_id}  number? Namespace ID. If nil or 0, generates and
                              returns a new |<A HREF="api.html#nvim_create_namespace()">nvim_create_namespace()</A>| id.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (number) Namespace id associated with {fn}. Or <A HREF="intro.html#count">count</A> of
                     all callbacks if on_key() is called without arguments.
 
@@ -1609,7 +1537,7 @@ paste({lines}, {phase})                                          *<A NAME="vim.p
 <B>                 end)(vim.paste)</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {lines}  |readfile()|-style <A HREF="eval.html#list">list</A> of lines to <A HREF="provider.html#paste">paste</A>.
                              |<A HREF="channel.html#channel-lines">channel-lines</A>|
                     {phase}  -1: &quot;non-streaming&quot; <A HREF="provider.html#paste">paste</A>: the call contains all
@@ -1618,10 +1546,10 @@ paste({lines}, {phase})                                          *<A NAME="vim.p
                              • 2: continues the <A HREF="provider.html#paste">paste</A> (zero or more times)
                              • 3: ends the <A HREF="provider.html#paste">paste</A> (exactly once)
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     false if client should cancel the <A HREF="provider.html#paste">paste</A>.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="provider.html#paste">paste</A>|
 
 
@@ -1631,10 +1559,10 @@ pretty_print({...})                                       *<A NAME="vim.pretty_p
 <B>                  local hl_normal = vim.pretty_print(vim.api.nvim_get_hl_by_name("Normal", true))</B>
  
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     given arguments.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="vim.html">vim.inspect()</A>|
 
 
@@ -1642,7 +1570,7 @@ region({bufnr}, {pos1}, {pos2}, {regtype}, {inclusive})         *<A NAME="vim.re
                 Get a table of lines with start, end columns for a region
                 marked by two points
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {bufnr}      (number) of buffer
                     {pos1}       (line, column) tuple marking beginning of
                                  region
@@ -1651,14 +1579,14 @@ region({bufnr}, {pos1}, {pos2}, {regtype}, {inclusive})         *<A NAME="vim.re
                     {inclusive}  (boolean) indicating whether the selection is
                                  end-inclusive
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     region <A HREF="#lua">lua</A> table of the form {linenr = {startcol,endcol}}
 
 
 schedule_wrap({cb})                                      *<A NAME="vim.schedule_wrap()"></A><B>vim.schedule_wrap()</B>*
                 Defers callback `cb` until the Nvim <A HREF="api.html#API">API</A> is safe to call.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="#lua-loop-callbacks">lua-loop-callbacks</A>|
                     |<A HREF="vim.html">vim.schedule()</A>|
                     |<A HREF="vim.html">vim.in_fast_event()</A>|
@@ -1672,11 +1600,11 @@ deep_equal({a}, {b})                                        *<A NAME="vim.deep_e
 
                 Tables are compared recursively unless they both provide the `eq` metamethod. All other types are compared using the equality `==` <A HREF="motion.html#operator">operator</A>.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {a}  any First value
                     {b}  any Second value
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (boolean) `true` if values are equals, else `false`
 
 
@@ -1688,37 +1616,37 @@ deepcopy({orig})                                              *<A NAME="vim.deep
                 those in the input table. Userdata and threads are not copied
                 and will throw an error.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {orig}  (table) Table to copy
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (table) Table of copied keys and (nested) values.
 
 
 endswith({s}, {suffix})                                       *<A NAME="vim.endswith()"></A><B>vim.endswith()</B>*
                 Tests if `s` ends with `suffix`.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {s}       (string) <A HREF="eval.html#String">String</A>
                     {suffix}  (string) Suffix to match
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (boolean) `true` if `suffix` is a suffix of `s`
 
 
 gsplit({s}, {sep}, {plain})                                     *<A NAME="vim.gsplit()"></A><B>vim.gsplit()</B>*
                 Splits a <A HREF="eval.html#string">string</A> at each instance of a separator.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {s}      (string) <A HREF="eval.html#String">String</A> to split
                     {sep}    (string) Separator or <A HREF="pattern.html#pattern">pattern</A>
                     {plain}  (boolean) If `true` use `sep` literally (passed
                              to string.find)
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (function) Iterator over the split components
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="vim.html">vim.split()</A>|
                     https://www.lua.org/pil/20.2.html
 	<A HREF="http://lua-users.org/wiki/StringLibraryTutorial">http://lua-users.org/wiki/StringLibraryTutorial</A>
@@ -1727,10 +1655,10 @@ gsplit({s}, {sep}, {plain})                                     *<A NAME="vim.gs
 is_callable({f})                                           *<A NAME="vim.is_callable()"></A><B>vim.is_callable()</B>*
                 Returns true if object `f` can be called <A HREF="motion.html#as">as</A> a function.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {f}  any Any object
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (boolean) `true` if `f` is callable, else `false`
 
 
@@ -1740,17 +1668,17 @@ list_extend({dst}, {src}, {start}, {finish})               *<A NAME="vim.list_ex
 
                 NOTE: This mutates dst!
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {dst}     (table) <A HREF="eval.html#List">List</A> which will be modified and appended
                               to
                     {src}     (table) <A HREF="eval.html#List">List</A> from which values will be inserted
                     {start}   (number) Start index on src. Defaults to 1
                     {finish}  (number) Final index on src. Defaults to `#src`
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (table) dst
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="vim.html">vim.tbl_extend()</A>|
 
 
@@ -1758,12 +1686,12 @@ list_slice({list}, {start}, {finish})                       *<A NAME="vim.list_s
                 Creates a copy of a table containing only elements from start
                 to end (inclusive)
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {list}    (table) Table
                     {start}   (number) Start range of <A HREF="eval.html#slice">slice</A>
                     {finish}  (number) End range of <A HREF="eval.html#slice">slice</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (table) Copy of table sliced from start to finish
                     (inclusive)
 
@@ -1771,13 +1699,13 @@ list_slice({list}, {start}, {finish})                       *<A NAME="vim.list_s
 pesc({s})                                                         *<A NAME="vim.pesc()"></A><B>vim.pesc()</B>*
                 Escapes magic chars in a <A HREF="#Lua">Lua</A> <A HREF="pattern.html#pattern">pattern</A>.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {s}  (string) <A HREF="eval.html#String">String</A> to <A HREF="intro.html#escape">escape</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (string) &#37;-escaped <A HREF="pattern.html#pattern">pattern</A> <A HREF="eval.html#string">string</A>
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     https://github.com/rxi/lume
 
 
@@ -1792,7 +1720,7 @@ split({s}, {sep}, {kwargs})                                      *<A NAME="vim.s
 <B>                  split("|x|y|z|", "|", {trimempty=true}) --&gt; {'x', 'y', 'z'}</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {s}       (string) <A HREF="eval.html#String">String</A> to split
                     {sep}     (string) Separator or <A HREF="pattern.html#pattern">pattern</A>
                     {kwargs}  (table) Keyword arguments:
@@ -1801,21 +1729,21 @@ split({s}, {sep}, {kwargs})                                      *<A NAME="vim.s
                               • trimempty: (boolean) If `true` remove empty
                                 items from the front and back of the <A HREF="eval.html#list">list</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (table) <A HREF="eval.html#List">List</A> of split components
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="vim.html">vim.gsplit()</A>|
 
 
 startswith({s}, {prefix})                                   *<A NAME="vim.startswith()"></A><B>vim.startswith()</B>*
                 Tests if `s` starts with `prefix`.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {s}       (string) <A HREF="eval.html#String">String</A>
                     {prefix}  (string) Prefix to match
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (boolean) `true` if `prefix` is a prefix of `s`
 
 
@@ -1826,21 +1754,21 @@ tbl_add_reverse_lookup({o})                     *<A NAME="vim.tbl_add_reverse_lo
 
                 Note that this modifies the input.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {o}  (table) Table to add the reverse to
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (table) <A HREF="insert.html#o">o</A>
 
 
 tbl_contains({t}, {value})                                *<A NAME="vim.tbl_contains()"></A><B>vim.tbl_contains()</B>*
                 Checks if a list-like (vector) table contains `value`.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {t}      (table) Table to check
                     {value}  any Value to compare
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (boolean) `true` if `t` contains `value`
 
 
@@ -1852,20 +1780,20 @@ tbl_count({t})                                               *<A NAME="vim.tbl_c
 <B>    vim.tbl_count({ 1, 2 }) =&gt; 2</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {t}  (table) Table
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (number) <A HREF="eval.html#Number">Number</A> of non-nil values in table
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     https://github.com/Tieske/Penlight/blob/master/lua/pl/tablex.lua
 
 
 tbl_deep_extend({behavior}, {...})                     *<A NAME="vim.tbl_deep_extend()"></A><B>vim.tbl_deep_extend()</B>*
                 Merges recursively two or more map-like tables.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {behavior}  (string) Decides what to <A HREF="diff.html#do">do</A> if a key is found
                                 in more than one map:
                                 • &quot;error&quot;: raise an error
@@ -1873,17 +1801,17 @@ tbl_deep_extend({behavior}, {...})                     *<A NAME="vim.tbl_deep_ex
                                 • &quot;force&quot;: use value from the rightmost map
                     {...}       (table) Two or more map-like tables
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (table) Merged table
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="intro.html#tbl_extend()">tbl_extend()</A>|
 
 
 tbl_extend({behavior}, {...})                               *<A NAME="vim.tbl_extend()"></A><B>vim.tbl_extend()</B>*
                 Merges two or more map-like tables.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {behavior}  (string) Decides what to <A HREF="diff.html#do">do</A> if a key is found
                                 in more than one map:
                                 • &quot;error&quot;: raise an error
@@ -1891,21 +1819,21 @@ tbl_extend({behavior}, {...})                               *<A NAME="vim.tbl_ex
                                 • &quot;force&quot;: use value from the rightmost map
                     {...}       (table) Two or more map-like tables
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (table) Merged table
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="builtin.html#extend()">extend()</A>|
 
 
 tbl_filter({func}, {t})                                     *<A NAME="vim.tbl_filter()"></A><B>vim.tbl_filter()</B>*
                 Filter a table using a predicate function
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {func}  function|table Function or callable table
                     {t}     (table) Table
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (table) Table of filtered values
 
 
@@ -1913,13 +1841,13 @@ tbl_flatten({t})                                           *<A NAME="vim.tbl_fla
                 Creates a copy of a list-like table such that any nested
                 tables are &quot;unrolled&quot; and appended to the result.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {t}  (table) List-like table
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (table) Flattened copy of the given list-like table
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     From https://github.com/premake/premake-core/blob/master/src/base/table.lua
 
 
@@ -1933,25 +1861,25 @@ tbl_get({o}, {...})                                            *<A NAME="vim.tbl
 <B>                  vim.tbl_get({ key = {}}, 'key', 'nested_key') == nil</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {o}    (table) Table to index
                     {...}  (string) Optional strings (0 or more, variadic) via
                            which to index the table
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     any Nested value indexed by key (if <A HREF="motion.html#it">it</A> exists), else nil
 
 
 tbl_isempty({t})                                           *<A NAME="vim.tbl_isempty()"></A><B>vim.tbl_isempty()</B>*
                 Checks if a table is empty.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {t}  (table) Table to check
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (boolean) `true` if `t` is empty
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     https://github.com/premake/premake-core/blob/master/src/base/table.lua
 
 
@@ -1963,10 +1891,10 @@ tbl_islist({t})                                             *<A NAME="vim.tbl_is
                 or Vimscript result, for example from |<A HREF="builtin.html#rpcrequest()">rpcrequest()</A>| or
                 |<A HREF="#vim.fn">vim.fn</A>|.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {t}  (table) Table
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (boolean) `true` if array-like table, else `false`
 
 
@@ -1974,24 +1902,24 @@ tbl_keys({t})                                                 *<A NAME="vim.tbl_
                 Return a <A HREF="eval.html#list">list</A> of all keys used in a table. However, the order
                 of the return table of keys is not guaranteed.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {t}  (table) Table
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (table) <A HREF="eval.html#List">List</A> of keys
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     From https://github.com/premake/premake-core/blob/master/src/base/table.lua
 
 
 tbl_map({func}, {t})                                           *<A NAME="vim.tbl_map()"></A><B>vim.tbl_map()</B>*
                 Apply a function to all values of a table.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {func}  function|table Function or callable table
                     {t}     (table) Table
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (table) Table of transformed values
 
 
@@ -1999,10 +1927,10 @@ tbl_values({t})                                             *<A NAME="vim.tbl_va
                 Return a <A HREF="eval.html#list">list</A> of all values used in a table. However, the
                 order of the return table of values is not guaranteed.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {t}  (table) Table
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (table) <A HREF="eval.html#List">List</A> of values
 
 
@@ -2010,14 +1938,14 @@ trim({s})                                                         *<A NAME="vim.
                 Trim <A HREF="pattern.html#whitespace">whitespace</A> (Lua <A HREF="pattern.html#pattern">pattern</A> &quot;&#37;s&quot;) from both sides of a
                 <A HREF="eval.html#string">string</A>.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {s}  (string) <A HREF="eval.html#String">String</A> to trim
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (string) <A HREF="eval.html#String">String</A> with <A HREF="pattern.html#whitespace">whitespace</A> removed from its beginning
                     and end
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     https://www.lua.org/pil/20.2.html
 
 
@@ -2057,7 +1985,7 @@ validate({opt})                                               *<A NAME="vim.vali
 <B>                     =&gt; error('arg1: expected string|table, got number')</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {opt}  (table) Names of parameters to validate. Each key
                            is a parameter name; each value is a tuple in one
                            of these forms:
@@ -2089,20 +2017,20 @@ validate({opt})                                               *<A NAME="vim.vali
 uri_from_bufnr({bufnr})                                 *<A NAME="vim.uri_from_bufnr()"></A><B>vim.uri_from_bufnr()</B>*
                 Get a URI from a bufnr
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {bufnr}  (number)
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (string) URI
 
 
 uri_from_fname({path})                                  *<A NAME="vim.uri_from_fname()"></A><B>vim.uri_from_fname()</B>*
                 Get a URI from a file path.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {path}  (string) Path to file
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (string) URI
 
 
@@ -2110,20 +2038,20 @@ uri_to_bufnr({uri})                                       *<A NAME="vim.uri_to_b
                 Get the buffer for a uri. Creates a new unloaded buffer if no
                 buffer for the uri already exists.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {uri}  (string)
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (number) bufnr
 
 
 uri_to_fname({uri})                                       *<A NAME="vim.uri_to_fname()"></A><B>vim.uri_to_fname()</B>*
                 Get a filename from a URI
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {uri}  (string)
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (string) filename or unchanged URI for non-file URIs
 
 
@@ -2142,7 +2070,7 @@ input({opts}, {on_confirm})                                   *<A NAME="vim.ui.i
 <B>                 end)</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {opts}        (table) Additional <A HREF="options.html#options">options</A>. See |<A HREF="builtin.html#input()">input()</A>|
                                   • prompt (string|nil) Text of the prompt.
                                     Defaults to `Input:`.
@@ -2182,7 +2110,7 @@ select({items}, {opts}, {on_choice})                         *<A NAME="vim.ui.se
 <B>                 end)</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {items}      (table) Arbitrary items
                     {opts}       (table) Additional <A HREF="options.html#options">options</A>
                                  • prompt (string|nil) Text of the prompt.
@@ -2266,7 +2194,7 @@ add({filetypes})                                          *<A NAME="vim.filetype
 <B>                  })</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {filetypes}  (table) A table containing new <A HREF="filetype.html#filetype">filetype</A> maps
                                  (see example).
 
@@ -2274,7 +2202,7 @@ add({filetypes})                                          *<A NAME="vim.filetype
 match({name}, {bufnr})                                  *<A NAME="vim.filetype.match()"></A><B>vim.filetype.match()</B>*
                 Set the <A HREF="filetype.html#filetype">filetype</A> for the given buffer from a file name.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}   (string) File name (can be an absolute or
                              relative path)
                     {bufnr}  (number|nil) The buffer to set the <A HREF="filetype.html#filetype">filetype</A> for.
@@ -2294,13 +2222,13 @@ del({modes}, <A HREF="map.html#{lhs}">{lhs}</A>, {opts})                        
 <B>                   vim.keymap.del({'n', 'i', 'v'}, '&lt;leader&gt;w', { buffer = 5 })</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {opts}  (table) A table of optional arguments:
                             • buffer: (number or <A HREF="options.html#boolean">boolean</A>) Remove a <A HREF="map.html#mapping">mapping</A>
                               from the given buffer. When &quot;true&quot; or 0, use the
                               current buffer.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="vim.html">vim.keymap.set()</A>|
 
 
@@ -2336,7 +2264,7 @@ set({mode}, <A HREF="map.html#{lhs}">{lhs}</A>, <A HREF="map.html#{rhs}">{rhs}</
 <B>                    vim.keymap.set('n', 'asdf', function() return require('jkl').my_fun() end)</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {mode}  string|table Same mode short names <A HREF="motion.html#as">as</A>
                             |<A HREF="api.html#nvim_set_keymap()">nvim_set_keymap()</A>|. Can also be <A HREF="eval.html#list">list</A> of modes to
                             create <A HREF="map.html#mapping">mapping</A> on multiple modes.
@@ -2360,7 +2288,7 @@ set({mode}, <A HREF="map.html#{lhs}">{lhs}</A>, <A HREF="map.html#{rhs}">{rhs}</
                               This is the <A HREF="syntax.html#inverse">inverse</A> of the &quot;noremap&quot; option from
                               |<A HREF="api.html#nvim_set_keymap()">nvim_set_keymap()</A>|. Default `false`.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="api.html#nvim_set_keymap()">nvim_set_keymap()</A>|
 
 
@@ -2372,10 +2300,10 @@ set({mode}, <A HREF="map.html#{lhs}">{lhs}</A>, <A HREF="map.html#{rhs}">{rhs}</
 basename({file})                                           *<A NAME="vim.fs.basename()"></A><B>vim.fs.basename()</B>*
                 Return the basename of the given file or directory
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     <A HREF="editing.html#{file}">{file}</A>  (string) File or directory
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (string) Basename of <A HREF="editing.html#{file}">{file}</A>
 
 
@@ -2383,12 +2311,12 @@ dir({path})                                                     *<A NAME="vim.fs
                 Return an iterator over the files and directories located in
                 {path}
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {path}  (string) An absolute or relative path to the
                             directory to iterate over. The path is first
                             normalized |<A HREF="#vim.fs.normalize()">vim.fs.normalize()</A>|.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Iterator over files and directories in {path}. Each
                     iteration yields two values: name and type. Each &quot;name&quot; is
                     the basename of the file or directory relative to {path}.
@@ -2398,10 +2326,10 @@ dir({path})                                                     *<A NAME="vim.fs
 dirname({file})                                             *<A NAME="vim.fs.dirname()"></A><B>vim.fs.dirname()</B>*
                 Return the parent directory of the given file or directory
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     <A HREF="editing.html#{file}">{file}</A>  (string) File or directory
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (string) Parent directory of <A HREF="editing.html#{file}">{file}</A>
 
 
@@ -2419,7 +2347,7 @@ find({names}, {opts})                                          *<A NAME="vim.fs.
                 files or or only directories by specifying {type} to be &quot;file&quot;
                 or &quot;directory&quot;, respectively.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {names}  (string|table) Names of the files and directories
                              to find. Must be base names, paths and globs are
                              not supported.
@@ -2442,7 +2370,7 @@ find({names}, {opts})                                          *<A NAME="vim.fs.
                                `math.huge` to place no limit on the number of
                                matches.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (table) The paths of all matching files or directories
 
 
@@ -2464,10 +2392,10 @@ normalize({path})                                         *<A NAME="vim.fs.norma
 <B>                 =&gt; '/Users/jdoe/.config/nvim/init.vim'</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {path}  (string) Path to normalize
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (string) Normalized path
 
 
@@ -2489,20 +2417,15 @@ parents({start})                                            *<A NAME="vim.fs.par
 <B>                 end</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {start}  (string) Initial file or directory.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (function) Iterator
 
 <A HREF="#top">top</A> - <A HREF="index.html">main help file</A>
 </PRE>
-    </div>
+</BODY>
 
-    <footer>
-      <div class="container">
-        Generated Thu Jun  2 10:56:13 UTC 2022 from <a href="https://github.com/neovim/neovim/commit/d93ba03c717bee05fe6d239fd7faefe6e9698c85"><code>d93ba03</code></a>.
-      </div>
-    </footer>
-  </body>
-</html>
+
+</HTML>

@@ -1,82 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Nvim documentation: api</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-    <link href="/css/normalize.min.css" rel="stylesheet">
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <header class="container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a href="/" class="navbar-brand" aria-label="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" width="173" height="50" viewBox="0 0 742 214" aria-label="Neovim">
-              <title>Neovim</title>
-              <defs>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
-                  <stop stop-color="#16B0ED" stop-opacity=".8" offset="0%" />
-                  <stop stop-color="#0F59B2" stop-opacity=".837" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="b">
-                  <stop stop-color="#7DB643" offset="0%" />
-                  <stop stop-color="#367533" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="c">
-                  <stop stop-color="#88C649" stop-opacity=".8" offset="0%" />
-                  <stop stop-color="#439240" stop-opacity=".84" offset="100%" />
-                </linearGradient>
-              </defs>
-              <g fill="none" fill-rule="evenodd">
-                <path
-                  d="M.027 45.459L45.224-.173v212.171L.027 166.894V45.459z"
-                  fill="url(#a)"
-                  transform="translate(1 1)"
-                />
-                <path
-                  d="M129.337 45.89L175.152-.149l-.928 212.146-45.197-45.104.31-121.005z"
-                  fill="url(#b)"
-                  transform="matrix(-1 0 0 1 305 1)"
-                />
-                <path
-                  d="M45.194-.137L162.7 179.173l-32.882 32.881L12.25 33.141 45.194-.137z"
-                  fill="url(#c)"
-                  transform="translate(1 1)"
-                />
-                <path
-                  d="M46.234 84.032l-.063 7.063-36.28-53.563 3.36-3.422 32.983 49.922z"
-                  fill-opacity=".13"
-                  fill="#000"
-                />
-                <g fill="#444">
-                  <path
-                    d="M227 154V64.44h4.655c1.55 0 2.445.75 2.685 2.25l.806 13.502c4.058-5.16 8.786-9.316 14.188-12.466 5.4-3.15 11.413-4.726 18.037-4.726 4.893 0 9.205.781 12.935 2.34 3.729 1.561 6.817 3.811 9.264 6.751 2.448 2.942 4.297 6.48 5.55 10.621 1.253 4.14 1.88 8.821 1.88 14.042V154h-8.504V96.754c0-8.402-1.91-14.987-5.729-19.757-3.82-4.771-9.667-7.156-17.544-7.156-5.851 0-11.28 1.516-16.292 4.545-5.013 3.032-9.489 7.187-13.427 12.467V154H227zM350.624 63c5.066 0 9.755.868 14.069 2.605 4.312 1.738 8.052 4.268 11.219 7.592s5.638 7.412 7.419 12.264C385.11 90.313 386 95.883 386 102.17c0 1.318-.195 2.216-.588 2.696-.393.48-1.01.719-1.851.719h-64.966v1.70c0 6.708.784 12.609 2.353 17.7 1.567 5.09 3.8 9.357 6.695 12.802 2.895 3.445 6.393 6.034 10.495 7.771 4.1 1.738 8.686 2.606 13.752 2.606 4.524 0 8.446-.494 11.762-1.483 3.317-.988 6.108-2.097 8.37-3.324 2.261-1.227 4.056-2.336 5.383-3.324 1.326-.988 2.292-1.482 2.895-1.482.784 0 1.388.3 1.81.898l2.352 2.875c-1.448 1.797-3.362 3.475-5.745 5.031-2.383 1.558-5.038 2.891-7.962 3.998-2.926 1.109-6.062 1.991-9.41 2.65a52.21 52.21 0 01-10.088.989c-6.152 0-11.762-1.064-16.828-3.19-5.067-2.125-9.415-5.225-13.043-9.298-3.63-4.074-6.435-9.06-8.415-14.96C310.99 121.655 310 114.9 310 107.294c0-6.408.92-12.323 2.76-17.744 1.84-5.421 4.493-10.093 7.961-14.016 3.467-3.922 7.72-6.991 12.758-9.209C338.513 64.11 344.229 63 350.624 63zm.573 6c-4.696 0-8.904.702-12.623 2.105-3.721 1.404-6.936 3.421-9.65 6.053-2.713 2.631-4.908 5.79-6.586 9.474S319.55 94.439 319 99h60c0-4.679-.672-8.874-2.013-12.588-1.343-3.712-3.232-6.856-5.67-9.43-2.44-2.571-5.367-4.545-8.782-5.92-3.413-1.374-7.192-2.062-11.338-2.062zM435.546 63c6.526 0 12.368 1.093 17.524 3.28 5.154 2.186 9.5 5.286 13.04 9.298 3.538 4.013 6.238 8.85 8.099 14.51 1.861 5.66 2.791 11.994 2.791 19.002 0 7.008-.932 13.327-2.791 18.957-1.861 5.631-4.561 10.452-8.099 14.465-3.54 4.012-7.886 7.097-13.04 9.254-5.156 2.156-10.998 3.234-17.524 3.234-6.529 0-12.369-1.078-17.525-3.234-5.155-2.157-9.517-5.242-13.085-9.254-3.57-4.013-6.285-8.836-8.145-14.465-1.861-5.63-2.791-11.95-2.791-18.957 0-7.008.93-13.342 2.791-19.002 1.861-5.66 4.576-10.496 8.145-14.51 3.568-4.012 7.93-7.112 13.085-9.299C423.177 64.094 429.017 63 435.546 63zm-.501 86c5.341 0 10.006-.918 13.997-2.757 3.99-1.838 7.32-4.474 9.992-7.909 2.67-3.435 4.664-7.576 5.986-12.428 1.317-4.85 1.98-10.288 1.98-16.316 0-5.965-.66-11.389-1.98-16.27-1.322-4.88-3.316-9.053-5.986-12.519-2.67-3.463-6-6.13-9.992-7.999-3.991-1.867-8.657-2.802-13.997-2.802s-10.008.935-13.997 2.802c-3.991 1.87-7.322 4.536-9.992 8-2.671 3.465-4.68 7.637-6.03 12.518-1.35 4.881-2.026 10.305-2.026 16.27 0 6.026.675 11.465 2.025 16.316 1.35 4.852 3.36 8.993 6.031 12.428 2.67 3.435 6 6.07 9.992 7.91 3.99 1.838 8.656 2.756 13.997 2.756z"
-                    fill="currentColor"
-                  />
-                  <path
-                    d="M530.57 152h-20.05L474 60h18.35c1.61 0 2.967.39 4.072 1.166 1.103.778 1.865 1.763 2.283 2.959l17.722 49.138a92.762 92.762 0 012.551 8.429c.686 2.751 1.298 5.5 1.835 8.25.537-2.75 1.148-5.499 1.835-8.25a77.713 77.713 0 012.64-8.429l18.171-49.138c.417-1.196 1.164-2.181 2.238-2.96 1.074-.776 2.356-1.165 3.849-1.165H567l-36.43 92zM572 61h23v92h-23zM610 153V60.443h13.624c2.887 0 4.78 1.354 5.682 4.06l1.443 6.856a52.7 52.7 0 015.097-4.962 32.732 32.732 0 015.683-3.879 30.731 30.731 0 016.496-2.57c2.314-.632 4.855-.948 7.624-.948 5.832 0 10.63 1.579 14.39 4.736 3.758 3.157 6.57 7.352 8.434 12.585 1.444-3.068 3.248-5.698 5.413-7.894 2.165-2.194 4.541-3.984 7.127-5.367a32.848 32.848 0 018.254-3.068 39.597 39.597 0 018.796-.992c5.111 0 9.653.783 13.622 2.345 3.97 1.565 7.307 3.849 10.014 6.857 2.706 3.007 4.766 6.675 6.18 11.005C739.29 83.537 740 88.5 740 94.092V153h-22.284V94.092c0-5.894-1.294-10.329-3.878-13.306-2.587-2.977-6.376-4.465-11.368-4.465-2.286 0-4.404.391-6.358 1.172a15.189 15.189 0 00-5.144 3.383c-1.473 1.474-2.631 3.324-3.474 5.548-.842 2.225-1.263 4.781-1.263 7.668V153h-22.37V94.092c0-6.194-1.249-10.704-3.744-13.532-2.497-2.825-6.18-4.24-11.051-4.24-3.19 0-6.18.798-8.976 2.391-2.799 1.593-5.399 3.775-7.804 6.54V153H610zM572 30h23v19h-23z"
-                    fill="currentColor"
-                    fill-opacity=".8"
-                  />
-                </g>
-              </g>
-            </svg>
-          </a>
-        </div>
-      </nav>
-    </header>
-
-    <div class="container">
-      <h1>Nvim documentation: api</h1>
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-type" content="text/html; charset=ISO-8859-1">
+<TITLE>Nvim documentation: api</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H1>Nvim documentation: api</H1>
 <A NAME="top"></A>
 <A HREF="index.html">main help file</A>
 
@@ -182,7 +110,7 @@ and YXXYrpcnotify()|:
 The Nvim C <A HREF="#API">API</A> defines custom types for all function parameters. Some are just
 typedefs around C99 standard types, others are Nvim-defined data structures.
 
-<B><FONT color="#54A23D">Basic types </FONT></B>
+<B><FONT COLOR="PURPLE">Basic types </FONT></B>
 
   <A HREF="#API">API</A> Type				C type
   ------------------------------------------------------------------------
@@ -197,7 +125,7 @@ typedefs around C99 standard types, others are Nvim-defined data structures.
 
   Note: empty Array is accepted <A HREF="motion.html#as">as</A> a valid argument for <A HREF="eval.html#Dictionary">Dictionary</A> parameter.
 
-<B><FONT color="#54A23D">Special types (msgpack EXT) </FONT></B>
+<B><FONT COLOR="PURPLE">Special types (msgpack EXT) </FONT></B>
 
   These are integer typedefs discriminated <A HREF="motion.html#as">as</A> separate Object subtypes. They
   can be treated <A HREF="motion.html#as">as</A> opaque integers, but are mutually incompatible: Buffer may
@@ -364,7 +292,7 @@ nvim_buf_lines_event[{buf}, {changedtick}, {firstline}, {lastline}, {linedata}, 
   but not the buffer contents. {linedata} contains the changed screen lines.
   This happens when <A HREF="options.html#'inccommand'">'inccommand'</A> shows a buffer preview.
 
-<B><FONT color="#54A23D">  Properties:</FONT></B>
+<B><FONT COLOR="PURPLE">  Properties:</FONT></B>
     {buf} <A HREF="#API">API</A> buffer handle (buffer number)
 
     {changedtick} value of |<A HREF="eval.html#b:changedtick">b:changedtick</A>| for the buffer. If you send an <A HREF="#API">API</A>
@@ -397,7 +325,7 @@ nvim_buf_changedtick_event[{buf}, {changedtick}]  *<A NAME="nvim_buf_changedtick
   When |<A HREF="eval.html#b:changedtick">b:changedtick</A>| was incremented but no text was changed. Relevant for
   undo/redo.
 
-<B><FONT color="#54A23D">  Properties:</FONT></B>
+<B><FONT COLOR="PURPLE">  Properties:</FONT></B>
     {buf} <A HREF="#API">API</A> buffer handle (buffer number)
     {changedtick} new value of |<A HREF="eval.html#b:changedtick">b:changedtick</A>| for the buffer
 
@@ -411,11 +339,11 @@ nvim_buf_detach_event[{buf}]                           *<A NAME="nvim_buf_detach
     |<A HREF="editing.html#:checktime">:checktime</A>| or <A HREF="options.html#'autoread'">'autoread'</A>.
   - Generally: whenever the buffer contents are unloaded from memory.
 
-<B><FONT color="#54A23D">  Properties:</FONT></B>
+<B><FONT COLOR="PURPLE">  Properties:</FONT></B>
     {buf} <A HREF="#API">API</A> buffer handle (buffer number)
 
 
-<B><FONT color="#54A23D">EXAMPLE </FONT></B>
+<B><FONT COLOR="PURPLE">EXAMPLE </FONT></B>
 
 Calling |<A HREF="#nvim_buf_attach()">nvim_buf_attach()</A>| with send_buffer=true on an empty buffer, emits:
 <B>  nvim_buf_lines_event[{buf}, {changedtick}, 0, -1, [""], v:false]</B>
@@ -442,7 +370,7 @@ Calling |<A HREF="#nvim_buf_attach()">nvim_buf_attach()</A>| with send_buffer=tr
 <B>  nvim_buf_detach_event[{buf}]</B>
  
 
-<B><FONT color="#54A23D">LUA </FONT></B>
+<B><FONT COLOR="PURPLE">LUA </FONT></B>
 
                                                         *<A NAME="api-buffer-updates-lua"></A><B>api-buffer-updates-lua</B>*
 In-process <A HREF="lua.html#Lua">Lua</A> plugins can receive buffer updates in the form of <A HREF="lua.html#Lua">Lua</A>
@@ -657,15 +585,15 @@ nvim__get_hl_defs({ns_id})                               *<A NAME="nvim__get_hl_
 nvim__get_runtime({pat}, {all}, {*opts})                 *<A NAME="nvim__get_runtime()"></A><B>nvim__get_runtime()</B>*
                 Find files in runtime directories
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#api-fast">api-fast</A>|
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {pat}   <A HREF="pattern.html#pattern">pattern</A> of files to search for
                     {all}   whether to return all matches or only the first
                     {opts}  is_lua: only search <A HREF="lua.html#lua">lua</A> subdirs
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#list">list</A> of absolute paths to the found files
 
 
@@ -675,10 +603,10 @@ nvim__id({obj})                                                   *<A NAME="nvim
                 This <A HREF="#API">API</A> function is used for <A HREF="testing.html#testing">testing</A>. One should not rely on
                 its presence in plugins.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {obj}  Object to return.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     its argument.
 
 
@@ -688,10 +616,10 @@ nvim__id_array({arr})                                       *<A NAME="nvim__id_a
                 This <A HREF="#API">API</A> function is used for <A HREF="testing.html#testing">testing</A>. One should not rely on
                 its presence in plugins.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {arr}  Array to return.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     its argument.
 
 
@@ -701,10 +629,10 @@ nvim__id_dictionary({dct})                             *<A NAME="nvim__id_dictio
                 This <A HREF="#API">API</A> function is used for <A HREF="testing.html#testing">testing</A>. One should not rely on
                 its presence in plugins.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {dct}  <A HREF="eval.html#Dictionary">Dictionary</A> to return.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     its argument.
 
 
@@ -714,10 +642,10 @@ nvim__id_float({flt})                                       *<A NAME="nvim__id_f
                 This <A HREF="#API">API</A> function is used for <A HREF="testing.html#testing">testing</A>. One should not rely on
                 its presence in plugins.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {flt}  Value to return.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     its argument.
 
 
@@ -733,7 +661,7 @@ nvim__inspect_cell({grid}, {row}, {col})                *<A NAME="nvim__inspect_
 nvim__screenshot({path})                                  *<A NAME="nvim__screenshot()"></A><B>nvim__screenshot()</B>*
                 TODO: Documentation
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#api-fast">api-fast</A>|
 
 
@@ -746,18 +674,25 @@ nvim__set_hl_ns({ns_id})                                   *<A NAME="nvim__set_h
                 are explicitly allowed to change the <A HREF="#namespace">namespace</A> during a redraw
                 cycle.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#api-fast">api-fast</A>|
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {ns_id}  the <A HREF="#namespace">namespace</A> to activate
 
 
 <A HREF="#nvim__stats()">nvim__stats()</A>                                                  *<A NAME="nvim__stats()"></A><B>nvim__stats()</B>*
                 Gets internal stats.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Map of various internal stats.
+
+
+nvim__unpack({str})                                           *<A NAME="nvim__unpack()"></A><B>nvim__unpack()</B>*
+                TODO: Documentation
+
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
+                    |<A HREF="#api-fast">api-fast</A>|
 
 
 nvim_call_atomic({calls})                                 *<A NAME="nvim_call_atomic()"></A><B>nvim_call_atomic()</B>*
@@ -772,15 +707,15 @@ nvim_call_atomic({calls})                                 *<A NAME="nvim_call_at
                 2. To minimize <A HREF="#RPC">RPC</A> overhead (roundtrips) of a sequence of many
                    requests.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#RPC">RPC</A>| only
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {calls}  an array of calls, where each call is described
                              by an array with two elements: the request name,
                              and an array of arguments.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Array of two elements. The first is an array of return
                     values. The second is NIL if all calls succeeded. If a
                     call resulted in an error, <A HREF="motion.html#it">it</A> is a three-element array
@@ -802,11 +737,11 @@ nvim_chan_send({chan}, {data})                              *<A NAME="nvim_chan_
                 <A HREF="#RPC">RPC</A> <A HREF="message.html#messages">messages</A>, use |<A HREF="vim.html">vim.rpcnotify()</A>| and |<A HREF="vim.html">vim.rpcrequest()</A>|
                 instead.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#RPC">RPC</A>| only
                     |<A HREF="vim.html">vim.api</A>| only
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {chan}  id of the <A HREF="channel.html#channel">channel</A>
                     {data}  data to write. 8-bit clean: can contain NUL bytes.
 
@@ -814,16 +749,16 @@ nvim_chan_send({chan}, {data})                              *<A NAME="nvim_chan_
 nvim_create_buf({listed}, {scratch})                       *<A NAME="nvim_create_buf()"></A><B>nvim_create_buf()</B>*
                 Creates a new, empty, unnamed buffer.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {listed}   Sets <A HREF="options.html#'buflisted'">'buflisted'</A>
                     {scratch}  Creates a &quot;throwaway&quot; |<A HREF="windows.html#scratch-buffer">scratch-buffer</A>| for
                                temporary work (always <A HREF="options.html#'nomodified'">'nomodified'</A>). Also sets
                                <A HREF="options.html#'nomodeline'">'nomodeline'</A> on the buffer.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Buffer handle, or 0 on error
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     buf_open_scratch
 
 
@@ -842,7 +777,7 @@ nvim_create_user_command({name}, {command}, {*opts})
 <B>                   Hello world!</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}     Name of the new user command. Must begin with
                                an <A HREF="change.html#uppercase">uppercase</A> <A HREF="print.html#letter">letter</A>.
                     {command}  Replacement command to execute when this user
@@ -892,7 +827,7 @@ nvim_create_user_command({name}, {command}, {*opts})
 <A HREF="#nvim_del_current_line()">nvim_del_current_line()</A>                              *<A NAME="nvim_del_current_line()"></A><B>nvim_del_current_line()</B>*
                 Deletes the current line.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     not allowed when |<A HREF="eval.html#textlock">textlock</A>| is active
 
 
@@ -901,7 +836,7 @@ nvim_del_keymap({mode}, <A HREF="map.html#{lhs}">{lhs}</A>)                     
 
                 To unmap a buffer-local <A HREF="map.html#mapping">mapping</A>, use |<A HREF="#nvim_buf_del_keymap()">nvim_buf_del_keymap()</A>|.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="#nvim_set_keymap()">nvim_set_keymap()</A>|
 
 
@@ -912,13 +847,13 @@ nvim_del_mark({name})                                        *<A NAME="nvim_del_
                     fails with error if a <A HREF="change.html#lowercase">lowercase</A> or buffer local named <A HREF="motion.html#mark">mark</A>
                     is used.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}  <A HREF="motion.html#Mark">Mark</A> name
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     true if the <A HREF="motion.html#mark">mark</A> was deleted, else false.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="#nvim_buf_del_mark()">nvim_buf_del_mark()</A>|
                     |<A HREF="#nvim_get_mark()">nvim_get_mark()</A>|
 
@@ -926,21 +861,21 @@ nvim_del_mark({name})                                        *<A NAME="nvim_del_
 nvim_del_user_command({name})                        *<A NAME="nvim_del_user_command()"></A><B>nvim_del_user_command()</B>*
                 Delete a user-defined command.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}  Name of the command to delete.
 
 
 nvim_del_var({name})                                          *<A NAME="nvim_del_var()"></A><B>nvim_del_var()</B>*
                 Removes a global (g:) variable.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}  Variable name
 
 
 nvim_echo({chunks}, {history}, {opts})                           *<A NAME="nvim_echo()"></A><B>nvim_echo()</B>*
                 Echo a message.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {chunks}   A <A HREF="eval.html#list">list</A> of [text, hl_group] arrays, each
                                representing a text chunk with specified
                                highlight. `hl_group` element can be omitted
@@ -954,7 +889,7 @@ nvim_err_write({str})                                       *<A NAME="nvim_err_w
                 &quot;\n&quot;, the message is buffered (won't display) until a <A HREF="intro.html#linefeed">linefeed</A>
                 is written.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {str}  Message
 
 
@@ -962,20 +897,20 @@ nvim_err_writeln({str})                                   *<A NAME="nvim_err_wri
                 Writes a message to the Vim error buffer. Appends &quot;\n&quot;, so the
                 buffer is flushed (and displayed).
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {str}  Message
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     <A HREF="#nvim_err_write()">nvim_err_write()</A>
 
 
 nvim_eval_statusline({str}, {*opts})                  *<A NAME="nvim_eval_statusline()"></A><B>nvim_eval_statusline()</B>*
                 Evaluates statusline <A HREF="eval.html#string">string</A>.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#api-fast">api-fast</A>|
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {str}   Statusline <A HREF="eval.html#string">string</A> (see <A HREF="options.html#'statusline'">'statusline'</A>).
                     {opts}  Optional parameters.
                             • <A HREF="windows.html#winid">winid</A>: (number) |<A HREF="windows.html#window-ID">window-ID</A>| of the window to use
@@ -992,7 +927,7 @@ nvim_eval_statusline({str}, {*opts})                  *<A NAME="nvim_eval_status
                               of statusline. When |<A HREF="eval.html#TRUE">TRUE</A>|, {winid} is ignored.
                               Mutually <A HREF="motion.html#exclusive">exclusive</A> with {use_winbar}.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#Dictionary">Dictionary</A> containing statusline information, with these
                     keys:
                     • str: (string) Characters that will be displayed on the
@@ -1014,14 +949,14 @@ nvim_exec_lua({code}, {args})                                *<A NAME="nvim_exec
                 Only statements are executed. To evaluate an <A HREF="eval.html#expression">expression</A>,
                 prefix <A HREF="motion.html#it">it</A> with `return`: return my_function(...)
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#RPC">RPC</A>| only
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {code}  <A HREF="lua.html#Lua">Lua</A> code to execute
                     {args}  Arguments to the code
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Return value of <A HREF="lua.html#Lua">Lua</A> code if present or NIL.
 
 
@@ -1041,7 +976,7 @@ nvim_feedkeys({keys}, {mode}, {escape_ks})                   *<A NAME="nvim_feed
 <B>                    :call nvim_feedkeys(key, 'n', v:false)</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {keys}       to be typed
                     {mode}       behavior flags, see |<A HREF="builtin.html#feedkeys()">feedkeys()</A>|
                     {escape_ks}  If true, <A HREF="intro.html#escape">escape</A> K_SPECIAL bytes in `keys`
@@ -1049,7 +984,7 @@ nvim_feedkeys({keys}, {mode}, {escape_ks})                   *<A NAME="nvim_feed
                                  |<A HREF="#nvim_replace_termcodes()">nvim_replace_termcodes()</A>|, and true
                                  otherwise.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     <A HREF="builtin.html#feedkeys()">feedkeys()</A>
                     vim_strsave_escape_ks
 
@@ -1060,7 +995,7 @@ nvim_feedkeys({keys}, {mode}, {escape_ks})                   *<A NAME="nvim_feed
                 The dictionary has the full option names <A HREF="motion.html#as">as</A> keys and option
                 metadata dictionaries <A HREF="motion.html#as">as</A> detailed at |<A HREF="intro.html#nvim_get_option_info">nvim_get_option_info</A>|.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     dictionary of all <A HREF="options.html#options">options</A>
 
 
@@ -1068,10 +1003,10 @@ nvim_feedkeys({keys}, {mode}, {escape_ks})                   *<A NAME="nvim_feed
                 Returns a 2-tuple (Array), where item 0 is the current <A HREF="channel.html#channel">channel</A>
                 id and item 1 is the |<A HREF="#api-metadata">api-metadata</A>| map (Dictionary).
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     2-tuple [{channel-id}, {api-metadata}]
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#api-fast">api-fast</A>|
                     |<A HREF="#RPC">RPC</A>| only
 
@@ -1079,7 +1014,7 @@ nvim_feedkeys({keys}, {mode}, {escape_ks})                   *<A NAME="nvim_feed
 nvim_get_chan_info({chan})                              *<A NAME="nvim_get_chan_info()"></A><B>nvim_get_chan_info()</B>*
                 Gets information about a <A HREF="channel.html#channel">channel</A>.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#Dictionary">Dictionary</A> describing a <A HREF="channel.html#channel">channel</A>, with these keys:
                     • &quot;id&quot; Channel id.
                     • &quot;argv&quot; (optional) Job arguments <A HREF="eval.html#list">list</A>.
@@ -1115,10 +1050,10 @@ nvim_get_color_by_name({name})                      *<A NAME="nvim_get_color_by_
 <B>                    :echo nvim_get_color_by_name("#cbcbcb")</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}  Color name or &quot;#rrggbb&quot; <A HREF="eval.html#string">string</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     24-bit RGB value, or -1 for invalid argument.
 
 
@@ -1128,7 +1063,7 @@ nvim_get_color_by_name({name})                      *<A NAME="nvim_get_color_by_
                 Keys are color names (e.g. &quot;Aqua&quot;) and values are 24-bit RGB
                 color values (e.g. 65535).
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Map of color names and RGB values.
 
 
@@ -1138,80 +1073,80 @@ nvim_get_commands({*opts})                               *<A NAME="nvim_get_comm
                 Currently only |<A HREF="map.html#user-commands">user-commands</A>| are supported, not builtin <A HREF="intro.html#Ex">Ex</A>
                 commands.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {opts}  Optional parameters. Currently only supports
                             {&quot;builtin&quot;:false}
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Map of maps describing commands.
 
 
 nvim_get_context({*opts})                                 *<A NAME="nvim_get_context()"></A><B>nvim_get_context()</B>*
                 Gets a map of the current editor state.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {opts}  Optional parameters.
                             • types: <A HREF="eval.html#List">List</A> of |<A HREF="repeat.html#context-types">context-types</A>| (&quot;regs&quot;, &quot;jumps&quot;,
                               &quot;bufs&quot;, &quot;gvars&quot;, …) to gather, or empty for
                               &quot;all&quot;.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     map of global |<A HREF="repeat.html#context">context</A>|.
 
 
 <A HREF="#nvim_get_current_buf()">nvim_get_current_buf()</A>                                *<A NAME="nvim_get_current_buf()"></A><B>nvim_get_current_buf()</B>*
                 Gets the current buffer.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Buffer handle
 
 
 <A HREF="#nvim_get_current_line()">nvim_get_current_line()</A>                              *<A NAME="nvim_get_current_line()"></A><B>nvim_get_current_line()</B>*
                 Gets the current line.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Current line <A HREF="eval.html#string">string</A>
 
 
 <A HREF="#nvim_get_current_tabpage()">nvim_get_current_tabpage()</A>                        *<A NAME="nvim_get_current_tabpage()"></A><B>nvim_get_current_tabpage()</B>*
                 Gets the current <A HREF="tabpage.html#tabpage">tabpage</A>.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Tabpage handle
 
 
 <A HREF="#nvim_get_current_win()">nvim_get_current_win()</A>                                *<A NAME="nvim_get_current_win()"></A><B>nvim_get_current_win()</B>*
                 Gets the current <A HREF="windows.html#window">window</A>.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Window handle
 
 
 nvim_get_hl_by_id({hl_id}, {rgb})                        *<A NAME="nvim_get_hl_by_id()"></A><B>nvim_get_hl_by_id()</B>*
                 Gets a highlight definition by id. |<A HREF="builtin.html#hlID()">hlID()</A>|
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {hl_id}  Highlight id <A HREF="motion.html#as">as</A> returned by |<A HREF="builtin.html#hlID()">hlID()</A>|
                     {rgb}    Export RGB colors
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Highlight definition map
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     nvim_get_hl_by_name
 
 
 nvim_get_hl_by_name({name}, {rgb})                     *<A NAME="nvim_get_hl_by_name()"></A><B>nvim_get_hl_by_name()</B>*
                 Gets a highlight definition by name.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}  Highlight group name
                     {rgb}   Export RGB colors
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Highlight definition map
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     nvim_get_hl_by_id
 
 
@@ -1225,10 +1160,10 @@ nvim_get_keymap({mode})                                    *<A NAME="nvim_get_ke
                 Gets a <A HREF="eval.html#list">list</A> of global (non-buffer-local) |<A HREF="map.html#mapping">mapping</A>|
                 <A HREF="intro.html#definitions">definitions</A>.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {mode}  Mode short-name (&quot;n&quot;, &quot;<A HREF="insert.html#i">i</A>&quot;, &quot;<A HREF="visual.html#v">v</A>&quot;, <A HREF="eval.html#...">...</A>)
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Array of maparg()-like dictionaries describing mappings.
                     The &quot;buffer&quot; key is always zero.
 
@@ -1243,15 +1178,15 @@ nvim_get_mark({name}, {opts})                                *<A NAME="nvim_get_
                     fails with error if a <A HREF="change.html#lowercase">lowercase</A> or buffer local named <A HREF="motion.html#mark">mark</A>
                     is used.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}  <A HREF="motion.html#Mark">Mark</A> name
                     {opts}  Optional parameters. Reserved for future use.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     4-tuple (row, col, buffer, buffername), (0, 0, 0, <A HREF="motion.html#''">''</A>) if
                     the <A HREF="motion.html#mark">mark</A> is not set.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="#nvim_buf_set_mark()">nvim_buf_set_mark()</A>|
                     |<A HREF="#nvim_del_mark()">nvim_del_mark()</A>|
 
@@ -1260,20 +1195,20 @@ nvim_get_mark({name}, {opts})                                *<A NAME="nvim_get_
                 Gets the current mode. |<A HREF="builtin.html#mode()">mode()</A>| &quot;blocking&quot; is true if Nvim is
                 waiting for input.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#Dictionary">Dictionary</A> { &quot;mode&quot;: <A HREF="eval.html#String">String</A>, &quot;blocking&quot;: <A HREF="eval.html#Boolean">Boolean</A> }
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#api-fast">api-fast</A>|
 
 
 nvim_get_option({name})                                    *<A NAME="nvim_get_option()"></A><B>nvim_get_option()</B>*
                 Gets the global value of an option.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}  Option name
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Option value (global)
 
 
@@ -1294,10 +1229,10 @@ nvim_get_option_info({name})                          *<A NAME="nvim_get_option_
                 • commalist: <A HREF="eval.html#List">List</A> of comma separated values
                 • flaglist: <A HREF="eval.html#List">List</A> of single char flags
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}  Option name
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Option Information
 
 
@@ -1310,27 +1245,27 @@ nvim_get_option_value({name}, {*opts})               *<A NAME="nvim_get_option_v
                 specific buffer or <A HREF="windows.html#window">window</A>, use |<A HREF="#nvim_buf_get_option()">nvim_buf_get_option()</A>| or
                 |<A HREF="#nvim_win_get_option()">nvim_win_get_option()</A>|.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}  Option name
                     {opts}  Optional parameters
                             • scope: One of 'global' or 'local'. Analogous to
                               |<A HREF="options.html#:setglobal">:setglobal</A>| and |<A HREF="options.html#:setlocal">:setlocal</A>|, respectively.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Option value
 
 
 nvim_get_proc({pid})                                         *<A NAME="nvim_get_proc()"></A><B>nvim_get_proc()</B>*
                 Gets info describing process `pid`.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Map of process properties, or NIL if process not found.
 
 
 nvim_get_proc_children({pid})                       *<A NAME="nvim_get_proc_children()"></A><B>nvim_get_proc_children()</B>*
                 Gets the immediate children of process `pid`.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Array of child process ids, empty if process not found.
 
 
@@ -1345,34 +1280,34 @@ nvim_get_runtime_file({name}, {all})                 *<A NAME="nvim_get_runtime_
                 It is not an error to not find any files. An empty array is
                 returned then.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#api-fast">api-fast</A>|
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}  <A HREF="pattern.html#pattern">pattern</A> of files to search for
                     {all}   whether to return all matches or only the first
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#list">list</A> of absolute paths to the found files
 
 
 nvim_get_var({name})                                          *<A NAME="nvim_get_var()"></A><B>nvim_get_var()</B>*
                 Gets a global (g:) variable.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}  Variable name
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Variable value
 
 
 nvim_get_vvar({name})                                        *<A NAME="nvim_get_vvar()"></A><B>nvim_get_vvar()</B>*
                 Gets a <A HREF="eval.html#v:">v:</A> variable.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}  Variable name
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Variable value
 
 
@@ -1392,13 +1327,13 @@ nvim_input({keys})                                              *<A NAME="nvim_i
                     form &quot;&lt;LeftMouse&gt;&lt;col,row&gt;&quot; is <A HREF="deprecated.html#deprecated">deprecated</A> since
                     |<A HREF="#api-level">api-level</A>| 6.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#api-fast">api-fast</A>|
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {keys}  to be typed
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#Number">Number</A> of bytes actually written (can be fewer than
                     requested if the buffer becomes full).
 
@@ -1418,10 +1353,10 @@ nvim_input_mouse({button}, {action}, {modifier}, {grid}, {row}, {col})
                     <A HREF="deprecated.html#deprecated">deprecated</A> pseudokey form (&quot;&lt;LeftMouse&gt;&lt;col,row&gt;&quot;) of
                     |<A HREF="#nvim_input()">nvim_input()</A>| has the same limitation.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#api-fast">api-fast</A>|
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {button}    Mouse button: one of &quot;left&quot;, &quot;right&quot;,
                                 &quot;middle&quot;, &quot;wheel&quot;.
                     {action}    For ordinary buttons, one of &quot;press&quot;, &quot;drag&quot;,
@@ -1446,14 +1381,14 @@ nvim_input_mouse({button}, {action}, {modifier}, {grid}, {row}, {col})
                 Includes unlisted (unloaded/deleted) <A HREF="windows.html#buffers">buffers</A>, like `:ls!`. Use
                 |<A HREF="#nvim_buf_is_loaded()">nvim_buf_is_loaded()</A>| to check if a buffer is loaded.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#List">List</A> of buffer handles
 
 
 <A HREF="#nvim_list_chans()">nvim_list_chans()</A>                                          *<A NAME="nvim_list_chans()"></A><B>nvim_list_chans()</B>*
                 Get information about all open channels.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Array of <A HREF="eval.html#Dictionaries">Dictionaries</A>, each describing a <A HREF="channel.html#channel">channel</A> with the
                     format specified at |<A HREF="#nvim_get_chan_info()">nvim_get_chan_info()</A>|.
 
@@ -1461,21 +1396,21 @@ nvim_input_mouse({button}, {action}, {modifier}, {grid}, {row}, {col})
 <A HREF="#nvim_list_runtime_paths()">nvim_list_runtime_paths()</A>                          *<A NAME="nvim_list_runtime_paths()"></A><B>nvim_list_runtime_paths()</B>*
                 Gets the paths contained in <A HREF="options.html#'runtimepath'">'runtimepath'</A>.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#List">List</A> of paths
 
 
 <A HREF="#nvim_list_tabpages()">nvim_list_tabpages()</A>                                    *<A NAME="nvim_list_tabpages()"></A><B>nvim_list_tabpages()</B>*
                 Gets the current <A HREF="eval.html#list">list</A> of <A HREF="tabpage.html#tabpage">tabpage</A> handles.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#List">List</A> of <A HREF="tabpage.html#tabpage">tabpage</A> handles
 
 
 <A HREF="#nvim_list_uis()">nvim_list_uis()</A>                                              *<A NAME="nvim_list_uis()"></A><B>nvim_list_uis()</B>*
                 Gets a <A HREF="eval.html#list">list</A> of dictionaries representing attached UIs.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Array of <A HREF="ui.html#UI">UI</A> dictionaries, each with these keys:
                     • &quot;height&quot; Requested height of the <A HREF="ui.html#UI">UI</A>
                     • &quot;width&quot; Requested width of the <A HREF="ui.html#UI">UI</A>
@@ -1488,14 +1423,14 @@ nvim_input_mouse({button}, {action}, {modifier}, {grid}, {row}, {col})
 <A HREF="#nvim_list_wins()">nvim_list_wins()</A>                                            *<A NAME="nvim_list_wins()"></A><B>nvim_list_wins()</B>*
                 Gets the current <A HREF="eval.html#list">list</A> of <A HREF="windows.html#window">window</A> handles.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#List">List</A> of <A HREF="windows.html#window">window</A> handles
 
 
 nvim_load_context({dict})                                *<A NAME="nvim_load_context()"></A><B>nvim_load_context()</B>*
                 Sets the current editor state from the given |<A HREF="repeat.html#context">context</A>| map.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {dict}  |<A HREF="repeat.html#Context">Context</A>| map.
 
 
@@ -1506,7 +1441,7 @@ nvim_notify({msg}, {log_level}, {opts})                        *<A NAME="nvim_no
                 message in the echo area but can be overridden to trigger
                 desktop notifications.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {msg}        Message to display to the user
                     {log_level}  The log level
                     {opts}       Reserved for future use.
@@ -1529,7 +1464,7 @@ nvim_open_term({buffer}, {opts})                            *<A NAME="nvim_open_
                 |<A HREF="#nvim_chan_send()">nvim_chan_send()</A>| can be called immediately to process
                 sequences in a virtual <A HREF="nvim_terminal_emulator.html#terminal">terminal</A> having the intended size.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  the buffer to use (expected to be empty)
                     {opts}    Optional parameters.
                               • on_input: <A HREF="lua.html#lua">lua</A> callback for input sent, <A HREF="insert.html#i">i</A> <A HREF="motion.html#e">e</A>
@@ -1541,7 +1476,7 @@ nvim_open_term({buffer}, {opts})                            *<A NAME="nvim_open_
                                 |<A HREF="intro.html#nvim_chan_send">nvim_chan_send</A>| directly in the callback
                                 however. [&quot;input&quot;, term, bufnr, data]
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Channel id, or 0 on error
 
 
@@ -1550,7 +1485,7 @@ nvim_out_write({str})                                       *<A NAME="nvim_out_w
                 &quot;\n&quot;, the message is buffered (won't display) until a <A HREF="intro.html#linefeed">linefeed</A>
                 is written.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {str}  Message
 
 
@@ -1567,10 +1502,10 @@ nvim_paste({data}, {crlf}, {phase})                             *<A NAME="nvim_p
                 calls are ignored (&quot;drained&quot;) until the next <A HREF="provider.html#paste">paste</A> is
                 initiated (phase 1 or -1).
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     not allowed when |<A HREF="eval.html#textlock">textlock</A>| is active
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {data}   Multiline input. May be binary (containing NUL
                              bytes).
                     {crlf}   Also break lines at CR and CRLF.
@@ -1580,7 +1515,7 @@ nvim_paste({data}, {crlf}, {phase})                             *<A NAME="nvim_p
                              • 2: continues the <A HREF="provider.html#paste">paste</A> (zero or more times)
                              • 3: ends the <A HREF="provider.html#paste">paste</A> (exactly once)
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
 
                     • true: Client may continue pasting.
                     • false: Client must cancel the <A HREF="provider.html#paste">paste</A>.
@@ -1591,10 +1526,10 @@ nvim_put({lines}, {type}, {after}, {follow})                      *<A NAME="nvim
 
                 Compare |<A HREF="change.html#:put">:put</A>| and |<A HREF="change.html#p">p</A>| which are always <A HREF="motion.html#linewise">linewise</A>.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     not allowed when |<A HREF="eval.html#textlock">textlock</A>| is active
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {lines}   |readfile()|-style <A HREF="eval.html#list">list</A> of lines.
                               |<A HREF="channel.html#channel-lines">channel-lines</A>|
                     {type}    Edit behavior: any |<A HREF="builtin.html#getregtype()">getregtype()</A>| result, or:
@@ -1613,7 +1548,7 @@ nvim_replace_termcodes({str}, {from_part}, {do_lt}, {special})
                 Replaces <A HREF="nvim_terminal_emulator.html#terminal">terminal</A> codes and |<A HREF="intro.html#keycodes">keycodes</A>| (&lt;CR&gt;, <A HREF="intro.html#&lt;Esc&gt;">&lt;Esc&gt;</A>, <A HREF="eval.html#...">...</A>) in a
                 <A HREF="eval.html#string">string</A> with the internal representation.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {str}        <A HREF="eval.html#String">String</A> to be converted.
                     {from_part}  Legacy Vim parameter. Usually true.
                     {do_lt}      Also translate <A HREF="intro.html#&lt;lt&gt;">&lt;lt&gt;</A>. Ignored if `special` is
@@ -1621,7 +1556,7 @@ nvim_replace_termcodes({str}, {from_part}, {do_lt}, {special})
                     {special}    <A HREF="insert.html#Replace">Replace</A> |<A HREF="intro.html#keycodes">keycodes</A>|, e.g. <A HREF="motion.html#&lt;CR&gt;">&lt;CR&gt;</A> becomes a &quot;\r&quot;
                                  char.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     replace_termcodes
                     cpoptions
 
@@ -1636,7 +1571,7 @@ nvim_select_popupmenu_item({item}, {insert}, {finish}, {opts})
                 <A HREF="map.html#mapping">mapping</A>; use &lt;cmd&gt; |<A HREF="map.html#:map-cmd">:map-cmd</A>| to ensure the <A HREF="map.html#mapping">mapping</A> doesn't
                 end completion mode.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {item}    Index (zero-based) of the item to select. Value
                               of -1 selects nothing and restores the original
                               text.
@@ -1663,10 +1598,10 @@ nvim_set_client_info({name}, {version}, {type}, {methods}, {attributes})
                     &quot;Something is better than nothing&quot;. You don't need to
                     include all the fields.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#RPC">RPC</A>| only
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}        Short name for the connected client
                     {version}     <A HREF="eval.html#Dictionary">Dictionary</A> describing the version, with
                                   these (optional) keys:
@@ -1718,47 +1653,47 @@ nvim_set_client_info({name}, {version}, {type}, {methods}, {attributes})
 nvim_set_current_buf({buffer})                        *<A NAME="nvim_set_current_buf()"></A><B>nvim_set_current_buf()</B>*
                 Sets the current buffer.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     not allowed when |<A HREF="eval.html#textlock">textlock</A>| is active
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle
 
 
 nvim_set_current_dir({dir})                           *<A NAME="nvim_set_current_dir()"></A><B>nvim_set_current_dir()</B>*
                 Changes the global working directory.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {dir}  Directory path
 
 
 nvim_set_current_line({line})                        *<A NAME="nvim_set_current_line()"></A><B>nvim_set_current_line()</B>*
                 Sets the current line.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     not allowed when |<A HREF="eval.html#textlock">textlock</A>| is active
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {line}  Line contents
 
 
 nvim_set_current_tabpage({tabpage})               *<A NAME="nvim_set_current_tabpage()"></A><B>nvim_set_current_tabpage()</B>*
                 Sets the current <A HREF="tabpage.html#tabpage">tabpage</A>.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     not allowed when |<A HREF="eval.html#textlock">textlock</A>| is active
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {tabpage}  Tabpage handle
 
 
 nvim_set_current_win({window})                        *<A NAME="nvim_set_current_win()"></A><B>nvim_set_current_win()</B>*
                 Sets the current <A HREF="windows.html#window">window</A>.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     not allowed when |<A HREF="eval.html#textlock">textlock</A>| is active
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle
 
 
@@ -1778,7 +1713,7 @@ nvim_set_hl({ns_id}, {name}, {*val})                           *<A NAME="nvim_se
                     the <A HREF="intro.html#Normal">Normal</A> group has not been defined, using these values
                     results in an error.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {ns_id}  Namespace id for this highlight
                              |<A HREF="#nvim_create_namespace()">nvim_create_namespace()</A>|. Use 0 to set a
                              highlight group globally |<A HREF="syntax.html#:highlight">:highlight</A>|.
@@ -1834,7 +1769,7 @@ nvim_set_keymap({mode}, <A HREF="map.html#{lhs}">{lhs}</A>, <A HREF="map.html#{r
 <B>                    nmap &lt;nowait&gt; &lt;Space&gt;&lt;NL&gt; &lt;Nop&gt;</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {mode}  Mode short-name (map command prefix: &quot;<A HREF="pattern.html#n">n</A>&quot;, &quot;<A HREF="insert.html#i">i</A>&quot;,
                             &quot;<A HREF="visual.html#v">v</A>&quot;, &quot;<A HREF="change.html#x">x</A>&quot;, …) or &quot;!&quot; for |<A HREF="map.html#:map!">:map!</A>|, or empty <A HREF="eval.html#string">string</A>
                             for |<A HREF="map.html#:map">:map</A>|.
@@ -1854,7 +1789,7 @@ nvim_set_keymap({mode}, <A HREF="map.html#{lhs}">{lhs}</A>, <A HREF="map.html#{r
 nvim_set_option({name}, {value})                           *<A NAME="nvim_set_option()"></A><B>nvim_set_option()</B>*
                 Sets the global value of an option.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}   Option name
                     {value}  New option value
 
@@ -1868,7 +1803,7 @@ nvim_set_option_value({name}, {value}, {*opts})
 
                 Note the <A HREF="options.html#options">options</A> {win} and {buf} cannot be used together.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}   Option name
                     {value}  New option value
                     {opts}   Optional parameters
@@ -1883,7 +1818,7 @@ nvim_set_option_value({name}, {value}, {*opts})
 nvim_set_var({name}, {value})                                 *<A NAME="nvim_set_var()"></A><B>nvim_set_var()</B>*
                 Sets a global (g:) variable.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}   Variable name
                     {value}  Variable value
 
@@ -1891,7 +1826,7 @@ nvim_set_var({name}, {value})                                 *<A NAME="nvim_set
 nvim_set_vvar({name}, {value})                               *<A NAME="nvim_set_vvar()"></A><B>nvim_set_vvar()</B>*
                 Sets a <A HREF="eval.html#v:">v:</A> variable, if <A HREF="motion.html#it">it</A> is not readonly.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}   Variable name
                     {value}  Variable value
 
@@ -1900,30 +1835,30 @@ nvim_strwidth({text})                                        *<A NAME="nvim_strw
                 Calculates the number of display cells occupied by `text`.
                 Control characters including <A HREF="motion.html#&lt;Tab&gt;">&lt;Tab&gt;</A> <A HREF="intro.html#count">count</A> <A HREF="motion.html#as">as</A> one cell.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {text}  Some text
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#Number">Number</A> of cells
 
 
 nvim_subscribe({event})                                     *<A NAME="nvim_subscribe()"></A><B>nvim_subscribe()</B>*
                 Subscribes to event broadcasts.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#RPC">RPC</A>| only
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     <A HREF="autocmd.html#{event}">{event}</A>  Event type <A HREF="eval.html#string">string</A>
 
 
 nvim_unsubscribe({event})                                 *<A NAME="nvim_unsubscribe()"></A><B>nvim_unsubscribe()</B>*
                 Unsubscribes to event broadcasts.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#RPC">RPC</A>| only
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     <A HREF="autocmd.html#{event}">{event}</A>  Event type <A HREF="eval.html#string">string</A>
 
 
@@ -1938,13 +1873,13 @@ nvim_call_dict_function({dict}, {fn}, {args})
 
                 On execution error: fails with VimL error, updates <A HREF="eval.html#v:errmsg">v:errmsg</A>.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {dict}  <A HREF="eval.html#Dictionary">Dictionary</A>, or <A HREF="eval.html#String">String</A> evaluating to a VimL |<A HREF="eval.html#self">self</A>|
                             <A HREF="eval.html#dict">dict</A>
                     {fn}    Name of the function defined on the VimL <A HREF="eval.html#dict">dict</A>
                     {args}  Function arguments packed in an Array
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Result of the function call
 
 
@@ -1953,11 +1888,11 @@ nvim_call_function({fn}, {args})                        *<A NAME="nvim_call_func
 
                 On execution error: fails with VimL error, updates <A HREF="eval.html#v:errmsg">v:errmsg</A>.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {fn}    Function to call
                     {args}  Function arguments packed in an Array
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Result of the function call
 
 
@@ -1973,7 +1908,7 @@ nvim_cmd({*cmd}, {*opts})                                         *<A NAME="nvim
 
                 On execution error: fails with VimL error, updates <A HREF="eval.html#v:errmsg">v:errmsg</A>.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {cmd}   Command to execute. Must be a <A HREF="eval.html#Dictionary">Dictionary</A> that can
                             contain the same values <A HREF="motion.html#as">as</A> the return value of
                             |<A HREF="#nvim_parse_cmd()">nvim_parse_cmd()</A>| except &quot;addr&quot;, &quot;nargs&quot; and
@@ -1983,11 +1918,11 @@ nvim_cmd({*cmd}, {*opts})                                         *<A NAME="nvim
                             • output: (boolean, default false) Whether to
                               return command output.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Command output (non-error, non-shell |<A HREF="various.html#:!">:!</A>|) if `output` is
                     true, else empty <A HREF="eval.html#string">string</A>.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="#nvim_exec()">nvim_exec()</A>|
                     |<A HREF="#nvim_command()">nvim_command()</A>|
 
@@ -2004,7 +1939,7 @@ nvim_command({command})                                       *<A NAME="nvim_com
                 modify an <A HREF="intro.html#Ex">Ex</A> command before evaluating <A HREF="motion.html#it">it</A>, use
                 |<A HREF="#nvim_parse_cmd()">nvim_parse_cmd()</A>| in conjunction with |<A HREF="#nvim_cmd()">nvim_cmd()</A>|.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {command}  <A HREF="intro.html#Ex">Ex</A> command <A HREF="eval.html#string">string</A>
 
 
@@ -2014,10 +1949,10 @@ nvim_eval({expr})                                                *<A NAME="nvim_
 
                 On execution error: fails with VimL error, updates <A HREF="eval.html#v:errmsg">v:errmsg</A>.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {expr}  VimL <A HREF="eval.html#expression">expression</A> <A HREF="eval.html#string">string</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Evaluation result or expanded object
 
 
@@ -2030,16 +1965,16 @@ nvim_exec({src}, {output})                                       *<A NAME="nvim_
 
                 On execution error: fails with VimL error, updates <A HREF="eval.html#v:errmsg">v:errmsg</A>.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {src}     Vimscript code
                     {output}  Capture and return all (non-error, non-shell
                               |<A HREF="various.html#:!">:!</A>|) output
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Output (non-error, non-shell |<A HREF="various.html#:!">:!</A>|) if `output` is true,
                     else empty <A HREF="eval.html#string">string</A>.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="builtin.html#execute()">execute()</A>|
                     |<A HREF="#nvim_command()">nvim_command()</A>|
                     |<A HREF="#nvim_cmd()">nvim_cmd()</A>|
@@ -2050,14 +1985,14 @@ nvim_parse_cmd({str}, {opts})                               *<A NAME="nvim_parse
 
                 Doesn't check the validity of command arguments.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#api-fast">api-fast</A>|
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {str}   Command line <A HREF="eval.html#string">string</A> to parse. Cannot contain &quot;\n&quot;.
                     {opts}  Optional parameters. Reserved for future use.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#Dictionary">Dictionary</A> containing command information, with these
                     keys:
                     • cmd: (string) Command name.
@@ -2120,10 +2055,10 @@ nvim_parse_cmd({str}, {opts})                               *<A NAME="nvim_parse
 nvim_parse_expression({expr}, {flags}, {highlight})
                 Parse a VimL <A HREF="eval.html#expression">expression</A>.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#api-fast">api-fast</A>|
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {expr}       Expression to parse. Always treated <A HREF="motion.html#as">as</A> a
                                  single line.
                     {flags}      Flags:
@@ -2151,7 +2086,7 @@ nvim_parse_expression({expr}, {flags}, {highlight})
                                  <A HREF="motion.html#exclusive">exclusive</A>: one should highlight region
                                  [start_col, end_col)).
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
 
                     • AST: top-level dictionary with these keys:
                       • &quot;error&quot;: <A HREF="eval.html#Dictionary">Dictionary</A> with error, present only if parser
@@ -2222,7 +2157,7 @@ Buffer Functions                                                  *<A NAME="api-
 
 For more information on buffers, see |<A HREF="windows.html#buffers">buffers</A>|.
 
-<B><FONT color="#54A23D">Unloaded Buffers:</FONT></B>
+<B><FONT COLOR="PURPLE">Unloaded Buffers:</FONT></B>
 
 Buffers may be unloaded by the |<A HREF="windows.html#:bunload">:bunload</A>| command or the
 buffer's |<A HREF="options.html#'bufhidden'">'bufhidden'</A>| option. When a buffer is unloaded its
@@ -2256,7 +2191,7 @@ nvim_buf_attach({buffer}, {send_buffer}, {opts})           *<A NAME="nvim_buf_at
 <B>                    on_lines=function(...) table.insert(events, {...}) end})</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}       Buffer handle, or 0 for current buffer
                     {send_buffer}  True if the initial notification should
                                    contain the whole buffer: first
@@ -2323,11 +2258,11 @@ nvim_buf_attach({buffer}, {send_buffer}, {opts})           *<A NAME="nvim_buf_at
                                    • preview: also attach to command preview
                                      (i.e. <A HREF="options.html#'inccommand'">'inccommand'</A>) <A HREF="autocmd.html#events">events</A>.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     False if attach failed (invalid parameter, or buffer isn't
                     loaded); otherwise True. TODO: LUA_API_NO_EVAL
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="#nvim_buf_detach()">nvim_buf_detach()</A>|
                     |<A HREF="#api-buffer-updates-lua">api-buffer-updates-lua</A>|
 
@@ -2346,15 +2281,15 @@ nvim_buf_call({buffer}, {fun})                               *<A NAME="nvim_buf_
                 This is useful e.g. to call vimL <A HREF="eval.html#functions">functions</A> that only work with
                 the current buffer/window currently, like |<A HREF="builtin.html#termopen()">termopen()</A>|.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="vim.html">vim.api</A>| only
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
                     {fun}     Function to call inside the buffer (currently
                               <A HREF="lua.html#lua">lua</A> callable only)
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Return value of function. NB: will deepcopy <A HREF="lua.html#lua">lua</A> values
                     currently, use upvalues to send <A HREF="lua.html#lua">lua</A> references in and out.
 
@@ -2363,20 +2298,20 @@ nvim_buf_call({buffer}, {fun})                               *<A NAME="nvim_buf_
 nvim_buf_create_user_command({buffer}, {name}, {command}, {*opts})
                 Create a new user command |<A HREF="map.html#user-commands">user-commands</A>| in the given buffer.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     nvim_create_user_command
 
 
 nvim_buf_del_keymap({buffer}, {mode}, <A HREF="map.html#{lhs}">{lhs}</A>)           *<A NAME="nvim_buf_del_keymap()"></A><B>nvim_buf_del_keymap()</B>*
                 Unmaps a buffer-local |<A HREF="map.html#mapping">mapping</A>| for the given mode.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="#nvim_del_keymap()">nvim_del_keymap()</A>|
 
 
@@ -2387,14 +2322,14 @@ nvim_buf_del_mark({buffer}, {name})                      *<A NAME="nvim_buf_del_
                     only deletes marks set in the buffer, if the <A HREF="motion.html#mark">mark</A> is not
                     set in the buffer <A HREF="motion.html#it">it</A> will return false.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer to set the <A HREF="motion.html#mark">mark</A> on
                     {name}    <A HREF="motion.html#Mark">Mark</A> name
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     true if the <A HREF="motion.html#mark">mark</A> was deleted, else false.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="#nvim_buf_set_mark()">nvim_buf_set_mark()</A>|
                     |<A HREF="#nvim_del_mark()">nvim_del_mark()</A>|
 
@@ -2407,7 +2342,7 @@ nvim_buf_del_user_command({buffer}, {name})
                 |<A HREF="#nvim_buf_create_user_command()">nvim_buf_create_user_command()</A>| can be deleted with this
                 function.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer.
                     {name}    Name of the command to delete.
 
@@ -2415,7 +2350,7 @@ nvim_buf_del_user_command({buffer}, {name})
 nvim_buf_del_var({buffer}, {name})                        *<A NAME="nvim_buf_del_var()"></A><B>nvim_buf_del_var()</B>*
                 Removes a buffer-scoped (b:) variable
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
                     {name}    Variable name
 
@@ -2423,10 +2358,10 @@ nvim_buf_del_var({buffer}, {name})                        *<A NAME="nvim_buf_del
 nvim_buf_delete({buffer}, {opts})                          *<A NAME="nvim_buf_delete()"></A><B>nvim_buf_delete()</B>*
                 Deletes the buffer. See |<A HREF="windows.html#:bwipeout">:bwipeout</A>|
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     not allowed when |<A HREF="eval.html#textlock">textlock</A>| is active
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
                     {opts}    Optional parameters. Keys:
                               • force: Force deletion and ignore unsaved
@@ -2438,17 +2373,17 @@ nvim_buf_delete({buffer}, {opts})                          *<A NAME="nvim_buf_de
 nvim_buf_detach({buffer})                                  *<A NAME="nvim_buf_detach()"></A><B>nvim_buf_detach()</B>*
                 Deactivates buffer-update <A HREF="autocmd.html#events">events</A> on the <A HREF="channel.html#channel">channel</A>.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#RPC">RPC</A>| only
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     False if detach failed (because the buffer isn't loaded);
                     otherwise True.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="#nvim_buf_attach()">nvim_buf_attach()</A>|
                     |<A HREF="#api-lua-detach">api-lua-detach</A>| for detaching <A HREF="lua.html#Lua">Lua</A> callbacks
 
@@ -2456,32 +2391,32 @@ nvim_buf_detach({buffer})                                  *<A NAME="nvim_buf_de
 nvim_buf_get_changedtick({buffer})                *<A NAME="nvim_buf_get_changedtick()"></A><B>nvim_buf_get_changedtick()</B>*
                 Gets a changed tick of a buffer
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     `b:changedtick` value.
 
 
 nvim_buf_get_commands({buffer}, {*opts})             *<A NAME="nvim_buf_get_commands()"></A><B>nvim_buf_get_commands()</B>*
                 Gets a map of buffer-local |<A HREF="map.html#user-commands">user-commands</A>|.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
                     {opts}    Optional parameters. Currently not used.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Map of maps describing commands.
 
 
 nvim_buf_get_keymap({buffer}, {mode})                  *<A NAME="nvim_buf_get_keymap()"></A><B>nvim_buf_get_keymap()</B>*
                 Gets a <A HREF="eval.html#list">list</A> of buffer-local |<A HREF="map.html#mapping">mapping</A>| <A HREF="intro.html#definitions">definitions</A>.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {mode}    Mode short-name (&quot;n&quot;, &quot;<A HREF="insert.html#i">i</A>&quot;, &quot;<A HREF="visual.html#v">v</A>&quot;, <A HREF="eval.html#...">...</A>)
                     {buffer}  Buffer handle, or 0 for current buffer
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Array of maparg()-like dictionaries describing mappings.
                     The &quot;buffer&quot; key holds the associated buffer handle.
 
@@ -2497,14 +2432,14 @@ nvim_buf_get_lines({buffer}, {start}, {end}, {strict_indexing})
                 Out-of-bounds indices are clamped to the nearest valid value,
                 unless `strict_indexing` is set.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}           Buffer handle, or 0 for current buffer
                     {start}            First line index
                     {end}              Last line index, <A HREF="motion.html#exclusive">exclusive</A>
                     {strict_indexing}  Whether out-of-bounds should be an
                                        error.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Array of lines, or empty array for unloaded buffer.
 
 
@@ -2514,15 +2449,15 @@ nvim_buf_get_mark({buffer}, {name})                      *<A NAME="nvim_buf_get_
 
                 Marks are (1,0)-indexed. |<A HREF="#api-indexing">api-indexing</A>|
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
                     {name}    <A HREF="motion.html#Mark">Mark</A> name
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (row, col) tuple, (0, 0) if the <A HREF="motion.html#mark">mark</A> is not set, or is an
                     uppercase/file <A HREF="motion.html#mark">mark</A> set in another buffer.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="#nvim_buf_set_mark()">nvim_buf_set_mark()</A>|
                     |<A HREF="#nvim_buf_del_mark()">nvim_buf_del_mark()</A>|
 
@@ -2530,10 +2465,10 @@ nvim_buf_get_mark({buffer}, {name})                      *<A NAME="nvim_buf_get_
 nvim_buf_get_name({buffer})                              *<A NAME="nvim_buf_get_name()"></A><B>nvim_buf_get_name()</B>*
                 Gets the full file name for the buffer
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Buffer name
 
 
@@ -2549,22 +2484,22 @@ nvim_buf_get_offset({buffer}, {index})                 *<A NAME="nvim_buf_get_of
                 Unlike |<A HREF="builtin.html#line2byte()">line2byte()</A>|, throws error for out-of-bounds indexing.
                 Returns -1 for unloaded buffer.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
                     {index}   Line index
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#Integer">Integer</A> byte offset, or -1 for unloaded buffer.
 
 
 nvim_buf_get_option({buffer}, {name})                  *<A NAME="nvim_buf_get_option()"></A><B>nvim_buf_get_option()</B>*
                 Gets a buffer option value
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
                     {name}    Option name
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Option value
 
 
@@ -2581,7 +2516,7 @@ nvim_buf_get_text({buffer}, {start_row}, {start_col}, {end_row}, {end_col},
 
                 Prefer |<A HREF="#nvim_buf_get_lines()">nvim_buf_get_lines()</A>| when retrieving entire lines.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}     Buffer handle, or 0 for current buffer
                     {start_row}  First line index
                     {start_col}  Starting column (byte offset) on first line
@@ -2590,18 +2525,18 @@ nvim_buf_get_text({buffer}, {start_row}, {start_col}, {end_row}, {end_col},
                                  <A HREF="motion.html#exclusive">exclusive</A>
                     {opts}       Optional parameters. Currently unused.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Array of lines, or empty array for unloaded buffer.
 
 
 nvim_buf_get_var({buffer}, {name})                        *<A NAME="nvim_buf_get_var()"></A><B>nvim_buf_get_var()</B>*
                 Gets a buffer-scoped (b:) variable.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
                     {name}    Variable name
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Variable value
 
 
@@ -2609,10 +2544,10 @@ nvim_buf_is_loaded({buffer})                            *<A NAME="nvim_buf_is_lo
                 Checks if a buffer is valid and loaded. See |<A HREF="#api-buffer">api-buffer</A>| for
                 more info about unloaded <A HREF="windows.html#buffers">buffers</A>.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     true if the buffer is valid and loaded, false otherwise.
 
 
@@ -2623,20 +2558,20 @@ nvim_buf_is_valid({buffer})                              *<A NAME="nvim_buf_is_v
                     Even if a buffer is valid <A HREF="motion.html#it">it</A> may have been unloaded. See
                     |<A HREF="#api-buffer">api-buffer</A>| for more info about unloaded <A HREF="windows.html#buffers">buffers</A>.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     true if the buffer is valid, false otherwise.
 
 
 nvim_buf_line_count({buffer})                          *<A NAME="nvim_buf_line_count()"></A><B>nvim_buf_line_count()</B>*
                 Returns the number of lines in the given buffer.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Line <A HREF="intro.html#count">count</A>, or 0 for unloaded buffer. |<A HREF="#api-buffer">api-buffer</A>|
 
 
@@ -2644,10 +2579,10 @@ nvim_buf_line_count({buffer})                          *<A NAME="nvim_buf_line_c
 nvim_buf_set_keymap({buffer}, {mode}, <A HREF="map.html#{lhs}">{lhs}</A>, <A HREF="map.html#{rhs}">{rhs}</A>, {*opts})
                 Sets a buffer-local |<A HREF="map.html#mapping">mapping</A>| for the given mode.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="#nvim_set_keymap()">nvim_set_keymap()</A>|
 
 
@@ -2667,10 +2602,10 @@ nvim_buf_set_lines({buffer}, {start}, {end}, {strict_indexing}, {replacement})
                 Out-of-bounds indices are clamped to the nearest valid value,
                 unless `strict_indexing` is set.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     not allowed when |<A HREF="eval.html#textlock">textlock</A>| is active
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}           Buffer handle, or 0 for current buffer
                     {start}            First line index
                     {end}              Last line index, <A HREF="motion.html#exclusive">exclusive</A>
@@ -2689,17 +2624,17 @@ nvim_buf_set_mark({buffer}, {name}, {line}, {col}, {opts})
                 Note:
                     Passing 0 <A HREF="motion.html#as">as</A> line deletes the <A HREF="motion.html#mark">mark</A>
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer to set the <A HREF="motion.html#mark">mark</A> on
                     {name}    <A HREF="motion.html#Mark">Mark</A> name
                     {line}    Line number
                     {col}     Column/row number
                     {opts}    Optional parameters. Reserved for future use.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     true if the <A HREF="motion.html#mark">mark</A> was set, else false.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="#nvim_buf_del_mark()">nvim_buf_del_mark()</A>|
                     |<A HREF="#nvim_buf_get_mark()">nvim_buf_get_mark()</A>|
 
@@ -2707,7 +2642,7 @@ nvim_buf_set_mark({buffer}, {name}, {line}, {col}, {opts})
 nvim_buf_set_name({buffer}, {name})                      *<A NAME="nvim_buf_set_name()"></A><B>nvim_buf_set_name()</B>*
                 Sets the full file name for a buffer
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
                     {name}    Buffer name
 
@@ -2716,7 +2651,7 @@ nvim_buf_set_option({buffer}, {name}, {value})         *<A NAME="nvim_buf_set_op
                 Sets a buffer option value. Passing 'nil' <A HREF="motion.html#as">as</A> value deletes the
                 option (only works if there's a global fallback)
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
                     {name}    Option name
                     {value}   Option value
@@ -2741,7 +2676,7 @@ nvim_buf_set_text({buffer}, {start_row}, {start_col}, {end_row}, {end_col},
                 Prefer |<A HREF="#nvim_buf_set_lines()">nvim_buf_set_lines()</A>| if you are only adding or
                 <A HREF="change.html#deleting">deleting</A> entire lines.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}       Buffer handle, or 0 for current buffer
                     {start_row}    First line index
                     {start_col}    Starting column (byte offset) on first line
@@ -2754,7 +2689,7 @@ nvim_buf_set_text({buffer}, {start_row}, {start_col}, {end_row}, {end_col},
 nvim_buf_set_var({buffer}, {name}, {value})               *<A NAME="nvim_buf_set_var()"></A><B>nvim_buf_set_var()</B>*
                 Sets a buffer-scoped (b:) variable
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
                     {name}    Variable name
                     {value}   Variable value
@@ -2793,7 +2728,7 @@ nvim_buf_add_highlight({buffer}, {ns_id}, {hl_group}, {line}, {col_start},
                 for backwards compatibility, new code should use
                 |<A HREF="#nvim_create_namespace()">nvim_create_namespace()</A>| to create a new empty namespace.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}     Buffer handle, or 0 for current buffer
                     {ns_id}      <A HREF="#namespace">namespace</A> to use or -1 for ungrouped
                                  highlight
@@ -2804,7 +2739,7 @@ nvim_buf_add_highlight({buffer}, {ns_id}, {hl_group}, {line}, {col_start},
                     {col_end}    End of (byte-indexed) column range to
                                  highlight, or -1 to highlight to end of line
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     The ns_id that was used
 
 
@@ -2816,7 +2751,7 @@ nvim_buf_clear_namespace({buffer}, {ns_id}, {line_start}, {line_end})
                 Lines are 0-indexed. |<A HREF="#api-indexing">api-indexing</A>| To clear the <A HREF="#namespace">namespace</A> in
                 the entire buffer, specify line_start=0 and line_end=-1.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}      Buffer handle, or 0 for current buffer
                     {ns_id}       Namespace to clear, or -1 to clear all
                                   namespaces.
@@ -2828,12 +2763,12 @@ nvim_buf_clear_namespace({buffer}, {ns_id}, {line_start}, {line_end})
 nvim_buf_del_extmark({buffer}, {ns_id}, {id})         *<A NAME="nvim_buf_del_extmark()"></A><B>nvim_buf_del_extmark()</B>*
                 Removes an extmark.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
                     {ns_id}   Namespace id from |<A HREF="#nvim_create_namespace()">nvim_create_namespace()</A>|
                     {id}      Extmark id
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     true if the extmark was found, else false
 
 
@@ -2841,14 +2776,14 @@ nvim_buf_del_extmark({buffer}, {ns_id}, {id})         *<A NAME="nvim_buf_del_ext
 nvim_buf_get_extmark_by_id({buffer}, {ns_id}, {id}, {opts})
                 Gets the position (0-indexed) of an extmark.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
                     {ns_id}   Namespace id from |<A HREF="#nvim_create_namespace()">nvim_create_namespace()</A>|
                     {id}      Extmark id
                     {opts}    Optional parameters. Keys:
                               • details: Whether to include the details <A HREF="eval.html#dict">dict</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     0-indexed (row, col) tuple or empty <A HREF="eval.html#list">list</A> () if extmark id
                     was absent
 
@@ -2888,7 +2823,7 @@ nvim_buf_get_extmarks({buffer}, {ns_id}, {start}, {end}, {opts})
 <B>    print(vim.inspect(ms))</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
                     {ns_id}   Namespace id from |<A HREF="#nvim_create_namespace()">nvim_create_namespace()</A>|
                     {start}   Start of range: a 0-indexed (row, col) or valid
@@ -2901,7 +2836,7 @@ nvim_buf_get_extmarks({buffer}, {ns_id}, {start}, {end}, {opts})
                               • limit: Maximum number of marks to return
                               • details Whether to include the details <A HREF="eval.html#dict">dict</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#List">List</A> of [extmark_id, row, col] tuples in &quot;traversal
                     order&quot;.
 
@@ -2921,7 +2856,7 @@ nvim_buf_set_extmark({buffer}, {ns_id}, {line}, {col}, {*opts})
                 highlight a range of text, and also to associate virtual text
                 to the <A HREF="motion.html#mark">mark</A>.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer handle, or 0 for current buffer
                     {ns_id}   Namespace id from |<A HREF="#nvim_create_namespace()">nvim_create_namespace()</A>|
                     {line}    Line where to place the <A HREF="motion.html#mark">mark</A>, 0-based.
@@ -3048,7 +2983,7 @@ nvim_buf_set_extmark({buffer}, {ns_id}, {line}, {col}, {*opts})
                                 positioned by virt_text attributes. Can be
                                 used together with virt_text.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Id of the created/updated extmark
 
 
@@ -3063,17 +2998,17 @@ nvim_create_namespace({name})                        *<A NAME="nvim_create_names
                 existing <A HREF="#namespace">namespace</A>, the associated id is returned. If `name`
                 is an empty <A HREF="eval.html#string">string</A> a new, anonymous <A HREF="#namespace">namespace</A> is created.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}  Namespace name or empty <A HREF="eval.html#string">string</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Namespace id
 
 
 <A HREF="#nvim_get_namespaces()">nvim_get_namespaces()</A>                                  *<A NAME="nvim_get_namespaces()"></A><B>nvim_get_namespaces()</B>*
                 Gets existing, non-anonymous namespaces.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#dict">dict</A> that maps from names to <A HREF="#namespace">namespace</A> ids.
 
 
@@ -3108,10 +3043,10 @@ nvim_set_decoration_provider({ns_id}, {opts})
                 `vim.rpcnotify` should be OK, but `vim.rpcrequest` is quite
                 dubious for the moment.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="vim.html">vim.api</A>| only
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {ns_id}  Namespace id from |<A HREF="#nvim_create_namespace()">nvim_create_namespace()</A>|
                     {opts}   Callbacks invoked during redraw:
                              • on_start: called first on each screen redraw
@@ -3136,19 +3071,19 @@ Window Functions                                                  *<A NAME="api-
 nvim_win_call({window}, {fun})                               *<A NAME="nvim_win_call()"></A><B>nvim_win_call()</B>*
                 Calls a function with <A HREF="windows.html#window">window</A> <A HREF="motion.html#as">as</A> temporary current <A HREF="windows.html#window">window</A>.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="vim.html">vim.api</A>| only
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
                     {fun}     Function to call inside the <A HREF="windows.html#window">window</A> (currently
                               <A HREF="lua.html#lua">lua</A> callable only)
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Return value of function. NB: will deepcopy <A HREF="lua.html#lua">lua</A> values
                     currently, use upvalues to send <A HREF="lua.html#lua">lua</A> references in and out.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="builtin.html#win_execute()">win_execute()</A>|
                     |<A HREF="#nvim_buf_call()">nvim_buf_call()</A>|
 
@@ -3156,10 +3091,10 @@ nvim_win_call({window}, {fun})                               *<A NAME="nvim_win_
 nvim_win_close({window}, {force})                           *<A NAME="nvim_win_close()"></A><B>nvim_win_close()</B>*
                 Closes the window (like |<A HREF="windows.html#:close">:close</A>| with a |<A HREF="windows.html#window-ID">window-ID</A>|).
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     not allowed when |<A HREF="eval.html#textlock">textlock</A>| is active
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
                     {force}   Behave like `:close!` The last <A HREF="windows.html#window">window</A> of a
                               buffer with unwritten changes can be closed. The
@@ -3170,7 +3105,7 @@ nvim_win_close({window}, {force})                           *<A NAME="nvim_win_c
 nvim_win_del_var({window}, {name})                        *<A NAME="nvim_win_del_var()"></A><B>nvim_win_del_var()</B>*
                 Removes a window-scoped (w:) variable
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
                     {name}    Variable name
 
@@ -3178,10 +3113,10 @@ nvim_win_del_var({window}, {name})                        *<A NAME="nvim_win_del
 nvim_win_get_buf({window})                                *<A NAME="nvim_win_get_buf()"></A><B>nvim_win_get_buf()</B>*
                 Gets the current buffer in a <A HREF="windows.html#window">window</A>
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Buffer handle
 
 
@@ -3189,41 +3124,41 @@ nvim_win_get_cursor({window})                          *<A NAME="nvim_win_get_cu
                 Gets the (1,0)-indexed cursor position in the <A HREF="windows.html#window">window</A>.
                 |<A HREF="#api-indexing">api-indexing</A>|
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (row, col) tuple
 
 
 nvim_win_get_height({window})                          *<A NAME="nvim_win_get_height()"></A><B>nvim_win_get_height()</B>*
                 Gets the <A HREF="windows.html#window">window</A> height
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Height <A HREF="motion.html#as">as</A> a <A HREF="intro.html#count">count</A> of rows
 
 
 nvim_win_get_number({window})                          *<A NAME="nvim_win_get_number()"></A><B>nvim_win_get_number()</B>*
                 Gets the <A HREF="windows.html#window">window</A> number
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Window number
 
 
 nvim_win_get_option({window}, {name})                  *<A NAME="nvim_win_get_option()"></A><B>nvim_win_get_option()</B>*
                 Gets a <A HREF="windows.html#window">window</A> option value
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
                     {name}    Option name
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Option value
 
 
@@ -3231,41 +3166,41 @@ nvim_win_get_position({window})                      *<A NAME="nvim_win_get_posi
                 Gets the <A HREF="windows.html#window">window</A> position in display cells. First position is
                 zero.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     (row, col) tuple with the <A HREF="windows.html#window">window</A> position
 
 
 nvim_win_get_tabpage({window})                        *<A NAME="nvim_win_get_tabpage()"></A><B>nvim_win_get_tabpage()</B>*
                 Gets the <A HREF="windows.html#window">window</A> <A HREF="tabpage.html#tabpage">tabpage</A>
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Tabpage that contains the <A HREF="windows.html#window">window</A>
 
 
 nvim_win_get_var({window}, {name})                        *<A NAME="nvim_win_get_var()"></A><B>nvim_win_get_var()</B>*
                 Gets a window-scoped (w:) variable
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
                     {name}    Variable name
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Variable value
 
 
 nvim_win_get_width({window})                            *<A NAME="nvim_win_get_width()"></A><B>nvim_win_get_width()</B>*
                 Gets the <A HREF="windows.html#window">window</A> width
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Width <A HREF="motion.html#as">as</A> a <A HREF="intro.html#count">count</A> of columns
 
 
@@ -3278,30 +3213,30 @@ nvim_win_hide({window})                                      *<A NAME="nvim_win_
                 <A HREF="motion.html#as">as</A> opposed to |<A HREF="windows.html#:close">:close</A>| or |<A HREF="intro.html#nvim_win_close">nvim_win_close</A>|, which will close
                 the buffer.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     not allowed when |<A HREF="eval.html#textlock">textlock</A>| is active
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
 
 
 nvim_win_is_valid({window})                              *<A NAME="nvim_win_is_valid()"></A><B>nvim_win_is_valid()</B>*
                 Checks if a <A HREF="windows.html#window">window</A> is valid
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     true if the <A HREF="windows.html#window">window</A> is valid, false otherwise
 
 
 nvim_win_set_buf({window}, {buffer})                      *<A NAME="nvim_win_set_buf()"></A><B>nvim_win_set_buf()</B>*
                 Sets the current buffer in a <A HREF="windows.html#window">window</A>, without side effects
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     not allowed when |<A HREF="eval.html#textlock">textlock</A>| is active
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
                     {buffer}  Buffer handle
 
@@ -3311,7 +3246,7 @@ nvim_win_set_cursor({window}, {pos})                   *<A NAME="nvim_win_set_cu
                 |<A HREF="#api-indexing">api-indexing</A>| This scrolls the <A HREF="windows.html#window">window</A> even if <A HREF="motion.html#it">it</A> is not the
                 current one.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
                     {pos}     (row, col) tuple representing the new position
 
@@ -3319,7 +3254,7 @@ nvim_win_set_cursor({window}, {pos})                   *<A NAME="nvim_win_set_cu
 nvim_win_set_height({window}, {height})                *<A NAME="nvim_win_set_height()"></A><B>nvim_win_set_height()</B>*
                 Sets the <A HREF="windows.html#window">window</A> height.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
                     {height}  Height <A HREF="motion.html#as">as</A> a <A HREF="intro.html#count">count</A> of rows
 
@@ -3328,7 +3263,7 @@ nvim_win_set_option({window}, {name}, {value})         *<A NAME="nvim_win_set_op
                 Sets a <A HREF="windows.html#window">window</A> option value. Passing 'nil' <A HREF="motion.html#as">as</A> value deletes the
                 option(only works if there's a global fallback)
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
                     {name}    Option name
                     {value}   Option value
@@ -3337,7 +3272,7 @@ nvim_win_set_option({window}, {name}, {value})         *<A NAME="nvim_win_set_op
 nvim_win_set_var({window}, {name}, {value})               *<A NAME="nvim_win_set_var()"></A><B>nvim_win_set_var()</B>*
                 Sets a window-scoped (w:) variable
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
                     {name}    Variable name
                     {value}   Variable value
@@ -3347,7 +3282,7 @@ nvim_win_set_width({window}, {width})                   *<A NAME="nvim_win_set_w
                 Sets the <A HREF="windows.html#window">window</A> width. This will only succeed if the screen is
                 split vertically.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
                     {width}   Width <A HREF="motion.html#as">as</A> a <A HREF="intro.html#count">count</A> of columns
 
@@ -3396,10 +3331,10 @@ nvim_open_win({buffer}, {enter}, {*config})                  *<A NAME="nvim_open
 <B>                      {relative='win', width=12, height=3, bufpos={100,10}})</B>
  
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     not allowed when |<A HREF="eval.html#textlock">textlock</A>| is active
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {buffer}  Buffer to display, or 0 for current buffer
                     {enter}   Enter the <A HREF="windows.html#window">window</A> (make <A HREF="motion.html#it">it</A> the current <A HREF="windows.html#window">window</A>)
                     {config}  Map defining the <A HREF="windows.html#window">window</A> configuration. Keys:
@@ -3509,7 +3444,7 @@ nvim_open_win({buffer}, {enter}, {*config})                  *<A NAME="nvim_open
                                 |<A HREF="autocmd.html#BufLeave">BufLeave</A>| or |<A HREF="autocmd.html#BufWinEnter">BufWinEnter</A>| may fire from
                                 calling this function.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Window handle, or 0 on error
 
 
@@ -3520,10 +3455,10 @@ nvim_win_get_config({window})                          *<A NAME="nvim_win_get_co
 
                 `relative` is empty for normal <A HREF="windows.html#windows">windows</A>.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Map defining the <A HREF="windows.html#window">window</A> configuration, see
                     |<A HREF="#nvim_open_win()">nvim_open_win()</A>|
 
@@ -3537,12 +3472,12 @@ nvim_win_set_config({window}, {*config})               *<A NAME="nvim_win_set_co
                 not be changed. `row`/`col` and `relative` must be
                 reconfigured together.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {window}  Window handle, or 0 for current <A HREF="windows.html#window">window</A>
                     {config}  Map defining the <A HREF="windows.html#window">window</A> configuration, see
                               |<A HREF="#nvim_open_win()">nvim_open_win()</A>|
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="#nvim_open_win()">nvim_open_win()</A>|
 
 
@@ -3554,7 +3489,7 @@ Tabpage Functions                                                *<A NAME="api-t
 nvim_tabpage_del_var({tabpage}, {name})               *<A NAME="nvim_tabpage_del_var()"></A><B>nvim_tabpage_del_var()</B>*
                 Removes a tab-scoped (t:) variable
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {tabpage}  Tabpage handle, or 0 for current <A HREF="tabpage.html#tabpage">tabpage</A>
                     {name}     Variable name
 
@@ -3562,51 +3497,51 @@ nvim_tabpage_del_var({tabpage}, {name})               *<A NAME="nvim_tabpage_del
 nvim_tabpage_get_number({tabpage})                 *<A NAME="nvim_tabpage_get_number()"></A><B>nvim_tabpage_get_number()</B>*
                 Gets the <A HREF="tabpage.html#tabpage">tabpage</A> number
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {tabpage}  Tabpage handle, or 0 for current <A HREF="tabpage.html#tabpage">tabpage</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Tabpage number
 
 
 nvim_tabpage_get_var({tabpage}, {name})               *<A NAME="nvim_tabpage_get_var()"></A><B>nvim_tabpage_get_var()</B>*
                 Gets a tab-scoped (t:) variable
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {tabpage}  Tabpage handle, or 0 for current <A HREF="tabpage.html#tabpage">tabpage</A>
                     {name}     Variable name
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Variable value
 
 
 nvim_tabpage_get_win({tabpage})                       *<A NAME="nvim_tabpage_get_win()"></A><B>nvim_tabpage_get_win()</B>*
                 Gets the current <A HREF="windows.html#window">window</A> in a <A HREF="tabpage.html#tabpage">tabpage</A>
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {tabpage}  Tabpage handle, or 0 for current <A HREF="tabpage.html#tabpage">tabpage</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Window handle
 
 
 nvim_tabpage_is_valid({tabpage})                     *<A NAME="nvim_tabpage_is_valid()"></A><B>nvim_tabpage_is_valid()</B>*
                 Checks if a <A HREF="tabpage.html#tabpage">tabpage</A> is valid
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {tabpage}  Tabpage handle, or 0 for current <A HREF="tabpage.html#tabpage">tabpage</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     true if the <A HREF="tabpage.html#tabpage">tabpage</A> is valid, false otherwise
 
 
 nvim_tabpage_list_wins({tabpage})                   *<A NAME="nvim_tabpage_list_wins()"></A><B>nvim_tabpage_list_wins()</B>*
                 Gets the <A HREF="windows.html#windows">windows</A> in a <A HREF="tabpage.html#tabpage">tabpage</A>
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {tabpage}  Tabpage handle, or 0 for current <A HREF="tabpage.html#tabpage">tabpage</A>
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#List">List</A> of <A HREF="windows.html#windows">windows</A> in `tabpage`
 
 
@@ -3614,7 +3549,7 @@ nvim_tabpage_list_wins({tabpage})                   *<A NAME="nvim_tabpage_list_
 nvim_tabpage_set_var({tabpage}, {name}, {value})
                 Sets a tab-scoped (t:) variable
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {tabpage}  Tabpage handle, or 0 for current <A HREF="tabpage.html#tabpage">tabpage</A>
                     {name}     Variable name
                     {value}    Variable value
@@ -3629,7 +3564,7 @@ nvim_clear_autocmds({*opts})                           *<A NAME="nvim_clear_auto
                 Clear all autocommands that match the corresponding {opts}. To
                 delete a particular autocmd, see |<A HREF="intro.html#nvim_del_autocmd">nvim_del_autocmd</A>|.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {opts}  Parameters
                             • event: (string|table) Examples:
                               • event: &quot;pat1&quot;
@@ -3663,17 +3598,17 @@ nvim_create_augroup({name}, {*opts})                   *<A NAME="nvim_create_aug
 <B>                    })</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}  <A HREF="eval.html#String">String</A>: The name of the group
                     {opts}  <A HREF="eval.html#Dictionary">Dictionary</A> Parameters
                             • clear (bool) optional: defaults to true. Clear
                               existing commands if the group already exists
                               |<A HREF="autocmd.html#autocmd-groups">autocmd-groups</A>|.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#Integer">Integer</A> id of the created group.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="autocmd.html#autocmd-groups">autocmd-groups</A>|
 
 
@@ -3731,7 +3666,7 @@ nvim_create_autocmd({event}, {*opts})                  *<A NAME="nvim_create_aut
 <B>                  {"CursorHold", "BufWritePre", "BufWritePost"}</B>
  
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     <A HREF="autocmd.html#{event}">{event}</A>  (string|array) The event or <A HREF="autocmd.html#events">events</A> to <A HREF="intro.html#register">register</A>
                              this <A HREF="autocmd.html#autocommand">autocommand</A>
                     {opts}   <A HREF="eval.html#Dictionary">Dictionary</A> of <A HREF="autocmd.html#autocommand">autocommand</A> <A HREF="options.html#options">options</A>:
@@ -3774,10 +3709,10 @@ nvim_create_autocmd({event}, {*opts})                  *<A NAME="nvim_create_aut
                              • nested (boolean) optional: defaults to false.
                                Run nested autocommands |<A HREF="autocmd.html#autocmd-nested">autocmd-nested</A>|.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     <A HREF="eval.html#Integer">Integer</A> id of the created <A HREF="autocmd.html#autocommand">autocommand</A>.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="autocmd.html#autocommand">autocommand</A>|
                     |<A HREF="#nvim_del_autocmd()">nvim_del_autocmd()</A>|
 
@@ -3791,10 +3726,10 @@ nvim_del_augroup_by_id({id})                        *<A NAME="nvim_del_augroup_b
                 group, autocommands contained in this group will also be
                 deleted and cleared. This group will no longer exist.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {id}  <A HREF="eval.html#Integer">Integer</A> The id of the group.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="#nvim_del_augroup_by_name()">nvim_del_augroup_by_name()</A>|
                     |<A HREF="#nvim_create_augroup()">nvim_create_augroup()</A>|
 
@@ -3806,10 +3741,10 @@ nvim_del_augroup_by_name({name})                  *<A NAME="nvim_del_augroup_by_
                 group, autocommands contained in this group will also be
                 deleted and cleared. This group will no longer exist.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {name}  <A HREF="eval.html#String">String</A> The name of the group.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="intro.html#autocommand-groups">autocommand-groups</A>|
 
 
@@ -3818,10 +3753,10 @@ nvim_del_autocmd({id})                                    *<A NAME="nvim_del_aut
 
                 NOTE: Only autocommands created via the <A HREF="#API">API</A> have an id.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {id}  <A HREF="eval.html#Integer">Integer</A> The id returned by nvim_create_autocmd
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="#nvim_create_autocmd()">nvim_create_autocmd()</A>|
 
 
@@ -3829,7 +3764,7 @@ nvim_exec_autocmds({event}, {*opts})                    *<A NAME="nvim_exec_auto
                 Execute all autocommands for <A HREF="autocmd.html#{event}">{event}</A> that match the
                 corresponding {opts} |<A HREF="autocmd.html#autocmd-execute">autocmd-execute</A>|.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     <A HREF="autocmd.html#{event}">{event}</A>  (String|Array) The event or <A HREF="autocmd.html#events">events</A> to execute
                     {opts}   <A HREF="eval.html#Dictionary">Dictionary</A> of <A HREF="autocmd.html#autocommand">autocommand</A> <A HREF="options.html#options">options</A>:
                              • group (string|integer) optional: the
@@ -3848,7 +3783,7 @@ nvim_exec_autocmds({event}, {*opts})                    *<A NAME="nvim_exec_auto
                                <A HREF="autocmd.html#autocommand">autocommand</A> callback. See
                                |<A HREF="#nvim_create_autocmd()">nvim_create_autocmd()</A>| for details.
 
-<B><FONT color="#54A23D">                See also: </FONT></B>
+<B><FONT COLOR="PURPLE">                See also: </FONT></B>
                     |<A HREF="autocmd.html#:doautocmd">:doautocmd</A>|
 
 
@@ -3873,7 +3808,7 @@ nvim_get_autocmds({*opts})                               *<A NAME="nvim_get_auto
                 NOTE: When multiple patterns or <A HREF="autocmd.html#events">events</A> are provided, <A HREF="motion.html#it">it</A> will
                 find all the autocommands that match any combination of them.
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {opts}  <A HREF="eval.html#Dictionary">Dictionary</A> with at least one of the following:
                             • group (string|integer): the <A HREF="autocmd.html#autocommand">autocommand</A> group
                               name or id to match against.
@@ -3882,7 +3817,7 @@ nvim_get_autocmds({*opts})                               *<A NAME="nvim_get_auto
                             • <A HREF="pattern.html#pattern">pattern</A> (string|array): <A HREF="pattern.html#pattern">pattern</A> or patterns to
                               match against |<A HREF="autocmd.html#autocmd-pattern">autocmd-pattern</A>|.
 
-<B><FONT color="#54A23D">                Return: </FONT></B>
+<B><FONT COLOR="PURPLE">                Return: </FONT></B>
                     Array of autocommands matching the criteria, with each
                     item containing the following fields:
                     • id (number): the <A HREF="autocmd.html#autocommand">autocommand</A> id (only when defined with
@@ -3919,10 +3854,10 @@ nvim_ui_attach({width}, {height}, {options})                *<A NAME="nvim_ui_at
                     A requests 80x40 but client <A HREF="motion.html#B">B</A> requests 200x100, the global
                     screen has size 80x40.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#RPC">RPC</A>| only
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {width}    Requested screen columns
                     {height}   Requested screen rows
                     {options}  |<A HREF="ui.html#ui-option">ui-option</A>| map
@@ -3933,7 +3868,7 @@ nvim_ui_attach({width}, {height}, {options})                *<A NAME="nvim_ui_at
 
                 Removes the client from the list of UIs. |<A HREF="#nvim_list_uis()">nvim_list_uis()</A>|
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#RPC">RPC</A>| only
 
 
@@ -3950,10 +3885,10 @@ nvim_ui_pum_set_bounds({width}, {height}, {row}, {col})
                 nor be anchored to exact grid corners, so one can set
                 floating-point numbers to the popup menu geometry.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#RPC">RPC</A>| only
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {width}   Popupmenu width.
                     {height}  Popupmenu height.
                     {row}     Popupmenu row.
@@ -3964,24 +3899,24 @@ nvim_ui_pum_set_height({height})                    *<A NAME="nvim_ui_pum_set_he
                 Tells Nvim the number of elements displaying in the popumenu,
                 to decide <A HREF="scroll.html#&lt;PageUp&gt;">&lt;PageUp&gt;</A> and <A HREF="scroll.html#&lt;PageDown&gt;">&lt;PageDown&gt;</A> <A HREF="intro.html#movement">movement</A>.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#RPC">RPC</A>| only
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {height}  Popupmenu height, must be greater than zero.
 
 
 nvim_ui_set_option({name}, {value})                     *<A NAME="nvim_ui_set_option()"></A><B>nvim_ui_set_option()</B>*
                 TODO: Documentation
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#RPC">RPC</A>| only
 
 
 nvim_ui_try_resize({width}, {height})                   *<A NAME="nvim_ui_try_resize()"></A><B>nvim_ui_try_resize()</B>*
                 TODO: Documentation
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#RPC">RPC</A>| only
 
 
@@ -3993,22 +3928,17 @@ nvim_ui_try_resize_grid({grid}, {width}, {height})
 
                 On invalid grid handle, fails with error.
 
-<B><FONT color="#54A23D">                Attributes: </FONT></B>
+<B><FONT COLOR="PURPLE">                Attributes: </FONT></B>
                     |<A HREF="#RPC">RPC</A>| only
 
-<B><FONT color="#54A23D">                Parameters: </FONT></B>
+<B><FONT COLOR="PURPLE">                Parameters: </FONT></B>
                     {grid}    The handle of the grid to be changed.
                     {width}   The new requested width.
                     {height}  The new requested height.
 
 <A HREF="#top">top</A> - <A HREF="index.html">main help file</A>
 </PRE>
-    </div>
+</BODY>
 
-    <footer>
-      <div class="container">
-        Generated Thu Jun  2 10:56:12 UTC 2022 from <a href="https://github.com/neovim/neovim/commit/d93ba03c717bee05fe6d239fd7faefe6e9698c85"><code>d93ba03</code></a>.
-      </div>
-    </footer>
-  </body>
-</html>
+
+</HTML>

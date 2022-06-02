@@ -1,82 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Nvim documentation: syntax</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-    <link href="/css/normalize.min.css" rel="stylesheet">
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <header class="container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a href="/" class="navbar-brand" aria-label="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" width="173" height="50" viewBox="0 0 742 214" aria-label="Neovim">
-              <title>Neovim</title>
-              <defs>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
-                  <stop stop-color="#16B0ED" stop-opacity=".8" offset="0%" />
-                  <stop stop-color="#0F59B2" stop-opacity=".837" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="b">
-                  <stop stop-color="#7DB643" offset="0%" />
-                  <stop stop-color="#367533" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="c">
-                  <stop stop-color="#88C649" stop-opacity=".8" offset="0%" />
-                  <stop stop-color="#439240" stop-opacity=".84" offset="100%" />
-                </linearGradient>
-              </defs>
-              <g fill="none" fill-rule="evenodd">
-                <path
-                  d="M.027 45.459L45.224-.173v212.171L.027 166.894V45.459z"
-                  fill="url(#a)"
-                  transform="translate(1 1)"
-                />
-                <path
-                  d="M129.337 45.89L175.152-.149l-.928 212.146-45.197-45.104.31-121.005z"
-                  fill="url(#b)"
-                  transform="matrix(-1 0 0 1 305 1)"
-                />
-                <path
-                  d="M45.194-.137L162.7 179.173l-32.882 32.881L12.25 33.141 45.194-.137z"
-                  fill="url(#c)"
-                  transform="translate(1 1)"
-                />
-                <path
-                  d="M46.234 84.032l-.063 7.063-36.28-53.563 3.36-3.422 32.983 49.922z"
-                  fill-opacity=".13"
-                  fill="#000"
-                />
-                <g fill="#444">
-                  <path
-                    d="M227 154V64.44h4.655c1.55 0 2.445.75 2.685 2.25l.806 13.502c4.058-5.16 8.786-9.316 14.188-12.466 5.4-3.15 11.413-4.726 18.037-4.726 4.893 0 9.205.781 12.935 2.34 3.729 1.561 6.817 3.811 9.264 6.751 2.448 2.942 4.297 6.48 5.55 10.621 1.253 4.14 1.88 8.821 1.88 14.042V154h-8.504V96.754c0-8.402-1.91-14.987-5.729-19.757-3.82-4.771-9.667-7.156-17.544-7.156-5.851 0-11.28 1.516-16.292 4.545-5.013 3.032-9.489 7.187-13.427 12.467V154H227zM350.624 63c5.066 0 9.755.868 14.069 2.605 4.312 1.738 8.052 4.268 11.219 7.592s5.638 7.412 7.419 12.264C385.11 90.313 386 95.883 386 102.17c0 1.318-.195 2.216-.588 2.696-.393.48-1.01.719-1.851.719h-64.966v1.70c0 6.708.784 12.609 2.353 17.7 1.567 5.09 3.8 9.357 6.695 12.802 2.895 3.445 6.393 6.034 10.495 7.771 4.1 1.738 8.686 2.606 13.752 2.606 4.524 0 8.446-.494 11.762-1.483 3.317-.988 6.108-2.097 8.37-3.324 2.261-1.227 4.056-2.336 5.383-3.324 1.326-.988 2.292-1.482 2.895-1.482.784 0 1.388.3 1.81.898l2.352 2.875c-1.448 1.797-3.362 3.475-5.745 5.031-2.383 1.558-5.038 2.891-7.962 3.998-2.926 1.109-6.062 1.991-9.41 2.65a52.21 52.21 0 01-10.088.989c-6.152 0-11.762-1.064-16.828-3.19-5.067-2.125-9.415-5.225-13.043-9.298-3.63-4.074-6.435-9.06-8.415-14.96C310.99 121.655 310 114.9 310 107.294c0-6.408.92-12.323 2.76-17.744 1.84-5.421 4.493-10.093 7.961-14.016 3.467-3.922 7.72-6.991 12.758-9.209C338.513 64.11 344.229 63 350.624 63zm.573 6c-4.696 0-8.904.702-12.623 2.105-3.721 1.404-6.936 3.421-9.65 6.053-2.713 2.631-4.908 5.79-6.586 9.474S319.55 94.439 319 99h60c0-4.679-.672-8.874-2.013-12.588-1.343-3.712-3.232-6.856-5.67-9.43-2.44-2.571-5.367-4.545-8.782-5.92-3.413-1.374-7.192-2.062-11.338-2.062zM435.546 63c6.526 0 12.368 1.093 17.524 3.28 5.154 2.186 9.5 5.286 13.04 9.298 3.538 4.013 6.238 8.85 8.099 14.51 1.861 5.66 2.791 11.994 2.791 19.002 0 7.008-.932 13.327-2.791 18.957-1.861 5.631-4.561 10.452-8.099 14.465-3.54 4.012-7.886 7.097-13.04 9.254-5.156 2.156-10.998 3.234-17.524 3.234-6.529 0-12.369-1.078-17.525-3.234-5.155-2.157-9.517-5.242-13.085-9.254-3.57-4.013-6.285-8.836-8.145-14.465-1.861-5.63-2.791-11.95-2.791-18.957 0-7.008.93-13.342 2.791-19.002 1.861-5.66 4.576-10.496 8.145-14.51 3.568-4.012 7.93-7.112 13.085-9.299C423.177 64.094 429.017 63 435.546 63zm-.501 86c5.341 0 10.006-.918 13.997-2.757 3.99-1.838 7.32-4.474 9.992-7.909 2.67-3.435 4.664-7.576 5.986-12.428 1.317-4.85 1.98-10.288 1.98-16.316 0-5.965-.66-11.389-1.98-16.27-1.322-4.88-3.316-9.053-5.986-12.519-2.67-3.463-6-6.13-9.992-7.999-3.991-1.867-8.657-2.802-13.997-2.802s-10.008.935-13.997 2.802c-3.991 1.87-7.322 4.536-9.992 8-2.671 3.465-4.68 7.637-6.03 12.518-1.35 4.881-2.026 10.305-2.026 16.27 0 6.026.675 11.465 2.025 16.316 1.35 4.852 3.36 8.993 6.031 12.428 2.67 3.435 6 6.07 9.992 7.91 3.99 1.838 8.656 2.756 13.997 2.756z"
-                    fill="currentColor"
-                  />
-                  <path
-                    d="M530.57 152h-20.05L474 60h18.35c1.61 0 2.967.39 4.072 1.166 1.103.778 1.865 1.763 2.283 2.959l17.722 49.138a92.762 92.762 0 012.551 8.429c.686 2.751 1.298 5.5 1.835 8.25.537-2.75 1.148-5.499 1.835-8.25a77.713 77.713 0 012.64-8.429l18.171-49.138c.417-1.196 1.164-2.181 2.238-2.96 1.074-.776 2.356-1.165 3.849-1.165H567l-36.43 92zM572 61h23v92h-23zM610 153V60.443h13.624c2.887 0 4.78 1.354 5.682 4.06l1.443 6.856a52.7 52.7 0 015.097-4.962 32.732 32.732 0 015.683-3.879 30.731 30.731 0 016.496-2.57c2.314-.632 4.855-.948 7.624-.948 5.832 0 10.63 1.579 14.39 4.736 3.758 3.157 6.57 7.352 8.434 12.585 1.444-3.068 3.248-5.698 5.413-7.894 2.165-2.194 4.541-3.984 7.127-5.367a32.848 32.848 0 018.254-3.068 39.597 39.597 0 018.796-.992c5.111 0 9.653.783 13.622 2.345 3.97 1.565 7.307 3.849 10.014 6.857 2.706 3.007 4.766 6.675 6.18 11.005C739.29 83.537 740 88.5 740 94.092V153h-22.284V94.092c0-5.894-1.294-10.329-3.878-13.306-2.587-2.977-6.376-4.465-11.368-4.465-2.286 0-4.404.391-6.358 1.172a15.189 15.189 0 00-5.144 3.383c-1.473 1.474-2.631 3.324-3.474 5.548-.842 2.225-1.263 4.781-1.263 7.668V153h-22.37V94.092c0-6.194-1.249-10.704-3.744-13.532-2.497-2.825-6.18-4.24-11.051-4.24-3.19 0-6.18.798-8.976 2.391-2.799 1.593-5.399 3.775-7.804 6.54V153H610zM572 30h23v19h-23z"
-                    fill="currentColor"
-                    fill-opacity=".8"
-                  />
-                </g>
-              </g>
-            </svg>
-          </a>
-        </div>
-      </nav>
-    </header>
-
-    <div class="container">
-      <h1>Nvim documentation: syntax</h1>
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-type" content="text/html; charset=ISO-8859-1">
+<TITLE>Nvim documentation: syntax</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H1>Nvim documentation: syntax</H1>
 <A NAME="top"></A>
 <A HREF="index.html">main help file</A>
 
@@ -175,7 +103,7 @@ To put this into a <A HREF="map.html#mapping">mapping</A>, you can use:
 Details:
 The &quot;<A HREF="#:syntax">:syntax</A>&quot; commands are implemented by sourcing a file.  To see exactly how
 this works, look in the file:
-<B><FONT color="#54A23D">    command		file </FONT></B>
+<B><FONT COLOR="PURPLE">    command		file </FONT></B>
     <A HREF="#:syntax">:syntax</A> enable	$VIMRUNTIME/syntax/syntax.vim
     <A HREF="#:syntax">:syntax</A> on		$VIMRUNTIME/syntax/syntax.vim
     <A HREF="#:syntax">:syntax</A> manual	$VIMRUNTIME/syntax/manual.vim
@@ -917,7 +845,7 @@ any value to the respective variable.  Example:
 To disable them use &quot;<A HREF="eval.html#:unlet">:unlet</A>&quot;.  Example:
 <B>	:unlet abel_obsolete_ok</B>
 
-<B><FONT color="#54A23D">Variable			Highlight </FONT></B>
+<B><FONT COLOR="PURPLE">Variable			Highlight </FONT></B>
 abel_obsolete_ok		obsolete keywords are statements, not <A HREF="message.html#errors">errors</A>
 abel_cpp_comments_illegal	<A HREF="diff.html#do">do</A> not interpret '//' <A HREF="motion.html#as">as</A> inline comment leader
 
@@ -1003,14 +931,14 @@ language:
 As a last resort, if nothing is defined, the &quot;asm&quot; <A HREF="#syntax">syntax</A> is used.
 
 
-<B><FONT color="#54A23D">Netwide assembler (nasm.vim) optional highlighting </FONT></B>
+<B><FONT COLOR="PURPLE">Netwide assembler (nasm.vim) optional highlighting </FONT></B>
 
 To enable a feature:
 <B>	:let   {variable}=1|set syntax=nasm</B>
 To disable a feature:
 <B>	:unlet {variable}  |set syntax=nasm</B>
 
-<B><FONT color="#54A23D">Variable		Highlight </FONT></B>
+<B><FONT COLOR="PURPLE">Variable		Highlight </FONT></B>
 nasm_loose_syntax	unofficial parser allowed <A HREF="#syntax">syntax</A> not <A HREF="motion.html#as">as</A> Error
 			  (parser dependent; not recommended)
 nasm_ctx_outside_macro	contexts outside <A HREF="map.html#macro">macro</A> not <A HREF="motion.html#as">as</A> Error
@@ -1093,7 +1021,7 @@ Setting the value to zero doesn't work!
 An alternative is to switch to the C++ highlighting:
 <B>	:set filetype=cpp</B>
 
-<B><FONT color="#54A23D">Variable		Highlight </FONT></B>
+<B><FONT COLOR="PURPLE">Variable		Highlight </FONT></B>
 
 *<A NAME="c_gnu"></A><B>c_gnu</B>*			GNU gcc specific items
 
@@ -1294,7 +1222,7 @@ CPP						*<A NAME="cpp.vim"></A><B>cpp.vim</B>* *<A NAME="ft-cpp-syntax"></A><B>
 
 Most things are the same <A HREF="motion.html#as">as</A> |<A HREF="#ft-c-syntax">ft-c-syntax</A>|.
 
-<B><FONT color="#54A23D">Variable		Highlight </FONT></B>
+<B><FONT COLOR="PURPLE">Variable		Highlight </FONT></B>
 cpp_no_cpp11		don't highlight C++11 standard items
 cpp_no_cpp14		don't highlight C++14 standard items
 cpp_no_cpp17		don't highlight C++17 standard items
@@ -1485,7 +1413,7 @@ adding the following to your <A HREF="starting.html#vimrc">vimrc</A>.
 There are a couple of <A HREF="eval.html#variables">variables</A> that have an effect on <A HREF="#syntax">syntax</A> highlighting,
 and are to <A HREF="diff.html#do">do</A> with non-standard highlighting <A HREF="options.html#options">options</A>.
 
-<B><FONT color="#54A23D">Variable			Default	Effect </FONT></B>
+<B><FONT COLOR="PURPLE">Variable			Default	Effect </FONT></B>
 g:doxygen_enhanced_color
 g:doxygen_enhanced_colour	0	Use non-standard highlighting for
 					doxygen comments.
@@ -1502,7 +1430,7 @@ doxygen_end_punctuation		'[.]'	Set to <A HREF="pattern.html#regexp">regexp</A> m
 There are also some highlight groups worth mentioning <A HREF="motion.html#as">as</A> they can be useful in
 configuration.
 
-<B><FONT color="#54A23D">Highlight			Effect </FONT></B>
+<B><FONT COLOR="PURPLE">Highlight			Effect </FONT></B>
 doxygenErrorComment		The colour of an end-comment when missing
 				punctuation in a code, verbatim or dot section
 doxygenLinkError		The colour of an end-comment when missing the
@@ -1719,12 +1647,12 @@ doesn't work for you, or you don't edit F# at all, use this in your
 
 FORTRAN					*<A NAME="fortran.vim"></A><B>fortran.vim</B>* *<A NAME="ft-fortran-syntax"></A><B>ft-fortran-syntax</B>*
 
-<B><FONT color="#54A23D">Default highlighting and dialect </FONT></B>
+<B><FONT COLOR="PURPLE">Default highlighting and dialect </FONT></B>
 Highlighting appropriate for Fortran 2008 is used by default.  This choice
 should be appropriate for most users most of the time because Fortran 2008 is
 almost a superset of previous versions (Fortran 2003, 95, 90, and 77).
 
-<B><FONT color="#54A23D">Fortran source code form </FONT></B>
+<B><FONT COLOR="PURPLE">Fortran source code form </FONT></B>
 Fortran code can be in either fixed or free source form.  Note that the
 <A HREF="#syntax">syntax</A> highlighting will not be correct if the form is incorrectly set.
 
@@ -1759,7 +1687,7 @@ incorrectly decide that the fortran code is in fixed form.  If that happens,
 just add a non-comment statement beginning anywhere in the first five columns
 of the first twenty-five lines, save (:w) and then <A HREF="editing.html#reload">reload</A> (:e!) the file.
 
-<B><FONT color="#54A23D">Tabs in fortran files </FONT></B>
+<B><FONT COLOR="PURPLE">Tabs in fortran files </FONT></B>
 Tabs are not recognized by the Fortran standards.  Tabs are not a good idea in
 fixed format fortran source code which requires fixed column boundaries.
 Therefore, tabs are marked <A HREF="motion.html#as">as</A> <A HREF="message.html#errors">errors</A>.  Nevertheless, some programmers like
@@ -1769,7 +1697,7 @@ variable fortran_have_tabs in your <A HREF="starting.html#vimrc">vimrc</A> with 
 placed prior to the <A HREF="#:syntax">:syntax</A> on command.  Unfortunately, the use of tabs will
 mean that the <A HREF="#syntax">syntax</A> file will not be able to detect incorrect margins.
 
-<B><FONT color="#54A23D">Syntax folding of fortran files </FONT></B>
+<B><FONT COLOR="PURPLE">Syntax folding of fortran files </FONT></B>
 If you wish to use foldmethod=syntax, then you must first set the variable
 fortran_fold with a command such <A HREF="motion.html#as">as</A>
 <B>    :let fortran_fold=1</B>
@@ -1791,7 +1719,7 @@ you set foldmethod=syntax.  Comments or blank lines placed between two program
 units are not folded because they are seen <A HREF="motion.html#as">as</A> not belonging to any program
 unit.
 
-<B><FONT color="#54A23D">More precise fortran syntax </FONT></B>
+<B><FONT COLOR="PURPLE">More precise fortran syntax </FONT></B>
 If you set the variable fortran_more_precise with a command such <A HREF="motion.html#as">as</A>
 <B>    :let fortran_more_precise=1</B>
 then the <A HREF="#syntax">syntax</A> <A HREF="#coloring">coloring</A> will be more precise but slower.  In particular,
@@ -1799,7 +1727,7 @@ statement labels used in <A HREF="diff.html#do">do</A>, goto and arithmetic if s
 recognized, <A HREF="motion.html#as">as</A> will construct names at the end of a <A HREF="diff.html#do">do</A>, if, select or forall
 construct.
 
-<B><FONT color="#54A23D">Non-default fortran dialects </FONT></B>
+<B><FONT COLOR="PURPLE">Non-default fortran dialects </FONT></B>
 The <A HREF="#syntax">syntax</A> <A HREF="usr_41.html#script">script</A> supports two Fortran dialects: f08 and <A HREF="motion.html#F">F</A>. You will probably
 find the default highlighting (f08) satisfactory.  A few legacy constructs
 deleted or declared obsolescent in the 2008 standard are highlighted <A HREF="motion.html#as">as</A> todo
@@ -1849,7 +1777,7 @@ non-standard, vendor-supplied intrinsics and (b) to prevent features deleted
 or declared obsolescent in the 2008 standard from being highlighted <A HREF="motion.html#as">as</A> todo
 items.
 
-<B><FONT color="#54A23D">Limitations </FONT></B>
+<B><FONT COLOR="PURPLE">Limitations </FONT></B>
 Parenthesis checking does not catch too few closing parentheses.  Hollerith
 strings are not recognized.  Some keywords may be highlighted incorrectly
 because Fortran90 has no reserved words.
@@ -2104,7 +2032,7 @@ are disabled by defining idl_no_ms_extensions.
 
 The more complex of the extensions are disabled by defining idl_no_extensions.
 
-<B><FONT color="#54A23D">Variable			Effect </FONT></B>
+<B><FONT COLOR="PURPLE">Variable			Effect </FONT></B>
 
 idl_no_ms_extensions		Disable some of the Microsoft specific
 				extensions
@@ -3099,7 +3027,7 @@ RUBY						*<A NAME="ruby.vim"></A><B>ruby.vim</B>* *<A NAME="ft-ruby-syntax"></A
 
 
 						*<A NAME="ruby_operators"></A><B>ruby_operators</B>*
-<B><FONT color="#54A23D"> Ruby: Operator highlighting </FONT></B>
+<B><FONT COLOR="PURPLE"> Ruby: Operator highlighting </FONT></B>
 
 Operators can be highlighted by defining &quot;<A HREF="#ruby_operators">ruby_operators</A>&quot;:
 
@@ -3107,7 +3035,7 @@ Operators can be highlighted by defining &quot;<A HREF="#ruby_operators">ruby_op
  
 
 						*<A NAME="ruby_space_errors"></A><B>ruby_space_errors</B>*
-<B><FONT color="#54A23D"> Ruby: Whitespace errors </FONT></B>
+<B><FONT COLOR="PURPLE"> Ruby: Whitespace errors </FONT></B>
 
 Whitespace <A HREF="message.html#errors">errors</A> can be highlighted by defining &quot;<A HREF="#ruby_space_errors">ruby_space_errors</A>&quot;:
 
@@ -3120,7 +3048,7 @@ spaces respectively.
 
 
 					*<A NAME="ruby_fold"></A><B>ruby_fold</B>* *<A NAME="ruby_foldable_groups"></A><B>ruby_foldable_groups</B>*
-<B><FONT color="#54A23D"> Ruby: Folding </FONT></B>
+<B><FONT COLOR="PURPLE"> Ruby: Folding </FONT></B>
 
 <A HREF="fold.html#Folding">Folding</A> can be enabled by defining &quot;<A HREF="#ruby_fold">ruby_fold</A>&quot;:
 
@@ -3139,8 +3067,8 @@ You can set &quot;<A HREF="#ruby_foldable_groups">ruby_foldable_groups</A>&quot;
  
 The value is a space-separated <A HREF="eval.html#list">list</A> of keywords:
 
-<B><FONT color="#54A23D">    keyword       meaning </FONT></B>
-<B><FONT color="#54A23D">    --------  ------------------------------------- </FONT></B>
+<B><FONT COLOR="PURPLE">    keyword       meaning </FONT></B>
+<B><FONT COLOR="PURPLE">    --------  ------------------------------------- </FONT></B>
     ALL        Most block <A HREF="#syntax">syntax</A> (default)
     NONE       Nothing
     if         &quot;if&quot; or &quot;unless&quot; block
@@ -3163,7 +3091,7 @@ The value is a space-separated <A HREF="eval.html#list">list</A> of keywords:
 
 
 						*<A NAME="ruby_no_expensive"></A><B>ruby_no_expensive</B>*
-<B><FONT color="#54A23D"> Ruby: Reducing expensive operations </FONT></B>
+<B><FONT COLOR="PURPLE"> Ruby: Reducing expensive operations </FONT></B>
 
 By default, the &quot;end&quot; keyword is colorized according to the opening statement
 of the block <A HREF="motion.html#it">it</A> closes.  While useful, this feature can be expensive; if you
@@ -3188,7 +3116,7 @@ largest class or module.
 
 
 						*<A NAME="ruby_spellcheck_strings"></A><B>ruby_spellcheck_strings</B>*
-<B><FONT color="#54A23D"> Ruby: Spellchecking strings </FONT></B>
+<B><FONT COLOR="PURPLE"> Ruby: Spellchecking strings </FONT></B>
 
 <A HREF="if_ruby.html#Ruby">Ruby</A> <A HREF="#syntax">syntax</A> will perform spellchecking of strings if you define
 &quot;<A HREF="#ruby_spellcheck_strings">ruby_spellcheck_strings</A>&quot;:
@@ -3374,7 +3302,7 @@ the following line in your .vimrc:
 
 
 						*<A NAME="sh-embed"></A><B>sh-embed</B>*  *<A NAME="sh-awk"></A><B>sh-awk</B>*
-<B><FONT color="#54A23D"> Sh: EMBEDDING LANGUAGES</FONT></B>
+<B><FONT COLOR="PURPLE"> Sh: EMBEDDING LANGUAGES</FONT></B>
 
 You may wish to embed languages into sh.  I'll give an example courtesy of
 Lorance Stinson on how to <A HREF="diff.html#do">do</A> this with awk <A HREF="motion.html#as">as</A> an example. Put the following
@@ -3490,7 +3418,7 @@ TEX				*<A NAME="tex.vim"></A><B>tex.vim</B>* *<A NAME="ft-tex-syntax"></A><B>ft
 
 				*<A NAME="syntax-tex"></A><B>syntax-tex</B>* *<A NAME="syntax-latex"></A><B>syntax-latex</B>*
 
-<B><FONT color="#54A23D">			Tex Contents</FONT></B>
+<B><FONT COLOR="PURPLE">			Tex Contents</FONT></B>
 	Tex: Want <A HREF="autocmd.html#Syntax">Syntax</A> <A HREF="fold.html#Folding">Folding</A>?			|<A HREF="#tex-folding">tex-folding</A>|
 	Tex: No Spell Checking Wanted			|<A HREF="#g:tex_nospell">g:tex_nospell</A>|
 	Tex: Don't Want Spell Checking In Comments?	|<A HREF="#tex-nospell">tex-nospell</A>|
@@ -3509,7 +3437,7 @@ TEX				*<A NAME="tex.vim"></A><B>tex.vim</B>* *<A NAME="ft-tex-syntax"></A><B>ft
 
 
 				*<A NAME="tex-folding"></A><B>tex-folding</B>* *<A NAME="g:tex_fold_enabled"></A><B>g:tex_fold_enabled</B>*
-<B><FONT color="#54A23D"> Tex: Want Syntax Folding? </FONT></B>
+<B><FONT COLOR="PURPLE"> Tex: Want Syntax Folding? </FONT></B>
 
 As of version 28 of &lt;syntax/tex.vim&gt;, syntax-based <A HREF="fold.html#folding">folding</A> of parts, chapters,
 sections, subsections, etc are supported.  Put
@@ -3522,7 +3450,7 @@ If your system becomes too slow, then you might wish to look into
  
 
 						*<A NAME="g:tex_nospell"></A><B>g:tex_nospell</B>*
-<B><FONT color="#54A23D"> Tex: No Spell Checking Wanted</FONT></B>
+<B><FONT COLOR="PURPLE"> Tex: No Spell Checking Wanted</FONT></B>
 
 If you don't want <A HREF="spell.html#spell">spell</A> checking anywhere in your LaTeX document, put
 <B>	let g:tex_nospell=1</B>
@@ -3531,7 +3459,7 @@ comments only, see |<A HREF="#g:tex_comment_nospell">g:tex_comment_nospell</A>|.
 
 
 				*<A NAME="tex-nospell"></A><B>tex-nospell</B>* *<A NAME="g:tex_comment_nospell"></A><B>g:tex_comment_nospell</B>*
-<B><FONT color="#54A23D"> Tex: Don't Want Spell Checking In Comments? </FONT></B>
+<B><FONT COLOR="PURPLE"> Tex: Don't Want Spell Checking In Comments? </FONT></B>
 
 Some folks like to include things like source code in comments and so would
 prefer that <A HREF="spell.html#spell">spell</A> checking be disabled in comments in LaTeX files.  To <A HREF="diff.html#do">do</A>
@@ -3542,7 +3470,7 @@ see |<A HREF="#g:tex_nospell">g:tex_nospell</A>|.
 
 
 				*<A NAME="tex-verb"></A><B>tex-verb</B>* *<A NAME="g:tex_verbspell"></A><B>g:tex_verbspell</B>*
-<B><FONT color="#54A23D"> Tex: Want Spell Checking in Verbatim Zones?</FONT></B>
+<B><FONT COLOR="PURPLE"> Tex: Want Spell Checking in Verbatim Zones?</FONT></B>
 
 Often verbatim regions are used for things like source code; seldom does
 one want source code spell-checked.  However, for those of you who <A HREF="diff.html#do">do</A>
@@ -3551,7 +3479,7 @@ want your verbatim zones spell-checked, put the following in your <A HREF="start
  
 
 					*<A NAME="tex-runon"></A><B>tex-runon</B>* *<A NAME="tex-stopzone"></A><B>tex-stopzone</B>*
-<B><FONT color="#54A23D"> Tex: Run-on Comments or MathZones </FONT></B>
+<B><FONT COLOR="PURPLE"> Tex: Run-on Comments or MathZones </FONT></B>
 
 The &lt;syntax/tex.vim&gt; highlighting supports TeX, LaTeX, and some AmsTeX.  The
 highlighting supports three primary zones/regions: normal, texZone, and
@@ -3565,7 +3493,7 @@ texMathZone.
 
 
 					*<A NAME="tex-slow"></A><B>tex-slow</B>* *<A NAME="tex-sync"></A><B>tex-sync</B>*
-<B><FONT color="#54A23D"> Tex: Slow Syntax Highlighting? </FONT></B>
+<B><FONT COLOR="PURPLE"> Tex: Slow Syntax Highlighting? </FONT></B>
 
 If you have a slow computer, you may wish to reduce the values for
 <B>	:syn sync maxlines=200</B>
@@ -3610,7 +3538,7 @@ but suppress all the other region-based <A HREF="#syntax">syntax</A> highlightin
 
 
 					*<A NAME="tex-morecommands"></A><B>tex-morecommands</B>* *<A NAME="tex-package"></A><B>tex-package</B>*
-<B><FONT color="#54A23D"> Tex: Want To Highlight More Commands? </FONT></B>
+<B><FONT COLOR="PURPLE"> Tex: Want To Highlight More Commands? </FONT></B>
 
 LaTeX is a programmable language, and so there are thousands of <A HREF="repeat.html#packages">packages</A> full
 of specialized LaTeX commands, <A HREF="#syntax">syntax</A>, and fonts.  If you're using such a
@@ -3629,7 +3557,7 @@ The <A HREF="#syntax">syntax</A> files there go into your .../after/syntax/tex/ 
 
 
 					*<A NAME="tex-error"></A><B>tex-error</B>* *<A NAME="g:tex_no_error"></A><B>g:tex_no_error</B>*
-<B><FONT color="#54A23D"> Tex: Excessive Error Highlighting? </FONT></B>
+<B><FONT COLOR="PURPLE"> Tex: Excessive Error Highlighting? </FONT></B>
 
 The &lt;tex.vim&gt; supports lexical error checking of various sorts.  Thus,
 although the error checking is ofttimes very useful, <A HREF="motion.html#it">it</A> can indicate
@@ -3640,7 +3568,7 @@ and all error checking by &lt;syntax/tex.vim&gt; will be suppressed.
 
 
 								*<A NAME="tex-math"></A><B>tex-math</B>*
-<B><FONT color="#54A23D"> Tex: Need a new Math Group? </FONT></B>
+<B><FONT COLOR="PURPLE"> Tex: Need a new Math Group? </FONT></B>
 
 If you want to include a new math group in your LaTeX, the following
 code shows you an example <A HREF="motion.html#as">as</A> to how you might <A HREF="diff.html#do">do</A> so:
@@ -3656,7 +3584,7 @@ has a starred form (ie. eqnarray*).
 
 
 					*<A NAME="tex-style"></A><B>tex-style</B>* *<A NAME="b:tex_stylish"></A><B>b:tex_stylish</B>*
-<B><FONT color="#54A23D"> Tex: Starting a New Style? </FONT></B>
+<B><FONT COLOR="PURPLE"> Tex: Starting a New Style? </FONT></B>
 
 One may use &quot;\makeatletter&quot; in *.tex files, thereby making the use of &quot;<A HREF="repeat.html#@">@</A>&quot; in
 commands available.  However, since the *.tex file doesn't have one of the
@@ -3671,7 +3599,7 @@ always accept such use of @.
 
 
 					*<A NAME="tex-cchar"></A><B>tex-cchar</B>* *<A NAME="tex-cole"></A><B>tex-cole</B>* *<A NAME="tex-conceal"></A><B>tex-conceal</B>*
-<B><FONT color="#54A23D"> Tex: Taking Advantage of Conceal Mode</FONT></B>
+<B><FONT COLOR="PURPLE"> Tex: Taking Advantage of Conceal Mode</FONT></B>
 
 If you have |<A HREF="options.html#'conceallevel'">'conceallevel'</A>| set to 2 and if your encoding is <A HREF="mbyte.html#utf-8">utf-8</A>, then a
 number of character sequences can be translated into appropriate <A HREF="mbyte.html#utf-8">utf-8</A> glyphs,
@@ -3685,7 +3613,7 @@ with |<A HREF="options.html#'conceallevel'">'conceallevel'</A>| at 0 and the oth
 
 
 					*<A NAME="g:tex_conceal"></A><B>g:tex_conceal</B>*
-<B><FONT color="#54A23D"> Tex: Selective Conceal Mode</FONT></B>
+<B><FONT COLOR="PURPLE"> Tex: Selective Conceal Mode</FONT></B>
 
 You may selectively use <A HREF="#conceal">conceal</A> mode by setting <A HREF="#g:tex_conceal">g:tex_conceal</A> in your
 <A HREF="starting.html#vimrc">vimrc</A>.  By default, <A HREF="#g:tex_conceal">g:tex_conceal</A> is set to &quot;admgs&quot; to enable concealment
@@ -3703,7 +3631,7 @@ substitution will not be made.
 
 
 						*<A NAME="g:tex_isk"></A><B>g:tex_isk</B>* *<A NAME="g:tex_stylish"></A><B>g:tex_stylish</B>*
-<B><FONT color="#54A23D"> Tex: Controlling iskeyword</FONT></B>
+<B><FONT COLOR="PURPLE"> Tex: Controlling iskeyword</FONT></B>
 
 Normally, LaTeX keywords support 0-9, a-z, A-z, and 192-255 only. Latex
 keywords don't support the underscore - except when in *.sty files.  The
@@ -3723,7 +3651,7 @@ keywords don't support the underscore - except when in *.sty files.  The
 
 
 			*<A NAME="tex-supersub"></A><B>tex-supersub</B>* *<A NAME="g:tex_superscripts"></A><B>g:tex_superscripts</B>* *<A NAME="g:tex_subscripts"></A><B>g:tex_subscripts</B>*
-<B><FONT color="#54A23D"> Tex: Fine Subscript and Superscript Control</FONT></B>
+<B><FONT COLOR="PURPLE"> Tex: Fine Subscript and Superscript Control</FONT></B>
 
 	See |<A HREF="#tex-conceal">tex-conceal</A>| for how to enable concealed character replacement.
 
@@ -3746,7 +3674,7 @@ keywords don't support the underscore - except when in *.sty files.  The
 
 
 					*<A NAME="tex-matchcheck"></A><B>tex-matchcheck</B>* *<A NAME="g:tex_matchcheck"></A><B>g:tex_matchcheck</B>*
-<B><FONT color="#54A23D"> Tex: Match Check Control</FONT></B>
+<B><FONT COLOR="PURPLE"> Tex: Match Check Control</FONT></B>
 
 	Sometimes one actually wants mismatched parentheses, square braces,
 	and or curly braces; for example, \text{(1,10]} is a range from but
@@ -3891,7 +3819,7 @@ and nothing else) <A HREF="motion.html#as">as</A> a value of the other type: nul
 integer. `g:yaml_schema` option determines according to which schema values
 will be highlighted specially. Supported schemas are
 
-<B><FONT color="#54A23D">Schema		Description </FONT></B>
+<B><FONT COLOR="PURPLE">Schema		Description </FONT></B>
 failsafe	No additional highlighting.
 json		Supports JSON-style numbers, booleans and null.
 core		Supports more number, <A HREF="options.html#boolean">boolean</A> and null styles.
@@ -4319,7 +4247,7 @@ Not all commands accept all arguments.	This table shows which arguments
 can not be used for all commands:
 
 							*<A NAME="E395"></A><B>E395</B>*
-<B><FONT color="#54A23D">		    contains  oneline	fold  display  extend concealends</FONT></B>
+<B><FONT COLOR="PURPLE">		    contains  oneline	fold  display  extend concealends</FONT></B>
 <A HREF="#:syntax">:syntax</A> keyword		 -	 -	 -	 -	 -      -
 <A HREF="#:syntax">:syntax</A> match		yes	 -	yes	yes	yes     -
 <A HREF="#:syntax">:syntax</A> region		yes	yes	yes	yes	yes    yes
@@ -4701,7 +4629,7 @@ Examples: &quot;ms=s+1&quot;, &quot;hs=e-2&quot;, &quot;lc=3&quot;.
 Although all offsets are accepted after any <A HREF="pattern.html#pattern">pattern</A>, they are not always
 meaningful.  This table shows which offsets are actually used:
 
-<B><FONT color="#54A23D">		    ms	 me   hs   he	rs   re	  lc </FONT></B>
+<B><FONT COLOR="PURPLE">		    ms	 me   hs   he	rs   re	  lc </FONT></B>
 match item	    yes  yes  yes  yes	-    -	  yes
 region item start   yes  -    yes  -	yes  -	  yes
 region item skip    -	 yes  -    -	-    -	  yes
@@ -5242,8 +5170,8 @@ result is like this single command has been used:
 When listing a highlight group and <A HREF="options.html#'verbose'">'verbose'</A> is non-zero, the listing will
 also tell where <A HREF="motion.html#it">it</A> was last set.  Example:
 <B>	:verbose hi Comment</B>
-<B><FONT color="#54A23D"> 	Comment        xxx ctermfg=4 guifg=Blue </FONT></B>
-<B><FONT color="#54A23D">	   Last set from /home/mool/vim/vim7/runtime/syntax/syncolor.vim </FONT></B>
+<B><FONT COLOR="PURPLE"> 	Comment        xxx ctermfg=4 guifg=Blue </FONT></B>
+<B><FONT COLOR="PURPLE">	   Last set from /home/mool/vim/vim7/runtime/syntax/syncolor.vim </FONT></B>
 
 When &quot;<A HREF="#:hi">:hi</A> clear&quot; is used then the <A HREF="usr_41.html#script">script</A> where this command is used will be
 mentioned for the default values. See |<A HREF="various.html#:verbose-cmd">:verbose-cmd</A>| for more information.
@@ -5327,7 +5255,7 @@ ctermbg={color-nr}				*<A NAME="highlight-ctermbg"></A><B>highlight-ctermbg</B>*
 
 
 							*<A NAME="cterm-colors"></A><B>cterm-colors</B>*
-<B><FONT color="#54A23D">	    NR-16   NR-8    COLOR NAME </FONT></B>
+<B><FONT COLOR="PURPLE">	    NR-16   NR-8    COLOR NAME </FONT></B>
 	    0	    0	    Black
 	    1	    4	    DarkBlue
 	    2	    2	    DarkGreen
@@ -5961,12 +5889,7 @@ literal text specify the size of that text (in bytes):
 
 <A HREF="#top">top</A> - <A HREF="index.html">main help file</A>
 </PRE>
-    </div>
+</BODY>
 
-    <footer>
-      <div class="container">
-        Generated Thu Jun  2 10:56:13 UTC 2022 from <a href="https://github.com/neovim/neovim/commit/d93ba03c717bee05fe6d239fd7faefe6e9698c85"><code>d93ba03</code></a>.
-      </div>
-    </footer>
-  </body>
-</html>
+
+</HTML>

@@ -1,82 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Nvim documentation: usr_41</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-    <link href="/css/normalize.min.css" rel="stylesheet">
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <header class="container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a href="/" class="navbar-brand" aria-label="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" width="173" height="50" viewBox="0 0 742 214" aria-label="Neovim">
-              <title>Neovim</title>
-              <defs>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
-                  <stop stop-color="#16B0ED" stop-opacity=".8" offset="0%" />
-                  <stop stop-color="#0F59B2" stop-opacity=".837" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="b">
-                  <stop stop-color="#7DB643" offset="0%" />
-                  <stop stop-color="#367533" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="c">
-                  <stop stop-color="#88C649" stop-opacity=".8" offset="0%" />
-                  <stop stop-color="#439240" stop-opacity=".84" offset="100%" />
-                </linearGradient>
-              </defs>
-              <g fill="none" fill-rule="evenodd">
-                <path
-                  d="M.027 45.459L45.224-.173v212.171L.027 166.894V45.459z"
-                  fill="url(#a)"
-                  transform="translate(1 1)"
-                />
-                <path
-                  d="M129.337 45.89L175.152-.149l-.928 212.146-45.197-45.104.31-121.005z"
-                  fill="url(#b)"
-                  transform="matrix(-1 0 0 1 305 1)"
-                />
-                <path
-                  d="M45.194-.137L162.7 179.173l-32.882 32.881L12.25 33.141 45.194-.137z"
-                  fill="url(#c)"
-                  transform="translate(1 1)"
-                />
-                <path
-                  d="M46.234 84.032l-.063 7.063-36.28-53.563 3.36-3.422 32.983 49.922z"
-                  fill-opacity=".13"
-                  fill="#000"
-                />
-                <g fill="#444">
-                  <path
-                    d="M227 154V64.44h4.655c1.55 0 2.445.75 2.685 2.25l.806 13.502c4.058-5.16 8.786-9.316 14.188-12.466 5.4-3.15 11.413-4.726 18.037-4.726 4.893 0 9.205.781 12.935 2.34 3.729 1.561 6.817 3.811 9.264 6.751 2.448 2.942 4.297 6.48 5.55 10.621 1.253 4.14 1.88 8.821 1.88 14.042V154h-8.504V96.754c0-8.402-1.91-14.987-5.729-19.757-3.82-4.771-9.667-7.156-17.544-7.156-5.851 0-11.28 1.516-16.292 4.545-5.013 3.032-9.489 7.187-13.427 12.467V154H227zM350.624 63c5.066 0 9.755.868 14.069 2.605 4.312 1.738 8.052 4.268 11.219 7.592s5.638 7.412 7.419 12.264C385.11 90.313 386 95.883 386 102.17c0 1.318-.195 2.216-.588 2.696-.393.48-1.01.719-1.851.719h-64.966v1.70c0 6.708.784 12.609 2.353 17.7 1.567 5.09 3.8 9.357 6.695 12.802 2.895 3.445 6.393 6.034 10.495 7.771 4.1 1.738 8.686 2.606 13.752 2.606 4.524 0 8.446-.494 11.762-1.483 3.317-.988 6.108-2.097 8.37-3.324 2.261-1.227 4.056-2.336 5.383-3.324 1.326-.988 2.292-1.482 2.895-1.482.784 0 1.388.3 1.81.898l2.352 2.875c-1.448 1.797-3.362 3.475-5.745 5.031-2.383 1.558-5.038 2.891-7.962 3.998-2.926 1.109-6.062 1.991-9.41 2.65a52.21 52.21 0 01-10.088.989c-6.152 0-11.762-1.064-16.828-3.19-5.067-2.125-9.415-5.225-13.043-9.298-3.63-4.074-6.435-9.06-8.415-14.96C310.99 121.655 310 114.9 310 107.294c0-6.408.92-12.323 2.76-17.744 1.84-5.421 4.493-10.093 7.961-14.016 3.467-3.922 7.72-6.991 12.758-9.209C338.513 64.11 344.229 63 350.624 63zm.573 6c-4.696 0-8.904.702-12.623 2.105-3.721 1.404-6.936 3.421-9.65 6.053-2.713 2.631-4.908 5.79-6.586 9.474S319.55 94.439 319 99h60c0-4.679-.672-8.874-2.013-12.588-1.343-3.712-3.232-6.856-5.67-9.43-2.44-2.571-5.367-4.545-8.782-5.92-3.413-1.374-7.192-2.062-11.338-2.062zM435.546 63c6.526 0 12.368 1.093 17.524 3.28 5.154 2.186 9.5 5.286 13.04 9.298 3.538 4.013 6.238 8.85 8.099 14.51 1.861 5.66 2.791 11.994 2.791 19.002 0 7.008-.932 13.327-2.791 18.957-1.861 5.631-4.561 10.452-8.099 14.465-3.54 4.012-7.886 7.097-13.04 9.254-5.156 2.156-10.998 3.234-17.524 3.234-6.529 0-12.369-1.078-17.525-3.234-5.155-2.157-9.517-5.242-13.085-9.254-3.57-4.013-6.285-8.836-8.145-14.465-1.861-5.63-2.791-11.95-2.791-18.957 0-7.008.93-13.342 2.791-19.002 1.861-5.66 4.576-10.496 8.145-14.51 3.568-4.012 7.93-7.112 13.085-9.299C423.177 64.094 429.017 63 435.546 63zm-.501 86c5.341 0 10.006-.918 13.997-2.757 3.99-1.838 7.32-4.474 9.992-7.909 2.67-3.435 4.664-7.576 5.986-12.428 1.317-4.85 1.98-10.288 1.98-16.316 0-5.965-.66-11.389-1.98-16.27-1.322-4.88-3.316-9.053-5.986-12.519-2.67-3.463-6-6.13-9.992-7.999-3.991-1.867-8.657-2.802-13.997-2.802s-10.008.935-13.997 2.802c-3.991 1.87-7.322 4.536-9.992 8-2.671 3.465-4.68 7.637-6.03 12.518-1.35 4.881-2.026 10.305-2.026 16.27 0 6.026.675 11.465 2.025 16.316 1.35 4.852 3.36 8.993 6.031 12.428 2.67 3.435 6 6.07 9.992 7.91 3.99 1.838 8.656 2.756 13.997 2.756z"
-                    fill="currentColor"
-                  />
-                  <path
-                    d="M530.57 152h-20.05L474 60h18.35c1.61 0 2.967.39 4.072 1.166 1.103.778 1.865 1.763 2.283 2.959l17.722 49.138a92.762 92.762 0 012.551 8.429c.686 2.751 1.298 5.5 1.835 8.25.537-2.75 1.148-5.499 1.835-8.25a77.713 77.713 0 012.64-8.429l18.171-49.138c.417-1.196 1.164-2.181 2.238-2.96 1.074-.776 2.356-1.165 3.849-1.165H567l-36.43 92zM572 61h23v92h-23zM610 153V60.443h13.624c2.887 0 4.78 1.354 5.682 4.06l1.443 6.856a52.7 52.7 0 015.097-4.962 32.732 32.732 0 015.683-3.879 30.731 30.731 0 016.496-2.57c2.314-.632 4.855-.948 7.624-.948 5.832 0 10.63 1.579 14.39 4.736 3.758 3.157 6.57 7.352 8.434 12.585 1.444-3.068 3.248-5.698 5.413-7.894 2.165-2.194 4.541-3.984 7.127-5.367a32.848 32.848 0 018.254-3.068 39.597 39.597 0 018.796-.992c5.111 0 9.653.783 13.622 2.345 3.97 1.565 7.307 3.849 10.014 6.857 2.706 3.007 4.766 6.675 6.18 11.005C739.29 83.537 740 88.5 740 94.092V153h-22.284V94.092c0-5.894-1.294-10.329-3.878-13.306-2.587-2.977-6.376-4.465-11.368-4.465-2.286 0-4.404.391-6.358 1.172a15.189 15.189 0 00-5.144 3.383c-1.473 1.474-2.631 3.324-3.474 5.548-.842 2.225-1.263 4.781-1.263 7.668V153h-22.37V94.092c0-6.194-1.249-10.704-3.744-13.532-2.497-2.825-6.18-4.24-11.051-4.24-3.19 0-6.18.798-8.976 2.391-2.799 1.593-5.399 3.775-7.804 6.54V153H610zM572 30h23v19h-23z"
-                    fill="currentColor"
-                    fill-opacity=".8"
-                  />
-                </g>
-              </g>
-            </svg>
-          </a>
-        </div>
-      </nav>
-    </header>
-
-    <div class="container">
-      <h1>Nvim documentation: usr_41</h1>
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-type" content="text/html; charset=ISO-8859-1">
+<TITLE>Nvim documentation: usr_41</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H1>Nvim documentation: usr_41</H1>
 <A NAME="top"></A>
 <A HREF="index.html">main help file</A>
 
@@ -152,10 +80,10 @@ Let's start with a simple example:
 
 The output of the example code is:
 
-<B><FONT color="#54A23D">	count is 1 </FONT></B>
-<B><FONT color="#54A23D">	count is 2 </FONT></B>
-<B><FONT color="#54A23D">	count is 3 </FONT></B>
-<B><FONT color="#54A23D">	count is 4 </FONT></B>
+<B><FONT COLOR="PURPLE">	count is 1 </FONT></B>
+<B><FONT COLOR="PURPLE">	count is 2 </FONT></B>
+<B><FONT COLOR="PURPLE">	count is 3 </FONT></B>
+<B><FONT COLOR="PURPLE">	count is 4 </FONT></B>
 
 In the first line the &quot;<A HREF="eval.html#:let">:let</A>&quot; command assigns a value to a variable.  The
 generic form is:
@@ -180,7 +108,7 @@ is true when the variable <A HREF="insert.html#i">i</A> is smaller than five.
 The &quot;<A HREF="eval.html#:echo">:echo</A>&quot; command prints its arguments.  In this <A HREF="change.html#case">case</A> the <A HREF="eval.html#string">string</A> &quot;<A HREF="intro.html#count">count</A> is&quot;
 and the value of the variable <A HREF="insert.html#i">i</A>.  Since <A HREF="insert.html#i">i</A> is one, this will print:
 
-<B><FONT color="#54A23D">	count is 1 </FONT></B>
+<B><FONT COLOR="PURPLE">	count is 1 </FONT></B>
 
 Then there is the &quot;<A HREF="eval.html#:let">:let</A> <A HREF="insert.html#i">i</A> += 1&quot; command.  This does the same thing <A HREF="motion.html#as">as</A>
 &quot;<A HREF="eval.html#:let">:let</A> <A HREF="insert.html#i">i</A> = <A HREF="insert.html#i">i</A> + 1&quot;.  This adds one to the variable <A HREF="insert.html#i">i</A> and assigns the new value
@@ -215,14 +143,14 @@ number, <A HREF="motion.html#it">it</A> will be interpreted <A HREF="motion.html
 The &quot;<A HREF="eval.html#:echo">:echo</A>&quot; command always prints decimal numbers.  Example:
 
 <B>	:echo 0x7f 0o36</B>
-<B><FONT color="#54A23D"> 	127 30 </FONT></B>
+<B><FONT COLOR="PURPLE"> 	127 30 </FONT></B>
 
 A number is made negative with a minus sign.  This also works for hexadecimal,
 <A HREF="eval.html#octal">octal</A> and binary numbers.  A minus sign is also used for subtraction.  Compare
 this with the previous example:
 
 <B>	:echo 0x7f -0o36</B>
-<B><FONT color="#54A23D"> 	97 </FONT></B>
+<B><FONT COLOR="PURPLE"> 	97 </FONT></B>
 
 White space in an <A HREF="eval.html#expression">expression</A> is ignored.  However, it's recommended to use <A HREF="motion.html#it">it</A>
 for separating items, to make the <A HREF="eval.html#expression">expression</A> easier to read.  For example, to
@@ -330,20 +258,20 @@ There are two types of these.  First the <A HREF="eval.html#string">string</A> i
 
 <B>	:let name = "peter"</B>
 <B>	:echo name</B>
-<B><FONT color="#54A23D"> 	peter </FONT></B>
+<B><FONT COLOR="PURPLE"> 	peter </FONT></B>
 
 If you want to include a double <A HREF="change.html#quote">quote</A> inside the <A HREF="eval.html#string">string</A>, put a <A HREF="intro.html#backslash">backslash</A> in
 front of <A HREF="motion.html#it">it</A>:
 
 <B>	:let name = "\"peter\""</B>
 <B>	:echo name</B>
-<B><FONT color="#54A23D"> 	"peter" </FONT></B>
+<B><FONT COLOR="PURPLE"> 	"peter" </FONT></B>
 
 To avoid the need for a <A HREF="intro.html#backslash">backslash</A>, you can use a <A HREF="eval.html#string">string</A> in single quotes:
 
 <B>	:let name = '"peter"'</B>
 <B>	:echo name</B>
-<B><FONT color="#54A23D"> 	"peter" </FONT></B>
+<B><FONT COLOR="PURPLE"> 	"peter" </FONT></B>
 
 Inside a single-quote <A HREF="eval.html#string">string</A> all the characters are <A HREF="motion.html#as">as</A> they are.  Only the
 single <A HREF="change.html#quote">quote</A> itself is special: you need to use two to get one.  A <A HREF="intro.html#backslash">backslash</A>
@@ -414,17 +342,17 @@ mathematics on numbers:
 The usual precedence is used.  Example:
 
 <B>	:echo 10 + 5 * 2</B>
-<B><FONT color="#54A23D"> 	20 </FONT></B>
+<B><FONT COLOR="PURPLE"> 	20 </FONT></B>
 
 Grouping is done with parentheses.  No surprises here.  Example:
 
 <B>	:echo (10 + 5) * 2</B>
-<B><FONT color="#54A23D"> 	30 </FONT></B>
+<B><FONT COLOR="PURPLE"> 	30 </FONT></B>
 
 Strings can be concatenated with &quot;..&quot; (see |<A HREF="eval.html#expr6">expr6</A>|).  Example:
 
 <B>	:echo "foo" .. "bar"</B>
-<B><FONT color="#54A23D"> 	foobar </FONT></B>
+<B><FONT COLOR="PURPLE"> 	foobar </FONT></B>
 
 When the &quot;<A HREF="eval.html#:echo">:echo</A>&quot; command gets multiple arguments, <A HREF="motion.html#it">it</A> separates them with a
 space.  In the example the argument is a single <A HREF="eval.html#expression">expression</A>, thus no space is
@@ -438,7 +366,7 @@ If &quot;<A HREF="insert.html#a">a</A>&quot; evaluates to true &quot;<A HREF="mo
 
 <B>	:let i = 4</B>
 <B>	:echo i &gt; 5 ? "i is big" : "i is small"</B>
-<B><FONT color="#54A23D"> 	i is small </FONT></B>
+<B><FONT COLOR="PURPLE"> 	i is small </FONT></B>
 
 The three parts of the constructs are always evaluated first, thus you could
 see <A HREF="motion.html#it">it</A> work <A HREF="motion.html#as">as</A>:
@@ -1348,17 +1276,17 @@ The &quot;<A HREF="eval.html#:function">:function</A>&quot; command lists the na
 <A HREF="eval.html#functions">functions</A>:
 
 <B>	:function</B>
-<B><FONT color="#54A23D"> 	function Show(start, ...) </FONT></B>
-<B><FONT color="#54A23D">	function GetVimIndent() </FONT></B>
-<B><FONT color="#54A23D">	function SetSyn(name) </FONT></B>
+<B><FONT COLOR="PURPLE"> 	function Show(start, ...) </FONT></B>
+<B><FONT COLOR="PURPLE">	function GetVimIndent() </FONT></B>
+<B><FONT COLOR="PURPLE">	function SetSyn(name) </FONT></B>
 
 To see what a function does, use its name <A HREF="motion.html#as">as</A> an argument for &quot;<A HREF="eval.html#:function">:function</A>&quot;:
 
 <B>	:function SetSyn</B>
-<B><FONT color="#54A23D"> 	1     if &amp;syntax == '' </FONT></B>
-<B><FONT color="#54A23D">	2       let &amp;syntax = a:name </FONT></B>
-<B><FONT color="#54A23D">	3     endif </FONT></B>
-<B><FONT color="#54A23D">	   endfunction </FONT></B>
+<B><FONT COLOR="PURPLE"> 	1     if &amp;syntax == '' </FONT></B>
+<B><FONT COLOR="PURPLE">	2       let &amp;syntax = a:name </FONT></B>
+<B><FONT COLOR="PURPLE">	3     endif </FONT></B>
+<B><FONT COLOR="PURPLE">	   endfunction </FONT></B>
 
 
 DEBUGGING
@@ -1398,7 +1326,7 @@ function into a reference:
 <B>	:  let Afunc = function('Wrong')</B>
 <B>	:endif</B>
 <B>	:echo call(Afunc, [])</B>
-<B><FONT color="#54A23D"> 	Wrong! </FONT></B>
+<B><FONT COLOR="PURPLE"> 	Wrong! </FONT></B>
 
 Note that the name of a variable that holds a function reference must start
 with a capital.  Otherwise <A HREF="motion.html#it">it</A> could be confused with the name of a builtin
@@ -1434,26 +1362,26 @@ You can add items to a <A HREF="eval.html#List">List</A> with the <A HREF="built
 <B>	:call add(alist, 'foo')</B>
 <B>	:call add(alist, 'bar')</B>
 <B>	:echo alist</B>
-<B><FONT color="#54A23D"> 	['foo', 'bar'] </FONT></B>
+<B><FONT COLOR="PURPLE"> 	['foo', 'bar'] </FONT></B>
 
 <A HREF="eval.html#List">List</A> concatenation is done with +:
 
 <B>	:echo alist + ['foo', 'bar']</B>
-<B><FONT color="#54A23D"> 	['foo', 'bar', 'foo', 'bar'] </FONT></B>
+<B><FONT COLOR="PURPLE"> 	['foo', 'bar', 'foo', 'bar'] </FONT></B>
 
 Or, if you want to extend a <A HREF="eval.html#List">List</A> directly:
 
 <B>	:let alist = ['one']</B>
 <B>	:call extend(alist, ['two', 'three'])</B>
 <B>	:echo alist</B>
-<B><FONT color="#54A23D"> 	['one', 'two', 'three'] </FONT></B>
+<B><FONT COLOR="PURPLE"> 	['one', 'two', 'three'] </FONT></B>
 
 Notice that using <A HREF="builtin.html#add()">add()</A> will have a different effect:
 
 <B>	:let alist = ['one']</B>
 <B>	:call add(alist, ['two', 'three'])</B>
 <B>	:echo alist</B>
-<B><FONT color="#54A23D"> 	['one', ['two', 'three']] </FONT></B>
+<B><FONT COLOR="PURPLE"> 	['one', ['two', 'three']] </FONT></B>
 
 The second argument of <A HREF="builtin.html#add()">add()</A> is added <A HREF="motion.html#as">as</A> a single item.
 
@@ -1466,9 +1394,9 @@ One of the nice things you can <A HREF="diff.html#do">do</A> with a <A HREF="eva
 <B>	:for n in alist</B>
 <B>	:  echo n</B>
 <B>	:endfor</B>
-<B><FONT color="#54A23D"> 	one </FONT></B>
-<B><FONT color="#54A23D">	two </FONT></B>
-<B><FONT color="#54A23D">	three </FONT></B>
+<B><FONT COLOR="PURPLE"> 	one </FONT></B>
+<B><FONT COLOR="PURPLE">	two </FONT></B>
+<B><FONT COLOR="PURPLE">	three </FONT></B>
 
 This will loop over each element in <A HREF="eval.html#List">List</A> &quot;alist&quot;, assigning the value to
 variable &quot;<A HREF="pattern.html#n">n</A>&quot;.  The generic form of a for loop is:
@@ -1483,9 +1411,9 @@ To loop a certain number of times you need a <A HREF="eval.html#List">List</A> o
 <B>	:for a in range(3)</B>
 <B>	:  echo a</B>
 <B>	:endfor</B>
-<B><FONT color="#54A23D"> 	0 </FONT></B>
-<B><FONT color="#54A23D">	1 </FONT></B>
-<B><FONT color="#54A23D">	2 </FONT></B>
+<B><FONT COLOR="PURPLE"> 	0 </FONT></B>
+<B><FONT COLOR="PURPLE">	1 </FONT></B>
+<B><FONT COLOR="PURPLE">	2 </FONT></B>
 
 Notice that the first item of the <A HREF="eval.html#List">List</A> that <A HREF="builtin.html#range()">range()</A> produces is zero, thus the
 last item is one <A HREF="various.html#less">less</A> than the length of the <A HREF="eval.html#list">list</A>.
@@ -1494,9 +1422,9 @@ last item is one <A HREF="various.html#less">less</A> than the length of the <A 
 <B>	:for a in range(8, 4, -2)</B>
 <B>	:  echo a</B>
 <B>	:endfor</B>
-<B><FONT color="#54A23D"> 	8 </FONT></B>
-<B><FONT color="#54A23D">	6 </FONT></B>
-<B><FONT color="#54A23D">	4 </FONT></B>
+<B><FONT COLOR="PURPLE"> 	8 </FONT></B>
+<B><FONT COLOR="PURPLE">	6 </FONT></B>
+<B><FONT COLOR="PURPLE">	4 </FONT></B>
 
 A more useful example, looping over lines in the buffer:
 
@@ -1519,7 +1447,7 @@ know the key.  A <A HREF="eval.html#Dictionary">Dictionary</A> is created with c
 Now you can lookup words by putting the key in square brackets:
 
 <B>	:echo uk2nl['two']</B>
-<B><FONT color="#54A23D"> 	twee </FONT></B>
+<B><FONT COLOR="PURPLE"> 	twee </FONT></B>
 
 The generic form for defining a <A HREF="eval.html#Dictionary">Dictionary</A> is:
 
@@ -1536,9 +1464,9 @@ over them:
 <B>	:for key in keys(uk2nl)</B>
 <B>	:  echo key</B>
 <B>	:endfor</B>
-<B><FONT color="#54A23D"> 	three </FONT></B>
-<B><FONT color="#54A23D">	one </FONT></B>
-<B><FONT color="#54A23D">	two </FONT></B>
+<B><FONT COLOR="PURPLE"> 	three </FONT></B>
+<B><FONT COLOR="PURPLE">	one </FONT></B>
+<B><FONT COLOR="PURPLE">	two </FONT></B>
 
 You will notice the keys are not ordered.  You can sort the <A HREF="eval.html#list">list</A> to get a
 specific order:
@@ -1546,9 +1474,9 @@ specific order:
 <B>	:for key in sort(keys(uk2nl))</B>
 <B>	:  echo key</B>
 <B>	:endfor</B>
-<B><FONT color="#54A23D"> 	one </FONT></B>
-<B><FONT color="#54A23D">	three </FONT></B>
-<B><FONT color="#54A23D">	two </FONT></B>
+<B><FONT COLOR="PURPLE"> 	one </FONT></B>
+<B><FONT COLOR="PURPLE">	three </FONT></B>
+<B><FONT COLOR="PURPLE">	two </FONT></B>
 
 But you can never get back the order in which items are defined.  For that you
 need to use a <A HREF="eval.html#List">List</A>, <A HREF="motion.html#it">it</A> stores items in an ordered sequence.
@@ -1560,19 +1488,19 @@ The items in a <A HREF="eval.html#Dictionary">Dictionary</A> can normally be obt
 brackets:
 
 <B>	:echo uk2nl['one']</B>
-<B><FONT color="#54A23D"> 	een </FONT></B>
+<B><FONT COLOR="PURPLE"> 	een </FONT></B>
 
 A <A HREF="eval.html#method">method</A> that does the same, but without so many punctuation characters:
 
 <B>	:echo uk2nl.one</B>
-<B><FONT color="#54A23D"> 	een </FONT></B>
+<B><FONT COLOR="PURPLE"> 	een </FONT></B>
 
 This only works for a key that is made of ASCII letters, digits and the
 underscore.  You can also assign a new value this way:
 
 <B>	:let uk2nl.four = 'vier'</B>
 <B>	:echo uk2nl</B>
-<B><FONT color="#54A23D"> 	{'three': 'drie', 'four': 'vier', 'one': 'een', 'two': 'twee'} </FONT></B>
+<B><FONT COLOR="PURPLE"> 	{'three': 'drie', 'four': 'vier', 'one': 'een', 'two': 'twee'} </FONT></B>
 
 And now for something special: you can directly define a function and store a
 reference to <A HREF="motion.html#it">it</A> in the dictionary:
@@ -1584,7 +1512,7 @@ reference to <A HREF="motion.html#it">it</A> in the dictionary:
 Let's first try <A HREF="motion.html#it">it</A> out:
 
 <B>	:echo uk2nl.translate('three two five one')</B>
-<B><FONT color="#54A23D"> 	drie twee ??? een </FONT></B>
+<B><FONT COLOR="PURPLE"> 	drie twee ??? een </FONT></B>
 
 The first special thing you notice is the &quot;<A HREF="eval.html#dict">dict</A>&quot; at the end of the &quot;<A HREF="eval.html#:function">:function</A>&quot;
 line.  This marks the function <A HREF="motion.html#as">as</A> being used from a <A HREF="eval.html#Dictionary">Dictionary</A>.  The &quot;<A HREF="eval.html#self">self</A>&quot;
@@ -1597,7 +1525,7 @@ The <A HREF="builtin.html#split()">split()</A> function takes a <A HREF="eval.ht
 and returns a <A HREF="eval.html#list">list</A> with these words.  Thus in the example <A HREF="motion.html#it">it</A> returns:
 
 <B>	:echo split('three two five one')</B>
-<B><FONT color="#54A23D"> 	['three', 'two', 'five', 'one'] </FONT></B>
+<B><FONT COLOR="PURPLE"> 	['three', 'two', 'five', 'one'] </FONT></B>
 
 This <A HREF="eval.html#list">list</A> is the first argument to the <A HREF="builtin.html#map()">map()</A> function.  This will go through
 the <A HREF="eval.html#list">list</A>, evaluating its second argument with &quot;<A HREF="eval.html#v:val">v:val</A>&quot; set to the value of each
@@ -1645,14 +1573,14 @@ Now we can instantiate a Dutch translation object:
 <B>	:let uk2nl = copy(transdict)</B>
 <B>	:let uk2nl.words = {'one': 'een', 'two': 'twee', 'three': 'drie'}</B>
 <B>	:echo uk2nl.translate('three one')</B>
-<B><FONT color="#54A23D"> 	drie een </FONT></B>
+<B><FONT COLOR="PURPLE"> 	drie een </FONT></B>
 
 And a German translator:
 
 <B>	:let uk2de = copy(transdict)</B>
 <B>	:let uk2de.words = {'one': 'eins', 'two': 'zwei', 'three': 'drei'}</B>
 <B>	:echo uk2de.translate('three one')</B>
-<B><FONT color="#54A23D"> 	drei eins </FONT></B>
+<B><FONT COLOR="PURPLE"> 	drei eins </FONT></B>
 
 You see that the <A HREF="builtin.html#copy()">copy()</A> function is used to make a copy of the &quot;transdict&quot;
 <A HREF="eval.html#Dictionary">Dictionary</A> and then the copy is changed to add the words.  The original
@@ -1666,7 +1594,7 @@ Now you can go one step further, and use your preferred translator:
 <B>	:  let trans = uk2nl</B>
 <B>	:endif</B>
 <B>	:echo trans.translate('one two three')</B>
-<B><FONT color="#54A23D"> 	een twee drie </FONT></B>
+<B><FONT COLOR="PURPLE"> 	een twee drie </FONT></B>
 
 Here &quot;trans&quot; refers to one of the two <A HREF="vimindex.html#objects">objects</A> (Dictionaries).  No copy is
 made.  More about <A HREF="eval.html#List">List</A> and <A HREF="eval.html#Dictionary">Dictionary</A> identity can be found at |<A HREF="eval.html#list-identity">list-identity</A>|
@@ -1680,7 +1608,7 @@ translate() function to <A HREF="diff.html#do">do</A> nothing:
 <B>	:  return a:line</B>
 <B>	:endfunction</B>
 <B>	:echo uk2uk.translate('three one wladiwostok')</B>
-<B><FONT color="#54A23D"> 	three one wladiwostok </FONT></B>
+<B><FONT COLOR="PURPLE"> 	three one wladiwostok </FONT></B>
 
 Notice that a ! was used to overwrite the existing function reference.  Now
 use &quot;uk2uk&quot; when no recognized language is found:
@@ -1693,7 +1621,7 @@ use &quot;uk2uk&quot; when no recognized language is found:
 <B>	:  let trans = uk2uk</B>
 <B>	:endif</B>
 <B>	:echo trans.translate('one two three')</B>
-<B><FONT color="#54A23D"> 	one two three </FONT></B>
+<B><FONT COLOR="PURPLE"> 	one two three </FONT></B>
 
 For further reading see |<A HREF="eval.html#Lists">Lists</A>| and |<A HREF="eval.html#Dictionaries">Dictionaries</A>|.
 
@@ -2756,12 +2684,7 @@ Next chapter: |<A HREF="usr_42.html">usr_42.txt</A>|  Add new <A HREF="gui.html#
 Copyright: see |<A HREF="usr_01.html#manual-copyright">manual-copyright</A>|  vim:tw=78:ts=8:noet:ft=help:norl:
 <A HREF="#top">top</A> - <A HREF="index.html">main help file</A>
 </PRE>
-    </div>
+</BODY>
 
-    <footer>
-      <div class="container">
-        Generated Thu Jun  2 10:56:14 UTC 2022 from <a href="https://github.com/neovim/neovim/commit/d93ba03c717bee05fe6d239fd7faefe6e9698c85"><code>d93ba03</code></a>.
-      </div>
-    </footer>
-  </body>
-</html>
+
+</HTML>

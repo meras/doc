@@ -1,82 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Nvim documentation: eval</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-    <link href="/css/normalize.min.css" rel="stylesheet">
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <header class="container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a href="/" class="navbar-brand" aria-label="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" width="173" height="50" viewBox="0 0 742 214" aria-label="Neovim">
-              <title>Neovim</title>
-              <defs>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
-                  <stop stop-color="#16B0ED" stop-opacity=".8" offset="0%" />
-                  <stop stop-color="#0F59B2" stop-opacity=".837" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="b">
-                  <stop stop-color="#7DB643" offset="0%" />
-                  <stop stop-color="#367533" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="c">
-                  <stop stop-color="#88C649" stop-opacity=".8" offset="0%" />
-                  <stop stop-color="#439240" stop-opacity=".84" offset="100%" />
-                </linearGradient>
-              </defs>
-              <g fill="none" fill-rule="evenodd">
-                <path
-                  d="M.027 45.459L45.224-.173v212.171L.027 166.894V45.459z"
-                  fill="url(#a)"
-                  transform="translate(1 1)"
-                />
-                <path
-                  d="M129.337 45.89L175.152-.149l-.928 212.146-45.197-45.104.31-121.005z"
-                  fill="url(#b)"
-                  transform="matrix(-1 0 0 1 305 1)"
-                />
-                <path
-                  d="M45.194-.137L162.7 179.173l-32.882 32.881L12.25 33.141 45.194-.137z"
-                  fill="url(#c)"
-                  transform="translate(1 1)"
-                />
-                <path
-                  d="M46.234 84.032l-.063 7.063-36.28-53.563 3.36-3.422 32.983 49.922z"
-                  fill-opacity=".13"
-                  fill="#000"
-                />
-                <g fill="#444">
-                  <path
-                    d="M227 154V64.44h4.655c1.55 0 2.445.75 2.685 2.25l.806 13.502c4.058-5.16 8.786-9.316 14.188-12.466 5.4-3.15 11.413-4.726 18.037-4.726 4.893 0 9.205.781 12.935 2.34 3.729 1.561 6.817 3.811 9.264 6.751 2.448 2.942 4.297 6.48 5.55 10.621 1.253 4.14 1.88 8.821 1.88 14.042V154h-8.504V96.754c0-8.402-1.91-14.987-5.729-19.757-3.82-4.771-9.667-7.156-17.544-7.156-5.851 0-11.28 1.516-16.292 4.545-5.013 3.032-9.489 7.187-13.427 12.467V154H227zM350.624 63c5.066 0 9.755.868 14.069 2.605 4.312 1.738 8.052 4.268 11.219 7.592s5.638 7.412 7.419 12.264C385.11 90.313 386 95.883 386 102.17c0 1.318-.195 2.216-.588 2.696-.393.48-1.01.719-1.851.719h-64.966v1.70c0 6.708.784 12.609 2.353 17.7 1.567 5.09 3.8 9.357 6.695 12.802 2.895 3.445 6.393 6.034 10.495 7.771 4.1 1.738 8.686 2.606 13.752 2.606 4.524 0 8.446-.494 11.762-1.483 3.317-.988 6.108-2.097 8.37-3.324 2.261-1.227 4.056-2.336 5.383-3.324 1.326-.988 2.292-1.482 2.895-1.482.784 0 1.388.3 1.81.898l2.352 2.875c-1.448 1.797-3.362 3.475-5.745 5.031-2.383 1.558-5.038 2.891-7.962 3.998-2.926 1.109-6.062 1.991-9.41 2.65a52.21 52.21 0 01-10.088.989c-6.152 0-11.762-1.064-16.828-3.19-5.067-2.125-9.415-5.225-13.043-9.298-3.63-4.074-6.435-9.06-8.415-14.96C310.99 121.655 310 114.9 310 107.294c0-6.408.92-12.323 2.76-17.744 1.84-5.421 4.493-10.093 7.961-14.016 3.467-3.922 7.72-6.991 12.758-9.209C338.513 64.11 344.229 63 350.624 63zm.573 6c-4.696 0-8.904.702-12.623 2.105-3.721 1.404-6.936 3.421-9.65 6.053-2.713 2.631-4.908 5.79-6.586 9.474S319.55 94.439 319 99h60c0-4.679-.672-8.874-2.013-12.588-1.343-3.712-3.232-6.856-5.67-9.43-2.44-2.571-5.367-4.545-8.782-5.92-3.413-1.374-7.192-2.062-11.338-2.062zM435.546 63c6.526 0 12.368 1.093 17.524 3.28 5.154 2.186 9.5 5.286 13.04 9.298 3.538 4.013 6.238 8.85 8.099 14.51 1.861 5.66 2.791 11.994 2.791 19.002 0 7.008-.932 13.327-2.791 18.957-1.861 5.631-4.561 10.452-8.099 14.465-3.54 4.012-7.886 7.097-13.04 9.254-5.156 2.156-10.998 3.234-17.524 3.234-6.529 0-12.369-1.078-17.525-3.234-5.155-2.157-9.517-5.242-13.085-9.254-3.57-4.013-6.285-8.836-8.145-14.465-1.861-5.63-2.791-11.95-2.791-18.957 0-7.008.93-13.342 2.791-19.002 1.861-5.66 4.576-10.496 8.145-14.51 3.568-4.012 7.93-7.112 13.085-9.299C423.177 64.094 429.017 63 435.546 63zm-.501 86c5.341 0 10.006-.918 13.997-2.757 3.99-1.838 7.32-4.474 9.992-7.909 2.67-3.435 4.664-7.576 5.986-12.428 1.317-4.85 1.98-10.288 1.98-16.316 0-5.965-.66-11.389-1.98-16.27-1.322-4.88-3.316-9.053-5.986-12.519-2.67-3.463-6-6.13-9.992-7.999-3.991-1.867-8.657-2.802-13.997-2.802s-10.008.935-13.997 2.802c-3.991 1.87-7.322 4.536-9.992 8-2.671 3.465-4.68 7.637-6.03 12.518-1.35 4.881-2.026 10.305-2.026 16.27 0 6.026.675 11.465 2.025 16.316 1.35 4.852 3.36 8.993 6.031 12.428 2.67 3.435 6 6.07 9.992 7.91 3.99 1.838 8.656 2.756 13.997 2.756z"
-                    fill="currentColor"
-                  />
-                  <path
-                    d="M530.57 152h-20.05L474 60h18.35c1.61 0 2.967.39 4.072 1.166 1.103.778 1.865 1.763 2.283 2.959l17.722 49.138a92.762 92.762 0 012.551 8.429c.686 2.751 1.298 5.5 1.835 8.25.537-2.75 1.148-5.499 1.835-8.25a77.713 77.713 0 012.64-8.429l18.171-49.138c.417-1.196 1.164-2.181 2.238-2.96 1.074-.776 2.356-1.165 3.849-1.165H567l-36.43 92zM572 61h23v92h-23zM610 153V60.443h13.624c2.887 0 4.78 1.354 5.682 4.06l1.443 6.856a52.7 52.7 0 015.097-4.962 32.732 32.732 0 015.683-3.879 30.731 30.731 0 016.496-2.57c2.314-.632 4.855-.948 7.624-.948 5.832 0 10.63 1.579 14.39 4.736 3.758 3.157 6.57 7.352 8.434 12.585 1.444-3.068 3.248-5.698 5.413-7.894 2.165-2.194 4.541-3.984 7.127-5.367a32.848 32.848 0 018.254-3.068 39.597 39.597 0 018.796-.992c5.111 0 9.653.783 13.622 2.345 3.97 1.565 7.307 3.849 10.014 6.857 2.706 3.007 4.766 6.675 6.18 11.005C739.29 83.537 740 88.5 740 94.092V153h-22.284V94.092c0-5.894-1.294-10.329-3.878-13.306-2.587-2.977-6.376-4.465-11.368-4.465-2.286 0-4.404.391-6.358 1.172a15.189 15.189 0 00-5.144 3.383c-1.473 1.474-2.631 3.324-3.474 5.548-.842 2.225-1.263 4.781-1.263 7.668V153h-22.37V94.092c0-6.194-1.249-10.704-3.744-13.532-2.497-2.825-6.18-4.24-11.051-4.24-3.19 0-6.18.798-8.976 2.391-2.799 1.593-5.399 3.775-7.804 6.54V153H610zM572 30h23v19h-23z"
-                    fill="currentColor"
-                    fill-opacity=".8"
-                  />
-                </g>
-              </g>
-            </svg>
-          </a>
-        </div>
-      </nav>
-    </header>
-
-    <div class="container">
-      <h1>Nvim documentation: eval</h1>
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-type" content="text/html; charset=ISO-8859-1">
+<TITLE>Nvim documentation: eval</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H1>Nvim documentation: eval</H1>
 <A NAME="top"></A>
 <A HREF="index.html">main help file</A>
 
@@ -100,7 +28,7 @@ Using expressions is introduced in chapter 41 of the user manual |<A HREF="usr_4
 
 1. Variables						*<A NAME="variables"></A><B>variables</B>*
 
-<B><FONT color="#54A23D">1.1 Variable types </FONT></B>
+<B><FONT COLOR="PURPLE">1.1 Variable types </FONT></B>
 
 						*<A NAME="E712"></A><B>E712</B>* *<A NAME="E896"></A><B>E896</B>* *<A NAME="E897"></A><B>E897</B>* *<A NAME="E899"></A><B>E899</B>*
 There are seven types of <A HREF="#variables">variables</A>:
@@ -143,28 +71,28 @@ are used.
 
 Conversion from a <A HREF="#Number">Number</A> to a <A HREF="#String">String</A> is by making the ASCII representation of
 the <A HREF="#Number">Number</A>.  Examples:
-<B><FONT color="#54A23D">	Number 123	--&gt;	String "123" </FONT></B>
-<B><FONT color="#54A23D">	Number 0	--&gt;	String "0" </FONT></B>
-<B><FONT color="#54A23D">	Number -1	--&gt;	String "-1" </FONT></B>
+<B><FONT COLOR="PURPLE">	Number 123	--&gt;	String "123" </FONT></B>
+<B><FONT COLOR="PURPLE">	Number 0	--&gt;	String "0" </FONT></B>
+<B><FONT COLOR="PURPLE">	Number -1	--&gt;	String "-1" </FONT></B>
 
 							*<A NAME="octal"></A><B>octal</B>*
 Conversion from a <A HREF="#String">String</A> to a <A HREF="#Number">Number</A> is done by converting the first digits to
 a number.  Hexadecimal &quot;0xf9&quot;, Octal &quot;017&quot; or &quot;0o17&quot;, and Binary &quot;0b10&quot;
 numbers are recognized.  If the <A HREF="#String">String</A> doesn't start with digits, the result
 is zero. Examples:
-<B><FONT color="#54A23D">	String "456"	--&gt;	Number 456 </FONT></B>
-<B><FONT color="#54A23D">	String "6bar"	--&gt;	Number 6 </FONT></B>
-<B><FONT color="#54A23D">	String "foo"	--&gt;	Number 0 </FONT></B>
-<B><FONT color="#54A23D">	String "0xf1"	--&gt;	Number 241 </FONT></B>
-<B><FONT color="#54A23D">	String "0100"	--&gt;	Number 64 </FONT></B>
-<B><FONT color="#54A23D">	String "0o100"	--&gt;	Number 64 </FONT></B>
-<B><FONT color="#54A23D">	String "0b101"	--&gt;	Number 5 </FONT></B>
-<B><FONT color="#54A23D">	String "-8"	--&gt;	Number -8 </FONT></B>
-<B><FONT color="#54A23D">	String "+8"	--&gt;	Number 0 </FONT></B>
+<B><FONT COLOR="PURPLE">	String "456"	--&gt;	Number 456 </FONT></B>
+<B><FONT COLOR="PURPLE">	String "6bar"	--&gt;	Number 6 </FONT></B>
+<B><FONT COLOR="PURPLE">	String "foo"	--&gt;	Number 0 </FONT></B>
+<B><FONT COLOR="PURPLE">	String "0xf1"	--&gt;	Number 241 </FONT></B>
+<B><FONT COLOR="PURPLE">	String "0100"	--&gt;	Number 64 </FONT></B>
+<B><FONT COLOR="PURPLE">	String "0o100"	--&gt;	Number 64 </FONT></B>
+<B><FONT COLOR="PURPLE">	String "0b101"	--&gt;	Number 5 </FONT></B>
+<B><FONT COLOR="PURPLE">	String "-8"	--&gt;	Number -8 </FONT></B>
+<B><FONT COLOR="PURPLE">	String "+8"	--&gt;	Number 0 </FONT></B>
 
 To force conversion from <A HREF="#String">String</A> to <A HREF="#Number">Number</A>, add zero to <A HREF="motion.html#it">it</A>:
 <B>	:echo "0100" + 0</B>
-<B><FONT color="#54A23D"> 	64 </FONT></B>
+<B><FONT COLOR="PURPLE"> 	64 </FONT></B>
 
 To avoid a leading zero to cause <A HREF="#octal">octal</A> conversion, or for using a different
 base, use |<A HREF="builtin.html#str2nr()">str2nr()</A>|.
@@ -216,7 +144,7 @@ When expecting a <A HREF="#Float">Float</A> a <A HREF="#Number">Number</A> can a
 You will not get an error if you try to change the type of a variable.
 
 
-<B><FONT color="#54A23D">1.2 Function references </FONT></B>
+<B><FONT COLOR="PURPLE">1.2 Function references </FONT></B>
 
 						*<A NAME="Funcref"></A><B>Funcref</B>* *<A NAME="E695"></A><B>E695</B>* *<A NAME="E718"></A><B>E718</B>*
 A <A HREF="#Funcref">Funcref</A> variable is obtained with the |<A HREF="builtin.html#function()">function()</A>| function, the |<A HREF="builtin.html#funcref()">funcref()</A>|
@@ -288,7 +216,7 @@ this won't happen:
 Here &quot;<A HREF="#self">self</A>&quot; will be &quot;myDict&quot;, because <A HREF="motion.html#it">it</A> was bound explicitly.
 
 
-<B><FONT color="#54A23D">1.3 Lists </FONT></B>
+<B><FONT COLOR="PURPLE">1.3 Lists </FONT></B>
 
 						*<A NAME="list"></A><B>list</B>* *<A NAME="List"></A><B>List</B>* *<A NAME="Lists"></A><B>Lists</B>* *<A NAME="E686"></A><B>E686</B>*
 A <A HREF="#List">List</A> is an ordered sequence of items.  An item can be of any type.  Items
@@ -296,7 +224,7 @@ can be accessed by their index number.  Items can be added and removed at any
 position in the sequence.
 
 
-<B><FONT color="#54A23D">List creation </FONT></B>
+<B><FONT COLOR="PURPLE">List creation </FONT></B>
 
 							*<A NAME="E696"></A><B>E696</B>* *<A NAME="E697"></A><B>E697</B>*
 A <A HREF="#List">List</A> is created with a comma-separated <A HREF="#list">list</A> of items in square brackets.
@@ -311,7 +239,7 @@ An item can be any <A HREF="#expression">expression</A>.  Using a <A HREF="#List
 An extra comma after the last item is ignored.
 
 
-<B><FONT color="#54A23D">List index </FONT></B>
+<B><FONT COLOR="PURPLE">List index </FONT></B>
 
 							*<A NAME="list-index"></A><B>list-index</B>* *<A NAME="E684"></A><B>E684</B>*
 An item in the <A HREF="#List">List</A> can be accessed by putting the index in square brackets
@@ -332,7 +260,7 @@ is not available <A HREF="motion.html#it">it</A> returns zero or the default val
 <B>	:echo get(mylist, idx, "NONE")</B>
 
 
-<B><FONT color="#54A23D">List concatenation </FONT></B>
+<B><FONT COLOR="PURPLE">List concatenation </FONT></B>
 
 Two lists can be concatenated with the &quot;<A HREF="motion.html#+">+</A>&quot; <A HREF="motion.html#operator">operator</A>:
 <B>	:let longlist = mylist + [5, 6]</B>
@@ -342,7 +270,7 @@ To prepend or append an item turn the item into a <A HREF="#list">list</A> by pu
 <A HREF="motion.html#it">it</A>.  To change a list in-place see |<A HREF="#list-modification">list-modification</A>| below.
 
 
-<B><FONT color="#54A23D">Sublist </FONT></B>
+<B><FONT COLOR="PURPLE">Sublist </FONT></B>
 
 							*<A NAME="sublist"></A><B>sublist</B>*
 A part of the <A HREF="#List">List</A> can be obtained by specifying the first and last index,
@@ -369,7 +297,7 @@ using a single <A HREF="print.html#letter">letter</A> variable before the &quot;
 mylist[s : e].
 
 
-<B><FONT color="#54A23D">List identity </FONT></B>
+<B><FONT COLOR="PURPLE">List identity </FONT></B>
 
 							*<A NAME="list-identity"></A><B>list-identity</B>*
 When variable &quot;aa&quot; is a <A HREF="#list">list</A> and you assign <A HREF="motion.html#it">it</A> to another variable &quot;bb&quot;, both
@@ -427,7 +355,7 @@ can compare simple values this way too by putting them in a <A HREF="#list">list
  	0
 
 
-<B><FONT color="#54A23D">List unpack </FONT></B>
+<B><FONT COLOR="PURPLE">List unpack </FONT></B>
 
 To unpack the items in a <A HREF="#list">list</A> to individual <A HREF="#variables">variables</A>, put the <A HREF="#variables">variables</A> in
 square brackets, like <A HREF="#list">list</A> items:
@@ -447,7 +375,7 @@ Except that there is no error if there are only two items.  &quot;rest&quot; wil
 empty <A HREF="#list">list</A> then.
 
 
-<B><FONT color="#54A23D">List modification </FONT></B>
+<B><FONT COLOR="PURPLE">List modification </FONT></B>
 
 							*<A NAME="list-modification"></A><B>list-modification</B>*
 To change a specific item of a <A HREF="#list">list</A> use |<A HREF="#:let">:let</A>| this way:
@@ -477,7 +405,7 @@ Changing the order of items in a <A HREF="#list">list</A>:
 <B>	:call uniq(sort(list))		" sort and remove duplicates</B>
 
 
-<B><FONT color="#54A23D">For loop </FONT></B>
+<B><FONT COLOR="PURPLE">For loop </FONT></B>
 
 The |<A HREF="#:for">:for</A>| loop executes commands for each item in a |<A HREF="#List">List</A>|, |<A HREF="#String">String</A>| or |<A HREF="#Blob">Blob</A>|.
 A variable is set to each item in sequence.  Example with a <A HREF="#List">List</A>:
@@ -522,7 +450,7 @@ For a <A HREF="#String">String</A> one character, including any composing charac
 <B>	endfor</B>
 
 
-<B><FONT color="#54A23D">List functions </FONT></B>
+<B><FONT COLOR="PURPLE">List functions </FONT></B>
 
 						*<A NAME="E714"></A><B>E714</B>*
 Functions that are useful with a <A HREF="#List">List</A>:
@@ -545,7 +473,7 @@ example, to add up all the numbers in a <A HREF="#list">list</A>:
 <B>	:exe 'let sum = ' .. join(nrlist, '+')</B>
 
 
-<B><FONT color="#54A23D">1.4 Dictionaries </FONT></B>
+<B><FONT COLOR="PURPLE">1.4 Dictionaries </FONT></B>
 
 				 *<A NAME="Dict"></A><B>Dict</B>* *<A NAME="dict"></A><B>dict</B>* *<A NAME="Dictionaries"></A><B>Dictionaries</B>* *<A NAME="Dictionary"></A><B>Dictionary</B>*
 A <A HREF="#Dictionary">Dictionary</A> is an associative array: Each entry has a key and a value.  The
@@ -553,7 +481,7 @@ entry can be located with the key.  The entries are stored without a specific
 ordering.
 
 
-<B><FONT color="#54A23D">Dictionary creation </FONT></B>
+<B><FONT COLOR="PURPLE">Dictionary creation </FONT></B>
 
 						*<A NAME="E720"></A><B>E720</B>* *<A NAME="E721"></A><B>E721</B>* *<A NAME="E722"></A><B>E722</B>* *<A NAME="E723"></A><B>E723</B>*
 A <A HREF="#Dictionary">Dictionary</A> is created with a comma-separated <A HREF="#list">list</A> of entries in curly
@@ -583,7 +511,7 @@ nested <A HREF="#Dictionary">Dictionary</A>:
 An extra comma after the last entry is ignored.
 
 
-<B><FONT color="#54A23D">Accessing entries </FONT></B>
+<B><FONT COLOR="PURPLE">Accessing entries </FONT></B>
 
 The normal way to access an entry is by putting the key in square brackets:
 <B>	:let val = mydict["one"]</B>
@@ -601,7 +529,7 @@ key lookup can be repeated:
 <B>	:echo dict.key[idx].key</B>
 
 
-<B><FONT color="#54A23D">Dictionary to List conversion </FONT></B>
+<B><FONT COLOR="PURPLE">Dictionary to List conversion </FONT></B>
 
 You may want to loop over the entries in a dictionary.  For this you need to
 turn the <A HREF="#Dictionary">Dictionary</A> into a <A HREF="#List">List</A> and pass <A HREF="motion.html#it">it</A> to |<A HREF="#:for">:for</A>|.
@@ -626,7 +554,7 @@ a <A HREF="#List">List</A> in which each item is a <A HREF="#List">List</A> with
 <B>	:endfor</B>
 
 
-<B><FONT color="#54A23D">Dictionary identity </FONT></B>
+<B><FONT COLOR="PURPLE">Dictionary identity </FONT></B>
 
 							*<A NAME="dict-identity"></A><B>dict-identity</B>*
 Just like <A HREF="#Lists">Lists</A> you need to use |<A HREF="builtin.html#copy()">copy()</A>| and |<A HREF="builtin.html#deepcopy()">deepcopy()</A>| to make a copy of a
@@ -642,7 +570,7 @@ Two <A HREF="#Dictionaries">Dictionaries</A> compare equal if all the key-value 
 more info see |<A HREF="#list-identity">list-identity</A>|.
 
 
-<B><FONT color="#54A23D">Dictionary modification </FONT></B>
+<B><FONT COLOR="PURPLE">Dictionary modification </FONT></B>
 
 							*<A NAME="dict-modification"></A><B>dict-modification</B>*
 To change an already existing entry of a <A HREF="#Dictionary">Dictionary</A>, or to add a new entry,
@@ -671,7 +599,7 @@ This can also be used to remove all entries:
 <B>	call filter(dict, 0)</B>
 
 
-<B><FONT color="#54A23D">Dictionary function </FONT></B>
+<B><FONT COLOR="PURPLE">Dictionary function </FONT></B>
 
 				*<A NAME="Dictionary-function"></A><B>Dictionary-function</B>* *<A NAME="self"></A><B>self</B>* *<A NAME="E725"></A><B>E725</B>* *<A NAME="E862"></A><B>E862</B>*
 When a function is defined with the &quot;<A HREF="#dict">dict</A>&quot; attribute <A HREF="motion.html#it">it</A> can be used in a
@@ -711,7 +639,7 @@ a trick.  Assuming the function is <A HREF="usr_42.html#42">42</A>, the command 
 <B>	:function g:42</B>
 
 
-<B><FONT color="#54A23D">Functions for Dictionaries </FONT></B>
+<B><FONT COLOR="PURPLE">Functions for Dictionaries </FONT></B>
 
 							*<A NAME="E715"></A><B>E715</B>*
 Functions that can be used with a <A HREF="#Dictionary">Dictionary</A>:
@@ -725,7 +653,7 @@ Functions that can be used with a <A HREF="#Dictionary">Dictionary</A>:
 <B>	:call map(dict, '"&gt;&gt; " .. v:val')  " prepend "&gt;&gt; " to each item</B>
 
 
-<B><FONT color="#54A23D">1.5 Blobs </FONT></B>
+<B><FONT COLOR="PURPLE">1.5 Blobs </FONT></B>
 
 						*<A NAME="blob"></A><B>blob</B>* *<A NAME="Blob"></A><B>Blob</B>* *<A NAME="Blobs"></A><B>Blobs</B>* *<A NAME="E978"></A><B>E978</B>*
 A <A HREF="#Blob">Blob</A> is a binary object.  It can be used to read an image from a file and
@@ -735,7 +663,7 @@ A <A HREF="#Blob">Blob</A> mostly behaves like a |<A HREF="#List">List</A>| of n
 value of an 8-bit byte, from 0 to 255.
 
 
-<B><FONT color="#54A23D">Blob creation </FONT></B>
+<B><FONT COLOR="PURPLE">Blob creation </FONT></B>
 
 A <A HREF="#Blob">Blob</A> can be created with a YXXYblob-literal|:
 <B>	:let b = 0zFF00ED015DAF</B>
@@ -748,7 +676,7 @@ set to &quot;<A HREF="motion.html#B">B</A>&quot;, for example:
 <B>	:let b = readfile('image.png', 'B')</B>
 
 
-<B><FONT color="#54A23D">Blob index </FONT></B>
+<B><FONT COLOR="PURPLE">Blob index </FONT></B>
 
 							*<A NAME="blob-index"></A><B>blob-index</B>* *<A NAME="E979"></A><B>E979</B>*
 A byte in the <A HREF="#Blob">Blob</A> can be accessed by putting the index in square brackets
@@ -767,7 +695,7 @@ is not available <A HREF="motion.html#it">it</A> returns -1 or the default value
 <B>	:echo get(myblob, idx, 999)</B>
 
 
-<B><FONT color="#54A23D">Blob iteration </FONT></B>
+<B><FONT COLOR="PURPLE">Blob iteration </FONT></B>
 
 The |<A HREF="#:for">:for</A>| loop executes commands for each byte of a <A HREF="#Blob">Blob</A>.  The loop variable is
 set to each byte in the <A HREF="#Blob">Blob</A>.  Example:
@@ -777,7 +705,7 @@ set to each byte in the <A HREF="#Blob">Blob</A>.  Example:
 This calls Doit() with 0x11, 0x22 and 0x33.
 
 
-<B><FONT color="#54A23D">Blob concatenation </FONT></B>
+<B><FONT COLOR="PURPLE">Blob concatenation </FONT></B>
 
 Two blobs can be concatenated with the &quot;<A HREF="motion.html#+">+</A>&quot; <A HREF="motion.html#operator">operator</A>:
 <B>	:let longblob = myblob + 0z4455</B>
@@ -786,7 +714,7 @@ Two blobs can be concatenated with the &quot;<A HREF="motion.html#+">+</A>&quot;
 To change a blob in-place see |<A HREF="#blob-modification">blob-modification</A>| below.
 
 
-<B><FONT color="#54A23D">Part of a blob </FONT></B>
+<B><FONT COLOR="PURPLE">Part of a blob </FONT></B>
 
 A part of the <A HREF="#Blob">Blob</A> can be obtained by specifying the first and last index,
 separated by a colon in square brackets:
@@ -809,7 +737,7 @@ length minus one is used:
 <B>	:echo myblob[2:8]		" result: 0z2233</B>
 
 
-<B><FONT color="#54A23D">Blob modification </FONT></B>
+<B><FONT COLOR="PURPLE">Blob modification </FONT></B>
 
 							*<A NAME="blob-modification"></A><B>blob-modification</B>*
 To change a specific byte of a <A HREF="#blob">blob</A> use |<A HREF="#:let">:let</A>| this way:
@@ -831,7 +759,7 @@ modified.  The value must at least have the number of bytes in the range:
 You can also use the <A HREF="#functions">functions</A> |<A HREF="builtin.html#add()">add()</A>|, |<A HREF="builtin.html#remove()">remove()</A>| and |<A HREF="builtin.html#insert()">insert()</A>|.
 
 
-<B><FONT color="#54A23D">Blob identity </FONT></B>
+<B><FONT COLOR="PURPLE">Blob identity </FONT></B>
 
 <A HREF="#Blobs">Blobs</A> can be compared for equality:
 <B>	if blob == 0z001122</B>
@@ -860,7 +788,7 @@ Making a copy of a <A HREF="#Blob">Blob</A> is done with the |<A HREF="builtin.h
 works, <A HREF="motion.html#as">as</A> explained above.
 
 
-<B><FONT color="#54A23D">1.6 More about variables </FONT></B>
+<B><FONT COLOR="PURPLE">1.6 More about variables </FONT></B>
 
 							*<A NAME="more-variables"></A><B>more-variables</B>*
 If you need to know the type of a variable or <A HREF="#expression">expression</A>, use the |<A HREF="builtin.html#type()">type()</A>|
@@ -874,7 +802,7 @@ When the <A HREF="options.html#'sessionoptions'">'sessionoptions'</A> option con
 start with an <A HREF="change.html#uppercase">uppercase</A> <A HREF="print.html#letter">letter</A> and contain at least one <A HREF="change.html#lowercase">lowercase</A> <A HREF="print.html#letter">letter</A> are
 stored in the session file |<A HREF="starting.html#session-file">session-file</A>|.
 
-<B><FONT color="#54A23D">variable name		can be stored where </FONT></B>
+<B><FONT COLOR="PURPLE">variable name		can be stored where </FONT></B>
 my_var_6		not
 My_Var_6		session file
 MY_VAR_6		<A HREF="starting.html#shada">shada</A> file
@@ -1002,8 +930,8 @@ use in a variable such <A HREF="motion.html#as">as</A> &quot;<A HREF="#a:1">a:1<
 The &quot;&#124;&#124;&quot; and &quot;&amp;&amp;&quot; operators take one argument on each side.  The arguments
 are (converted to) Numbers.  The result is:
 
-<B><FONT color="#54A23D">    input			 output </FONT></B>
-<B><FONT color="#54A23D">n1	n2		n1 || n2	n1 &amp;&amp; n2 </FONT></B>
+<B><FONT COLOR="PURPLE">    input			 output </FONT></B>
+<B><FONT COLOR="PURPLE">n1	n2		n1 || n2	n1 &amp;&amp; n2 </FONT></B>
 |<A HREF="#FALSE">FALSE</A>|	|<A HREF="#FALSE">FALSE</A>|		|<A HREF="#FALSE">FALSE</A>|		|<A HREF="#FALSE">FALSE</A>|
 |<A HREF="#FALSE">FALSE</A>|	|<A HREF="#TRUE">TRUE</A>|		|<A HREF="#TRUE">TRUE</A>|		|<A HREF="#FALSE">FALSE</A>|
 |<A HREF="#TRUE">TRUE</A>|	|<A HREF="#FALSE">FALSE</A>|		|<A HREF="#TRUE">TRUE</A>|		|<A HREF="#FALSE">FALSE</A>|
@@ -1056,7 +984,7 @@ if <A HREF="motion.html#it">it</A> evaluates to true.
 			*<A NAME="expr-is"></A><B>expr-is</B>* *<A NAME="expr-isnot"></A><B>expr-isnot</B>* *<A NAME="expr-is#"></A><B>expr-is#</B>* *<A NAME="expr-isnot#"></A><B>expr-isnot#</B>*
 
 			*<A NAME="expr-is?"></A><B>expr-is?</B>* *<A NAME="expr-isnot?"></A><B>expr-isnot?</B>*
-<B><FONT color="#54A23D">		use 'ignorecase'    match case	   ignore case </FONT></B>
+<B><FONT COLOR="PURPLE">		use 'ignorecase'    match case	   ignore case </FONT></B>
 equal			<A HREF="change.html#==">==</A>		==#		<A HREF="change.html#==">==</A>?
 not equal		!=		!=#		!=?
 greater than		<A HREF="change.html#&gt;">&gt;</A>		&gt;#		<A HREF="change.html#&gt;">&gt;</A>?
@@ -2008,7 +1936,7 @@ Some <A HREF="#variables">variables</A> can be set by the user, but the type can
 <B>			au TextYankPost * let g:foo = deepcopy(v:event)</B>
  		Keys vary by event; see the documentation for the specific
 		event, e.g. |<A HREF="autocmd.html#DirChanged">DirChanged</A>| or |<A HREF="autocmd.html#TextYankPost">TextYankPost</A>|.
-<B><FONT color="#54A23D">			KEY		DESCRIPTION </FONT></B>
+<B><FONT COLOR="PURPLE">			KEY		DESCRIPTION </FONT></B>
 			abort		Whether the event triggered during
 					an aborting condition (e.g. |<A HREF="cmdline.html#c_Esc">c_Esc</A>| or
 					|<A HREF="cmdline.html#c_CTRL-C">c_CTRL-C</A>| for |<A HREF="autocmd.html#CmdlineLeave">CmdlineLeave</A>|).
@@ -2110,7 +2038,7 @@ Some <A HREF="#variables">variables</A> can be set by the user, but the type can
 
 					*<A NAME="v:fname_in"></A><B>v:fname_in</B>* *<A NAME="fname_in-variable"></A><B>fname_in-variable</B>*
 <A HREF="#v:fname_in">v:fname_in</A>	The name of the input file.  Valid while evaluating:
-<B><FONT color="#54A23D">			option		used for </FONT></B>
+<B><FONT COLOR="PURPLE">			option		used for </FONT></B>
 			<A HREF="options.html#'charconvert'">'charconvert'</A>	file to be converted
 			<A HREF="options.html#'diffexpr'">'diffexpr'</A>	original file
 			<A HREF="options.html#'patchexpr'">'patchexpr'</A>	original file
@@ -2121,7 +2049,7 @@ Some <A HREF="#variables">variables</A> can be set by the user, but the type can
 					*<A NAME="v:fname_out"></A><B>v:fname_out</B>* *<A NAME="fname_out-variable"></A><B>fname_out-variable</B>*
 <A HREF="#v:fname_out">v:fname_out</A>	The name of the output file.  Only valid while
 		evaluating:
-<B><FONT color="#54A23D">			option		used for </FONT></B>
+<B><FONT COLOR="PURPLE">			option		used for </FONT></B>
 			<A HREF="options.html#'charconvert'">'charconvert'</A>	resulting converted file (*)
 			<A HREF="options.html#'diffexpr'">'diffexpr'</A>	output of <A HREF="diff.html#diff">diff</A>
 			<A HREF="options.html#'patchexpr'">'patchexpr'</A>	resulting patched file
@@ -2313,7 +2241,7 @@ Some <A HREF="#variables">variables</A> can be set by the user, but the type can
 <A HREF="#v:option_command">v:option_command</A>
 		Command used to set the option. Valid while executing an
 		|<A HREF="autocmd.html#OptionSet">OptionSet</A>| <A HREF="autocmd.html#autocommand">autocommand</A>.
-<B><FONT color="#54A23D">			value		option was set via   </FONT></B>
+<B><FONT COLOR="PURPLE">			value		option was set via   </FONT></B>
 			&quot;setlocal&quot;	|<A HREF="options.html#:setlocal">:setlocal</A>| or &quot;<A HREF="#:let">:let</A> l:xxx&quot;
 			&quot;setglobal&quot;	|<A HREF="options.html#:setglobal">:setglobal</A>| or &quot;<A HREF="#:let">:let</A> g:xxx&quot;
 			&quot;set&quot;		|<A HREF="options.html#:set">:set</A>| or |<A HREF="#:let">:let</A>|
@@ -2913,7 +2841,7 @@ allow for <A HREF="#method">method</A> chaining, e.g.:
 <B>	eval GetList()-&gt;Filter()-&gt;append('$')</B>
 
 
-<B><FONT color="#54A23D">AUTOMATICALLY LOADING FUNCTIONS </FONT></B>
+<B><FONT COLOR="PURPLE">AUTOMATICALLY LOADING FUNCTIONS </FONT></B>
 
 							*<A NAME="autoload-functions"></A><B>autoload-functions</B>*
 When using many or large <A HREF="#functions">functions</A>, it's possible to automatically define them
@@ -2921,7 +2849,7 @@ only when they are used.  There are two methods: with an <A HREF="autocmd.html#a
 the &quot;<A HREF="#autoload">autoload</A>&quot; directory in <A HREF="options.html#'runtimepath'">'runtimepath'</A>.
 
 
-<B><FONT color="#54A23D">Using an autocommand </FONT></B>
+<B><FONT COLOR="PURPLE">Using an autocommand </FONT></B>
 
 This is introduced in the user manual, section |<A HREF="usr_41.html#41.14">41.14</A>|.
 
@@ -2939,7 +2867,7 @@ The file &quot;~/vim/bufnetfuncs.vim&quot; should then define <A HREF="#function
 &quot;BufNet&quot;.  Also see |<A HREF="autocmd.html#FuncUndefined">FuncUndefined</A>|.
 
 
-<B><FONT color="#54A23D">Using an autoload script </FONT></B>
+<B><FONT COLOR="PURPLE">Using an autoload script </FONT></B>
 
 							*<A NAME="autoload"></A><B>autoload</B>* *<A NAME="E746"></A><B>E746</B>*
 This is introduced in the user manual, section |<A HREF="usr_41.html#41.15">41.15</A>|.
@@ -4159,7 +4087,7 @@ the original error exception value, you can use the |<A HREF="#:echoerr">:echoer
 
 This code displays
 
-<B><FONT color="#54A23D">	Vim(echoerr):Vim:E492: Not an editor command:	asdf </FONT></B>
+<B><FONT COLOR="PURPLE">	Vim(echoerr):Vim:E492: Not an editor command:	asdf </FONT></B>
 
 
 
@@ -4832,7 +4760,7 @@ a &quot;E600: Missing :endtry&quot; error message is given, see |<A HREF="#excep
 
 9. Examples						*<A NAME="eval-examples"></A><B>eval-examples</B>*
 
-<B><FONT color="#54A23D">Printing in Binary </FONT></B>
+<B><FONT COLOR="PURPLE">Printing in Binary </FONT></B>
 
 <B>  :" The function Nr2Bin() returns the binary string representation of a number.</B>
 <B>  :func Nr2Bin(nr)</B>
@@ -4862,7 +4790,7 @@ result: &quot;100000&quot;
 result: &quot;110011-110010&quot;
 
 
-<B><FONT color="#54A23D">Sorting lines </FONT></B>
+<B><FONT COLOR="PURPLE">Sorting lines </FONT></B>
 
 This example sorts lines with a specific compare function.
 
@@ -4876,7 +4804,7 @@ As a one-liner:
 <B>  :call setline(1, sort(getline(1, '$'), function("Strcmp")))</B>
 
 
-<B><FONT color="#54A23D">scanf() replacement </FONT></B>
+<B><FONT COLOR="PURPLE">scanf() replacement </FONT></B>
 
 							*<A NAME="sscanf"></A><B>sscanf</B>*
 There is no sscanf() function in Vim.  If you need to extract parts from a
@@ -4896,7 +4824,7 @@ The input is in the variable &quot;line&quot;, the results in the <A HREF="#vari
 &quot;lnum&quot; and &quot;col&quot;. (idea from Michael Geddes)
 
 
-<B><FONT color="#54A23D">getting the scriptnames in a Dictionary </FONT></B>
+<B><FONT COLOR="PURPLE">getting the scriptnames in a Dictionary </FONT></B>
 
 						*<A NAME="scriptnames-dictionary"></A><B>scriptnames-dictionary</B>*
 The |<A HREF="repeat.html#:scriptnames">:scriptnames</A>| command can be used to get a <A HREF="#list">list</A> of all script files that
@@ -5003,7 +4931,7 @@ before <A HREF="motion.html#it">it</A>.  They have mostly the same hierarchy, ex
 place of any non-Nvim-prefixed group NvimInvalid linking to `Error` is used
 and some other intermediate groups are present.
 
-<B><FONT color="#54A23D">Group                              Default link            Colored expression </FONT></B>
+<B><FONT COLOR="PURPLE">Group                              Default link            Colored expression </FONT></B>
 
 *<A NAME="hl-NvimInternalError"></A><B>hl-NvimInternalError</B>*               None, red/red           Parser bug
 
@@ -5176,12 +5104,7 @@ and some other intermediate groups are present.
 
 <A HREF="#top">top</A> - <A HREF="index.html">main help file</A>
 </PRE>
-    </div>
+</BODY>
 
-    <footer>
-      <div class="container">
-        Generated Thu Jun  2 10:56:12 UTC 2022 from <a href="https://github.com/neovim/neovim/commit/d93ba03c717bee05fe6d239fd7faefe6e9698c85"><code>d93ba03</code></a>.
-      </div>
-    </footer>
-  </body>
-</html>
+
+</HTML>

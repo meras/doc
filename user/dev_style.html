@@ -1,82 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Nvim documentation: dev_style</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-    <link href="/css/normalize.min.css" rel="stylesheet">
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <header class="container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a href="/" class="navbar-brand" aria-label="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" width="173" height="50" viewBox="0 0 742 214" aria-label="Neovim">
-              <title>Neovim</title>
-              <defs>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
-                  <stop stop-color="#16B0ED" stop-opacity=".8" offset="0%" />
-                  <stop stop-color="#0F59B2" stop-opacity=".837" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="b">
-                  <stop stop-color="#7DB643" offset="0%" />
-                  <stop stop-color="#367533" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="c">
-                  <stop stop-color="#88C649" stop-opacity=".8" offset="0%" />
-                  <stop stop-color="#439240" stop-opacity=".84" offset="100%" />
-                </linearGradient>
-              </defs>
-              <g fill="none" fill-rule="evenodd">
-                <path
-                  d="M.027 45.459L45.224-.173v212.171L.027 166.894V45.459z"
-                  fill="url(#a)"
-                  transform="translate(1 1)"
-                />
-                <path
-                  d="M129.337 45.89L175.152-.149l-.928 212.146-45.197-45.104.31-121.005z"
-                  fill="url(#b)"
-                  transform="matrix(-1 0 0 1 305 1)"
-                />
-                <path
-                  d="M45.194-.137L162.7 179.173l-32.882 32.881L12.25 33.141 45.194-.137z"
-                  fill="url(#c)"
-                  transform="translate(1 1)"
-                />
-                <path
-                  d="M46.234 84.032l-.063 7.063-36.28-53.563 3.36-3.422 32.983 49.922z"
-                  fill-opacity=".13"
-                  fill="#000"
-                />
-                <g fill="#444">
-                  <path
-                    d="M227 154V64.44h4.655c1.55 0 2.445.75 2.685 2.25l.806 13.502c4.058-5.16 8.786-9.316 14.188-12.466 5.4-3.15 11.413-4.726 18.037-4.726 4.893 0 9.205.781 12.935 2.34 3.729 1.561 6.817 3.811 9.264 6.751 2.448 2.942 4.297 6.48 5.55 10.621 1.253 4.14 1.88 8.821 1.88 14.042V154h-8.504V96.754c0-8.402-1.91-14.987-5.729-19.757-3.82-4.771-9.667-7.156-17.544-7.156-5.851 0-11.28 1.516-16.292 4.545-5.013 3.032-9.489 7.187-13.427 12.467V154H227zM350.624 63c5.066 0 9.755.868 14.069 2.605 4.312 1.738 8.052 4.268 11.219 7.592s5.638 7.412 7.419 12.264C385.11 90.313 386 95.883 386 102.17c0 1.318-.195 2.216-.588 2.696-.393.48-1.01.719-1.851.719h-64.966v1.70c0 6.708.784 12.609 2.353 17.7 1.567 5.09 3.8 9.357 6.695 12.802 2.895 3.445 6.393 6.034 10.495 7.771 4.1 1.738 8.686 2.606 13.752 2.606 4.524 0 8.446-.494 11.762-1.483 3.317-.988 6.108-2.097 8.37-3.324 2.261-1.227 4.056-2.336 5.383-3.324 1.326-.988 2.292-1.482 2.895-1.482.784 0 1.388.3 1.81.898l2.352 2.875c-1.448 1.797-3.362 3.475-5.745 5.031-2.383 1.558-5.038 2.891-7.962 3.998-2.926 1.109-6.062 1.991-9.41 2.65a52.21 52.21 0 01-10.088.989c-6.152 0-11.762-1.064-16.828-3.19-5.067-2.125-9.415-5.225-13.043-9.298-3.63-4.074-6.435-9.06-8.415-14.96C310.99 121.655 310 114.9 310 107.294c0-6.408.92-12.323 2.76-17.744 1.84-5.421 4.493-10.093 7.961-14.016 3.467-3.922 7.72-6.991 12.758-9.209C338.513 64.11 344.229 63 350.624 63zm.573 6c-4.696 0-8.904.702-12.623 2.105-3.721 1.404-6.936 3.421-9.65 6.053-2.713 2.631-4.908 5.79-6.586 9.474S319.55 94.439 319 99h60c0-4.679-.672-8.874-2.013-12.588-1.343-3.712-3.232-6.856-5.67-9.43-2.44-2.571-5.367-4.545-8.782-5.92-3.413-1.374-7.192-2.062-11.338-2.062zM435.546 63c6.526 0 12.368 1.093 17.524 3.28 5.154 2.186 9.5 5.286 13.04 9.298 3.538 4.013 6.238 8.85 8.099 14.51 1.861 5.66 2.791 11.994 2.791 19.002 0 7.008-.932 13.327-2.791 18.957-1.861 5.631-4.561 10.452-8.099 14.465-3.54 4.012-7.886 7.097-13.04 9.254-5.156 2.156-10.998 3.234-17.524 3.234-6.529 0-12.369-1.078-17.525-3.234-5.155-2.157-9.517-5.242-13.085-9.254-3.57-4.013-6.285-8.836-8.145-14.465-1.861-5.63-2.791-11.95-2.791-18.957 0-7.008.93-13.342 2.791-19.002 1.861-5.66 4.576-10.496 8.145-14.51 3.568-4.012 7.93-7.112 13.085-9.299C423.177 64.094 429.017 63 435.546 63zm-.501 86c5.341 0 10.006-.918 13.997-2.757 3.99-1.838 7.32-4.474 9.992-7.909 2.67-3.435 4.664-7.576 5.986-12.428 1.317-4.85 1.98-10.288 1.98-16.316 0-5.965-.66-11.389-1.98-16.27-1.322-4.88-3.316-9.053-5.986-12.519-2.67-3.463-6-6.13-9.992-7.999-3.991-1.867-8.657-2.802-13.997-2.802s-10.008.935-13.997 2.802c-3.991 1.87-7.322 4.536-9.992 8-2.671 3.465-4.68 7.637-6.03 12.518-1.35 4.881-2.026 10.305-2.026 16.27 0 6.026.675 11.465 2.025 16.316 1.35 4.852 3.36 8.993 6.031 12.428 2.67 3.435 6 6.07 9.992 7.91 3.99 1.838 8.656 2.756 13.997 2.756z"
-                    fill="currentColor"
-                  />
-                  <path
-                    d="M530.57 152h-20.05L474 60h18.35c1.61 0 2.967.39 4.072 1.166 1.103.778 1.865 1.763 2.283 2.959l17.722 49.138a92.762 92.762 0 012.551 8.429c.686 2.751 1.298 5.5 1.835 8.25.537-2.75 1.148-5.499 1.835-8.25a77.713 77.713 0 012.64-8.429l18.171-49.138c.417-1.196 1.164-2.181 2.238-2.96 1.074-.776 2.356-1.165 3.849-1.165H567l-36.43 92zM572 61h23v92h-23zM610 153V60.443h13.624c2.887 0 4.78 1.354 5.682 4.06l1.443 6.856a52.7 52.7 0 015.097-4.962 32.732 32.732 0 015.683-3.879 30.731 30.731 0 016.496-2.57c2.314-.632 4.855-.948 7.624-.948 5.832 0 10.63 1.579 14.39 4.736 3.758 3.157 6.57 7.352 8.434 12.585 1.444-3.068 3.248-5.698 5.413-7.894 2.165-2.194 4.541-3.984 7.127-5.367a32.848 32.848 0 018.254-3.068 39.597 39.597 0 018.796-.992c5.111 0 9.653.783 13.622 2.345 3.97 1.565 7.307 3.849 10.014 6.857 2.706 3.007 4.766 6.675 6.18 11.005C739.29 83.537 740 88.5 740 94.092V153h-22.284V94.092c0-5.894-1.294-10.329-3.878-13.306-2.587-2.977-6.376-4.465-11.368-4.465-2.286 0-4.404.391-6.358 1.172a15.189 15.189 0 00-5.144 3.383c-1.473 1.474-2.631 3.324-3.474 5.548-.842 2.225-1.263 4.781-1.263 7.668V153h-22.37V94.092c0-6.194-1.249-10.704-3.744-13.532-2.497-2.825-6.18-4.24-11.051-4.24-3.19 0-6.18.798-8.976 2.391-2.799 1.593-5.399 3.775-7.804 6.54V153H610zM572 30h23v19h-23z"
-                    fill="currentColor"
-                    fill-opacity=".8"
-                  />
-                </g>
-              </g>
-            </svg>
-          </a>
-        </div>
-      </nav>
-    </header>
-
-    <div class="container">
-      <h1>Nvim documentation: dev_style</h1>
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-type" content="text/html; charset=ISO-8859-1">
+<TITLE>Nvim documentation: dev_style</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H1>Nvim documentation: dev_style</H1>
 <A NAME="top"></A>
 <A HREF="index.html">main help file</A>
 
@@ -119,7 +47,7 @@ but we nonetheless keep things <A HREF="motion.html#as">as</A> they are in order
 Header Files                                            *<A NAME="dev-style-header"></A><B>dev-style-header</B>*
 
 
-<B><FONT color="#54A23D">The #define Guard </FONT></B>
+<B><FONT COLOR="PURPLE">The #define Guard </FONT></B>
 
 All header files should have `#define` guards to prevent multiple inclusion.
 The format of the symbol name should be `NVIM_&lt;DIRECTORY&gt;_&lt;FILE&gt;_H`.
@@ -135,7 +63,7 @@ The format of the symbol name should be `NVIM_&lt;DIRECTORY&gt;_&lt;FILE&gt;_H`.
  
 
 
-<B><FONT color="#54A23D">Constants </FONT></B>
+<B><FONT COLOR="PURPLE">Constants </FONT></B>
 
 Do not use macros to define constants in headers.
 
@@ -150,7 +78,7 @@ represents the size of an array.
 
 Scoping                                                 *<A NAME="dev-style-scope"></A><B>dev-style-scope</B>*
 
-<B><FONT color="#54A23D">Local Variables </FONT></B>
+<B><FONT COLOR="PURPLE">Local Variables </FONT></B>
 
 Place a function's <A HREF="eval.html#variables">variables</A> in the narrowest scope possible, and initialize
 <A HREF="eval.html#variables">variables</A> in the declaration.
@@ -170,7 +98,7 @@ should be used instead of declaration and assignment, e.g.
 ==============================================================================
 Nvim-Specific Magic
 
-<B><FONT color="#54A23D">clint </FONT></B>
+<B><FONT COLOR="PURPLE">clint </FONT></B>
 
 Use `clint.py` to detect style <A HREF="message.html#errors">errors</A>.
 
@@ -179,7 +107,7 @@ style <A HREF="message.html#errors">errors</A>. It is not perfect, and has both 
 negatives, but <A HREF="motion.html#it">it</A> is still a valuable tool. False positives can be ignored by
 putting `// NOLINT` at the end of the line.
 
-<B><FONT color="#54A23D">uncrustify </FONT></B>
+<B><FONT COLOR="PURPLE">uncrustify </FONT></B>
 
 src/uncrustify.cfg is the authority for expected code <A HREF="change.html#formatting">formatting</A>, for cases
 not covered by clint.py.  We remove checks in clint.py if they are covered by
@@ -190,14 +118,14 @@ uncrustify rules.
 Other C Features                                        *<A NAME="dev-style-features"></A><B>dev-style-features</B>*
 
 
-<B><FONT color="#54A23D">Variable-Length Arrays and alloca() </FONT></B>
+<B><FONT COLOR="PURPLE">Variable-Length Arrays and alloca() </FONT></B>
 
 We <A HREF="diff.html#do">do</A> not allow variable-length arrays or `alloca()`.
 
 Variable-length arrays can cause hard to detect stack overflows.
 
 
-<B><FONT color="#54A23D">Postincrement and Postdecrement </FONT></B>
+<B><FONT COLOR="PURPLE">Postincrement and Postdecrement </FONT></B>
 
 Use postfix form (`i++`) in statements.
 
@@ -208,11 +136,11 @@ Use postfix form (`i++`) in statements.
 <B>    ++i;  // BAD: ++i is used as a statement.</B>
 
 
-<B><FONT color="#54A23D">Use of const </FONT></B>
+<B><FONT COLOR="PURPLE">Use of const </FONT></B>
 
 Use `const` pointers whenever possible. Avoid `const` on non-pointer parameter <A HREF="intro.html#definitions">definitions</A>.
 
-<B><FONT color="#54A23D">    Where to put the const </FONT></B>
+<B><FONT COLOR="PURPLE">    Where to put the const </FONT></B>
 
     Some people favor the form `int const *foo` to `const int *foo` . They
     argue that this is more readable because it's more consistent: <A HREF="motion.html#it">it</A> keeps
@@ -237,7 +165,7 @@ Use `const` pointers whenever possible. Avoid `const` on non-pointer parameter <
 <B>    }</B>
 
 
-<B><FONT color="#54A23D">Integer Types </FONT></B>
+<B><FONT COLOR="PURPLE">Integer Types </FONT></B>
 
 Of the built-in integer types only use `char`, `int`, `uint8_t`, `int8_t`,
 `uint16_t`, `int16_t`, `uint32_t`, `int32_t`, `uint64_t`, `int64_t`,
@@ -263,21 +191,21 @@ Type		unsigned    signed
 `ptrdiff_t`	`&#37;tu`	    `&#37;td`
 
 
-<B><FONT color="#54A23D">Booleans </FONT></B>
+<B><FONT COLOR="PURPLE">Booleans </FONT></B>
 
 Use `bool` to represent <A HREF="options.html#boolean">boolean</A> values.
 
 <B>    int loaded = 1;  // BAD: loaded should have type bool.</B>
 
 
-<B><FONT color="#54A23D">Variable declarations </FONT></B>
+<B><FONT COLOR="PURPLE">Variable declarations </FONT></B>
 
 Declare only one variable per line.
 
 <B>    int i, j = 1</B>
 
 
-<B><FONT color="#54A23D">Conditions </FONT></B>
+<B><FONT COLOR="PURPLE">Conditions </FONT></B>
 
 Don't use &quot;yoda-conditions&quot;. Use at most one assignment per condition.
 
@@ -288,7 +216,7 @@ Don't use &quot;yoda-conditions&quot;. Use at most one assignment per condition.
 <B>    if ((x = f()) &amp;&amp; (y = g())) {</B>
 
 
-<B><FONT color="#54A23D">Function declarations </FONT></B>
+<B><FONT COLOR="PURPLE">Function declarations </FONT></B>
 
 Every function must not have a separate declaration.
 
@@ -302,7 +230,7 @@ Function declarations are created by the gendeclarations.lua <A HREF="usr_41.htm
 <B>    }</B>
 
 
-<B><FONT color="#54A23D">General translation unit layout </FONT></B>
+<B><FONT COLOR="PURPLE">General translation unit layout </FONT></B>
 
 The <A HREF="intro.html#definitions">definitions</A> of public <A HREF="eval.html#functions">functions</A> precede the <A HREF="intro.html#definitions">definitions</A> of static
 <A HREF="eval.html#functions">functions</A>.
@@ -314,7 +242,7 @@ The <A HREF="intro.html#definitions">definitions</A> of public <A HREF="eval.htm
 <B>    &lt;STATIC FUNCTION DEFINITIONS&gt;</B>
 
 
-<B><FONT color="#54A23D">Integration with declarations generator </FONT></B>
+<B><FONT COLOR="PURPLE">Integration with declarations generator </FONT></B>
 
 Every C file must contain #include of the generated header file, guarded by
 #ifdef INCLUDE_GENERATED_DECLARATIONS.
@@ -352,7 +280,7 @@ contain only non-static function declarations.
 <B>    #endif  // NVIM_FOO_H</B>
 
 
-<B><FONT color="#54A23D">64-bit Portability </FONT></B>
+<B><FONT COLOR="PURPLE">64-bit Portability </FONT></B>
 
 Code should be 64-bit and 32-bit friendly. Bear in mind problems of <A HREF="print.html#printing">printing</A>,
 comparisons, and structure alignment.
@@ -376,7 +304,7 @@ comparisons, and structure alignment.
 <B>    uint64_t my_mask = 3ULL &lt;&lt; 48;</B>
 
 
-<B><FONT color="#54A23D">sizeof </FONT></B>
+<B><FONT COLOR="PURPLE">sizeof </FONT></B>
 
 Prefer `sizeof(varname)` to `sizeof(type)`.
 
@@ -412,7 +340,7 @@ important than individual preferences in this area, so regardless of whether
 you find them sensible or not, the rules are the rules.
 
 
-<B><FONT color="#54A23D">General Naming Rules </FONT></B>
+<B><FONT COLOR="PURPLE">General Naming Rules </FONT></B>
 
 Function names, variable names, and filenames should be descriptive; eschew
 abbreviation.
@@ -435,7 +363,7 @@ by <A HREF="change.html#deleting">deleting</A> letters within a <A HREF="motion.
 <B>    int cstmr_id;              // Deletes internal letters.</B>
 
 
-<B><FONT color="#54A23D">File Names </FONT></B>
+<B><FONT COLOR="PURPLE">File Names </FONT></B>
 
 Filenames should be all <A HREF="change.html#lowercase">lowercase</A> and can include underscores (`_`).
 
@@ -452,7 +380,7 @@ In general, make your filenames very specific. For example, use
 `http_server_logs.h` rather than `logs.h`.
 
 
-<B><FONT color="#54A23D">Type Names </FONT></B>
+<B><FONT COLOR="PURPLE">Type Names </FONT></B>
 
 Typedef-ed structs and enums start with a capital <A HREF="print.html#letter">letter</A> and have a capital
 <A HREF="print.html#letter">letter</A> for each new <A HREF="motion.html#word">word</A>, with no underscores: `MyExcitingStruct`.
@@ -466,12 +394,12 @@ words: `struct my_exciting_struct` .
 <B>    typedef struct my_struct MyAwesomeStruct;</B>
 
 
-<B><FONT color="#54A23D">Variable Names </FONT></B>
+<B><FONT COLOR="PURPLE">Variable Names </FONT></B>
 
 Variable names are all <A HREF="change.html#lowercase">lowercase</A>, with underscores between words. For
 instance: `my_exciting_local_variable`.
 
-<B><FONT color="#54A23D">    Common Variable names </FONT></B>
+<B><FONT COLOR="PURPLE">    Common Variable names </FONT></B>
 
     For example:
 
@@ -481,7 +409,7 @@ instance: `my_exciting_local_variable`.
 <B>        string tableName;   // BAD: mixed case.</B>
  
 
-<B><FONT color="#54A23D">    Struct Variables </FONT></B>
+<B><FONT COLOR="PURPLE">    Struct Variables </FONT></B>
 
     Data members in structs should be named like regular <A HREF="eval.html#variables">variables</A>.
 
@@ -491,13 +419,13 @@ instance: `my_exciting_local_variable`.
 <B>        }</B>
  
 
-<B><FONT color="#54A23D">    Global Variables </FONT></B>
+<B><FONT COLOR="PURPLE">    Global Variables </FONT></B>
 
     Don't use global <A HREF="eval.html#variables">variables</A> unless absolutely necessary. Prefix global
     <A HREF="eval.html#variables">variables</A> with `g_`.
 
 
-<B><FONT color="#54A23D">Constant Names </FONT></B>
+<B><FONT COLOR="PURPLE">Constant Names </FONT></B>
 
 Use a `k` followed by mixed <A HREF="change.html#case">case</A>: `kDaysInAWeek`.
 
@@ -507,7 +435,7 @@ followed by words with <A HREF="change.html#uppercase">uppercase</A> first lette
 
 <B>    const int kDaysInAWeek = 7;</B>
 
-<B><FONT color="#54A23D">Function Names </FONT></B>
+<B><FONT COLOR="PURPLE">Function Names </FONT></B>
 
 Function names are all <A HREF="change.html#lowercase">lowercase</A>, with underscores between words. For
 instance: `my_exceptional_function()`. All <A HREF="eval.html#functions">functions</A> in the same header file
@@ -524,7 +452,7 @@ production code and to <A HREF="message.html#errors">errors</A> that are reasona
 normal operation.
 
 
-<B><FONT color="#54A23D">Enumerator Names </FONT></B>
+<B><FONT COLOR="PURPLE">Enumerator Names </FONT></B>
 
 Enumerators should be named like constants: `kEnumName`.
 
@@ -535,7 +463,7 @@ Enumerators should be named like constants: `kEnumName`.
 <B>    };</B>
 
 
-<B><FONT color="#54A23D">Macro Names </FONT></B>
+<B><FONT COLOR="PURPLE">Macro Names </FONT></B>
 
 They're like this: `MY_MACRO_THAT_SCARES_CPP_DEVELOPERS`.
 
@@ -557,7 +485,7 @@ will need to understand your code. Be generous — the next one may be you!
 Nvim uses Doxygen comments.
 
 
-<B><FONT color="#54A23D">Comment Style </FONT></B>
+<B><FONT COLOR="PURPLE">Comment Style </FONT></B>
 
 Use the `//`-style <A HREF="syntax.html#syntax">syntax</A> only.
 
@@ -566,15 +494,15 @@ Use the `//`-style <A HREF="syntax.html#syntax">syntax</A> only.
 <B>    f();</B>
 
 
-<B><FONT color="#54A23D">File Comments </FONT></B>
+<B><FONT COLOR="PURPLE">File Comments </FONT></B>
 
 Start each file with a description of its contents.
 
-<B><FONT color="#54A23D">    Legal Notice </FONT></B>
+<B><FONT COLOR="PURPLE">    Legal Notice </FONT></B>
 
     We have no such thing. These things are in LICENSE and only there.
 
-<B><FONT color="#54A23D">    File Contents </FONT></B>
+<B><FONT COLOR="PURPLE">    File Contents </FONT></B>
 
     Every file should have a comment at the top describing its contents.
 
@@ -595,7 +523,7 @@ Start each file with a description of its contents.
 <B>    /// Be very generous here.</B>
 
 
-<B><FONT color="#54A23D">Struct Comments </FONT></B>
+<B><FONT COLOR="PURPLE">Struct Comments </FONT></B>
 
 Every struct definition should have accompanying comments that describes what
 <A HREF="motion.html#it">it</A> is for and how <A HREF="motion.html#it">it</A> should be used.
@@ -638,12 +566,12 @@ instance of the struct can be accessed by multiple threads, take extra care to
 document the rules and invariants surrounding multithreaded use.
 
 
-<B><FONT color="#54A23D">Function Comments </FONT></B>
+<B><FONT COLOR="PURPLE">Function Comments </FONT></B>
 
 Declaration comments describe use of the function; comments at the definition
 of a function describe operation.
 
-<B><FONT color="#54A23D">    Function Declarations </FONT></B>
+<B><FONT COLOR="PURPLE">    Function Declarations </FONT></B>
 
     Every function declaration should have comments immediately preceding <A HREF="motion.html#it">it</A>
     that describe what the function does and how to use <A HREF="motion.html#it">it</A>. These comments
@@ -673,7 +601,7 @@ of a function describe operation.
 <B>    Iterator *get_iterator(void *arg1, void *arg2);</B>
  
 
-<B><FONT color="#54A23D">    Function Definitions </FONT></B>
+<B><FONT COLOR="PURPLE">    Function Definitions </FONT></B>
 
     If there is anything tricky about how a function does its <A HREF="job_control.html#job">job</A>, the
     function definition should have an explanatory comment. For example, in
@@ -696,13 +624,13 @@ of a function describe operation.
 <B>    }</B>
 
 
-<B><FONT color="#54A23D">Variable Comments </FONT></B>
+<B><FONT COLOR="PURPLE">Variable Comments </FONT></B>
 
 In general the actual name of the variable should be descriptive enough to
 give a good idea of what the variable is used for. In certain cases, more
 comments are required.
 
-<B><FONT color="#54A23D">    Global Variables </FONT></B>
+<B><FONT COLOR="PURPLE">    Global Variables </FONT></B>
 
     All global <A HREF="eval.html#variables">variables</A> should have a comment describing what they are and
     what they are used for. For example:
@@ -712,12 +640,12 @@ comments are required.
 <B>        const int kNumTestCases = 6;</B>
 
 
-<B><FONT color="#54A23D">Implementation Comments </FONT></B>
+<B><FONT COLOR="PURPLE">Implementation Comments </FONT></B>
 
 In your implementation you should have comments in tricky, non-obvious,
 interesting, or important parts of your code.
 
-<B><FONT color="#54A23D">    Line Comments </FONT></B>
+<B><FONT COLOR="PURPLE">    Line Comments </FONT></B>
 
     Also, lines that are non-obvious should get a comment at the end of the
     line. These end-of-line comments should be separated from the code by 2
@@ -745,7 +673,7 @@ interesting, or important parts of your code.
 <B>        }</B>
  
 
-<B><FONT color="#54A23D">    NULL, true/false, 1, 2, 3... </FONT></B>
+<B><FONT COLOR="PURPLE">    NULL, true/false, 1, 2, 3... </FONT></B>
 
     When you pass in a null pointer, <A HREF="options.html#boolean">boolean</A>, or literal integer values to
     <A HREF="eval.html#functions">functions</A>, you should consider adding a comment about what they are, or
@@ -777,7 +705,7 @@ interesting, or important parts of your code.
 <B>                                           null_callback);</B>
  
 
-<B><FONT color="#54A23D">    Don'ts </FONT></B>
+<B><FONT COLOR="PURPLE">    Don'ts </FONT></B>
 
     Note that you should never describe the code itself. Assume that the
     person reading the code knows C better than you <A HREF="diff.html#do">do</A>, even though he or she
@@ -788,7 +716,7 @@ interesting, or important parts of your code.
 <B>        ...        // Geez.  What a useless comment.</B>
 
 
-<B><FONT color="#54A23D">Punctuation, Spelling and Grammar </FONT></B>
+<B><FONT COLOR="PURPLE">Punctuation, Spelling and Grammar </FONT></B>
 
 Pay attention to punctuation, spelling, and grammar; <A HREF="motion.html#it">it</A> is easier to read
 well-written comments than badly written ones.
@@ -805,7 +733,7 @@ source code maintain a high level of clarity and readability. Proper
 punctuation, spelling, and grammar help with that goal.
 
 
-<B><FONT color="#54A23D">TODO Comments </FONT></B>
+<B><FONT COLOR="PURPLE">TODO Comments </FONT></B>
 
 Use `TODO` comments for code that is temporary, a short-term solution, or
 good-enough but not perfect.
@@ -827,7 +755,7 @@ specific event (&quot;Remove this code when all clients can handle XML
 responses.&quot;).
 
 
-<B><FONT color="#54A23D">Deprecation Comments </FONT></B>
+<B><FONT COLOR="PURPLE">Deprecation Comments </FONT></B>
 
 <A HREF="motion.html#Mark">Mark</A> <A HREF="deprecated.html#deprecated">deprecated</A> interface points with `@deprecated` docstring token.
 
@@ -863,7 +791,7 @@ getting used to, but <A HREF="motion.html#it">it</A> is important that all proje
 style rules so that they can all read and understand everyone's code easily.
 
 
-<B><FONT color="#54A23D">Non-ASCII Characters </FONT></B>
+<B><FONT COLOR="PURPLE">Non-ASCII Characters </FONT></B>
 
 Non-ASCII characters should be rare, and must use <A HREF="mbyte.html#UTF-8">UTF-8</A> <A HREF="change.html#formatting">formatting</A>.
 
@@ -881,7 +809,7 @@ example, `&quot;\uFEFF&quot;`, is the <A HREF="mbyte.html#Unicode">Unicode</A> z
 would be invisible if included in the source <A HREF="motion.html#as">as</A> straight <A HREF="mbyte.html#UTF-8">UTF-8</A>.
 
 
-<B><FONT color="#54A23D">Function Declarations and Definitions </FONT></B>
+<B><FONT COLOR="PURPLE">Function Declarations and Definitions </FONT></B>
 
 Return type on the same line <A HREF="motion.html#as">as</A> function name, parameters on the same line if
 they fit.
@@ -930,7 +858,7 @@ Some points to note:
 - Wrapped parameters have a 4 space indent.
 
 
-<B><FONT color="#54A23D">Function Calls </FONT></B>
+<B><FONT COLOR="PURPLE">Function Calls </FONT></B>
 
 On one line if <A HREF="motion.html#it">it</A> fits; otherwise, wrap arguments at the parenthesis.
 
@@ -971,7 +899,7 @@ In particular, this should be done if the function signature is so long that
 <A HREF="motion.html#it">it</A> cannot fit within the maximum line length.
 
 
-<B><FONT color="#54A23D">Braced Initializer Lists </FONT></B>
+<B><FONT COLOR="PURPLE">Braced Initializer Lists </FONT></B>
 
 Format a braced <A HREF="eval.html#list">list</A> exactly like you would format a function call in its
 place but with one space after the `{` and one space before the `}`
@@ -988,7 +916,7 @@ no name, assume a zero-length name.
 <B>          interiorwrappinglist2 } };</B>
 
 
-<B><FONT color="#54A23D">Conditionals </FONT></B>
+<B><FONT COLOR="PURPLE">Conditionals </FONT></B>
 
 Don't use spaces inside parentheses.
 
@@ -1000,7 +928,7 @@ Don't use spaces inside parentheses.
 <B>      ...</B>
 <B>    }</B>
 
-<B><FONT color="#54A23D">Loops and Switch Statements </FONT></B>
+<B><FONT COLOR="PURPLE">Loops and Switch Statements </FONT></B>
 
 Annotate non-trivial fall-through between cases.
 
@@ -1020,7 +948,7 @@ execute, simply `assert`:
 <B>        assert(false);</B>
 <B>    }</B>
 
-<B><FONT color="#54A23D">Pointer Expressions </FONT></B>
+<B><FONT COLOR="PURPLE">Pointer Expressions </FONT></B>
 
 No spaces around period or arrow. Pointer operators <A HREF="diff.html#do">do</A> not have trailing
 spaces.
@@ -1038,7 +966,7 @@ Note that:
     - There are no spaces around the period or arrow when accessing a member.
     - Pointer operators have no space after the &#42; or <A HREF="change.html#&amp;">&amp;</A>.
 
-<B><FONT color="#54A23D">Boolean Expressions </FONT></B>
+<B><FONT COLOR="PURPLE">Boolean Expressions </FONT></B>
 
 When you have a <A HREF="options.html#boolean">boolean</A> <A HREF="eval.html#expression">expression</A> that is longer than the standard line
 length, keep operators at the start of the line.
@@ -1053,7 +981,7 @@ Also note that you should always use the punctuation operators, such <A HREF="mo
 and `~`, rather than the <A HREF="motion.html#word">word</A> operators, such <A HREF="motion.html#as">as</A> `and` and `compl`.
 
 
-<B><FONT color="#54A23D">Return Values </FONT></B>
+<B><FONT COLOR="PURPLE">Return Values </FONT></B>
 
 Do not needlessly surround the `return` <A HREF="eval.html#expression">expression</A> with parentheses.
 
@@ -1067,16 +995,16 @@ expr;`.
 <B>    return(result);  // return is not a function!</B>
 
 
-<B><FONT color="#54A23D">Horizontal Whitespace </FONT></B>
+<B><FONT COLOR="PURPLE">Horizontal Whitespace </FONT></B>
 
 Use of horizontal <A HREF="pattern.html#whitespace">whitespace</A> depends on location.
 
-<B><FONT color="#54A23D">    General </FONT></B>
+<B><FONT COLOR="PURPLE">    General </FONT></B>
 
 <B>        int x[] = { 0 };  // Spaces inside braces for braced-init-list.</B>
  
 
-<B><FONT color="#54A23D">    Variables </FONT></B>
+<B><FONT COLOR="PURPLE">    Variables </FONT></B>
 
 <B>        int long_variable = 0;  // Don't align assignments.</B>
 <B>        int i             = 1;</B>
@@ -1093,7 +1021,7 @@ Use of horizontal <A HREF="pattern.html#whitespace">whitespace</A> depends on lo
  
 
 
-<B><FONT color="#54A23D">    Operators </FONT></B>
+<B><FONT COLOR="PURPLE">    Operators </FONT></B>
 
 <B>        x = 0;            // Assignment operators always have spaces around</B>
 <B>                          // them.</B>
@@ -1104,7 +1032,7 @@ Use of horizontal <A HREF="pattern.html#whitespace">whitespace</A> depends on lo
 <B>        i = (int)d;       // No spaces after a cast operator.</B>
  
 
-<B><FONT color="#54A23D">Vertical Whitespace </FONT></B>
+<B><FONT COLOR="PURPLE">Vertical Whitespace </FONT></B>
 
 Minimize use of vertical <A HREF="pattern.html#whitespace">whitespace</A>.
 
@@ -1124,12 +1052,7 @@ to your pull request explaining your reasoning.
 
 <A HREF="#top">top</A> - <A HREF="index.html">main help file</A>
 </PRE>
-    </div>
+</BODY>
 
-    <footer>
-      <div class="container">
-        Generated Thu Jun  2 10:56:12 UTC 2022 from <a href="https://github.com/neovim/neovim/commit/d93ba03c717bee05fe6d239fd7faefe6e9698c85"><code>d93ba03</code></a>.
-      </div>
-    </footer>
-  </body>
-</html>
+
+</HTML>

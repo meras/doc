@@ -1,82 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Nvim documentation: spell</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-    <link href="/css/normalize.min.css" rel="stylesheet">
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <header class="container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a href="/" class="navbar-brand" aria-label="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" width="173" height="50" viewBox="0 0 742 214" aria-label="Neovim">
-              <title>Neovim</title>
-              <defs>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
-                  <stop stop-color="#16B0ED" stop-opacity=".8" offset="0%" />
-                  <stop stop-color="#0F59B2" stop-opacity=".837" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="b">
-                  <stop stop-color="#7DB643" offset="0%" />
-                  <stop stop-color="#367533" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="c">
-                  <stop stop-color="#88C649" stop-opacity=".8" offset="0%" />
-                  <stop stop-color="#439240" stop-opacity=".84" offset="100%" />
-                </linearGradient>
-              </defs>
-              <g fill="none" fill-rule="evenodd">
-                <path
-                  d="M.027 45.459L45.224-.173v212.171L.027 166.894V45.459z"
-                  fill="url(#a)"
-                  transform="translate(1 1)"
-                />
-                <path
-                  d="M129.337 45.89L175.152-.149l-.928 212.146-45.197-45.104.31-121.005z"
-                  fill="url(#b)"
-                  transform="matrix(-1 0 0 1 305 1)"
-                />
-                <path
-                  d="M45.194-.137L162.7 179.173l-32.882 32.881L12.25 33.141 45.194-.137z"
-                  fill="url(#c)"
-                  transform="translate(1 1)"
-                />
-                <path
-                  d="M46.234 84.032l-.063 7.063-36.28-53.563 3.36-3.422 32.983 49.922z"
-                  fill-opacity=".13"
-                  fill="#000"
-                />
-                <g fill="#444">
-                  <path
-                    d="M227 154V64.44h4.655c1.55 0 2.445.75 2.685 2.25l.806 13.502c4.058-5.16 8.786-9.316 14.188-12.466 5.4-3.15 11.413-4.726 18.037-4.726 4.893 0 9.205.781 12.935 2.34 3.729 1.561 6.817 3.811 9.264 6.751 2.448 2.942 4.297 6.48 5.55 10.621 1.253 4.14 1.88 8.821 1.88 14.042V154h-8.504V96.754c0-8.402-1.91-14.987-5.729-19.757-3.82-4.771-9.667-7.156-17.544-7.156-5.851 0-11.28 1.516-16.292 4.545-5.013 3.032-9.489 7.187-13.427 12.467V154H227zM350.624 63c5.066 0 9.755.868 14.069 2.605 4.312 1.738 8.052 4.268 11.219 7.592s5.638 7.412 7.419 12.264C385.11 90.313 386 95.883 386 102.17c0 1.318-.195 2.216-.588 2.696-.393.48-1.01.719-1.851.719h-64.966v1.70c0 6.708.784 12.609 2.353 17.7 1.567 5.09 3.8 9.357 6.695 12.802 2.895 3.445 6.393 6.034 10.495 7.771 4.1 1.738 8.686 2.606 13.752 2.606 4.524 0 8.446-.494 11.762-1.483 3.317-.988 6.108-2.097 8.37-3.324 2.261-1.227 4.056-2.336 5.383-3.324 1.326-.988 2.292-1.482 2.895-1.482.784 0 1.388.3 1.81.898l2.352 2.875c-1.448 1.797-3.362 3.475-5.745 5.031-2.383 1.558-5.038 2.891-7.962 3.998-2.926 1.109-6.062 1.991-9.41 2.65a52.21 52.21 0 01-10.088.989c-6.152 0-11.762-1.064-16.828-3.19-5.067-2.125-9.415-5.225-13.043-9.298-3.63-4.074-6.435-9.06-8.415-14.96C310.99 121.655 310 114.9 310 107.294c0-6.408.92-12.323 2.76-17.744 1.84-5.421 4.493-10.093 7.961-14.016 3.467-3.922 7.72-6.991 12.758-9.209C338.513 64.11 344.229 63 350.624 63zm.573 6c-4.696 0-8.904.702-12.623 2.105-3.721 1.404-6.936 3.421-9.65 6.053-2.713 2.631-4.908 5.79-6.586 9.474S319.55 94.439 319 99h60c0-4.679-.672-8.874-2.013-12.588-1.343-3.712-3.232-6.856-5.67-9.43-2.44-2.571-5.367-4.545-8.782-5.92-3.413-1.374-7.192-2.062-11.338-2.062zM435.546 63c6.526 0 12.368 1.093 17.524 3.28 5.154 2.186 9.5 5.286 13.04 9.298 3.538 4.013 6.238 8.85 8.099 14.51 1.861 5.66 2.791 11.994 2.791 19.002 0 7.008-.932 13.327-2.791 18.957-1.861 5.631-4.561 10.452-8.099 14.465-3.54 4.012-7.886 7.097-13.04 9.254-5.156 2.156-10.998 3.234-17.524 3.234-6.529 0-12.369-1.078-17.525-3.234-5.155-2.157-9.517-5.242-13.085-9.254-3.57-4.013-6.285-8.836-8.145-14.465-1.861-5.63-2.791-11.95-2.791-18.957 0-7.008.93-13.342 2.791-19.002 1.861-5.66 4.576-10.496 8.145-14.51 3.568-4.012 7.93-7.112 13.085-9.299C423.177 64.094 429.017 63 435.546 63zm-.501 86c5.341 0 10.006-.918 13.997-2.757 3.99-1.838 7.32-4.474 9.992-7.909 2.67-3.435 4.664-7.576 5.986-12.428 1.317-4.85 1.98-10.288 1.98-16.316 0-5.965-.66-11.389-1.98-16.27-1.322-4.88-3.316-9.053-5.986-12.519-2.67-3.463-6-6.13-9.992-7.999-3.991-1.867-8.657-2.802-13.997-2.802s-10.008.935-13.997 2.802c-3.991 1.87-7.322 4.536-9.992 8-2.671 3.465-4.68 7.637-6.03 12.518-1.35 4.881-2.026 10.305-2.026 16.27 0 6.026.675 11.465 2.025 16.316 1.35 4.852 3.36 8.993 6.031 12.428 2.67 3.435 6 6.07 9.992 7.91 3.99 1.838 8.656 2.756 13.997 2.756z"
-                    fill="currentColor"
-                  />
-                  <path
-                    d="M530.57 152h-20.05L474 60h18.35c1.61 0 2.967.39 4.072 1.166 1.103.778 1.865 1.763 2.283 2.959l17.722 49.138a92.762 92.762 0 012.551 8.429c.686 2.751 1.298 5.5 1.835 8.25.537-2.75 1.148-5.499 1.835-8.25a77.713 77.713 0 012.64-8.429l18.171-49.138c.417-1.196 1.164-2.181 2.238-2.96 1.074-.776 2.356-1.165 3.849-1.165H567l-36.43 92zM572 61h23v92h-23zM610 153V60.443h13.624c2.887 0 4.78 1.354 5.682 4.06l1.443 6.856a52.7 52.7 0 015.097-4.962 32.732 32.732 0 015.683-3.879 30.731 30.731 0 016.496-2.57c2.314-.632 4.855-.948 7.624-.948 5.832 0 10.63 1.579 14.39 4.736 3.758 3.157 6.57 7.352 8.434 12.585 1.444-3.068 3.248-5.698 5.413-7.894 2.165-2.194 4.541-3.984 7.127-5.367a32.848 32.848 0 018.254-3.068 39.597 39.597 0 018.796-.992c5.111 0 9.653.783 13.622 2.345 3.97 1.565 7.307 3.849 10.014 6.857 2.706 3.007 4.766 6.675 6.18 11.005C739.29 83.537 740 88.5 740 94.092V153h-22.284V94.092c0-5.894-1.294-10.329-3.878-13.306-2.587-2.977-6.376-4.465-11.368-4.465-2.286 0-4.404.391-6.358 1.172a15.189 15.189 0 00-5.144 3.383c-1.473 1.474-2.631 3.324-3.474 5.548-.842 2.225-1.263 4.781-1.263 7.668V153h-22.37V94.092c0-6.194-1.249-10.704-3.744-13.532-2.497-2.825-6.18-4.24-11.051-4.24-3.19 0-6.18.798-8.976 2.391-2.799 1.593-5.399 3.775-7.804 6.54V153H610zM572 30h23v19h-23z"
-                    fill="currentColor"
-                    fill-opacity=".8"
-                  />
-                </g>
-              </g>
-            </svg>
-          </a>
-        </div>
-      </nav>
-    </header>
-
-    <div class="container">
-      <h1>Nvim documentation: spell</h1>
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-type" content="text/html; charset=ISO-8859-1">
+<TITLE>Nvim documentation: spell</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<H1>Nvim documentation: spell</H1>
 <A NAME="top"></A>
 <A HREF="index.html">main help file</A>
 
@@ -402,7 +330,7 @@ Vim searches for <A HREF="#spell">spell</A> files in the &quot;<A HREF="#spell">
 
 The value for &quot;LL&quot; comes from <A HREF="options.html#'spelllang'">'spelllang'</A>, but excludes the region name.
 Examples:
-<B><FONT color="#54A23D">	'spelllang'	LL </FONT></B>
+<B><FONT COLOR="PURPLE">	'spelllang'	LL </FONT></B>
 	en_us		en
 	en-rare		en-rare
 	medical_ca	medical
@@ -710,14 +638,14 @@ Spell checking is a relatively new feature in Vim, thus it's possible that the
 .spl file format will be changed to support more languages.  Vim will check
 the validity of the <A HREF="#spell">spell</A> file and report anything wrong.
 
-<B><FONT color="#54A23D">	E771: Old spell file, needs to be updated </FONT></B>
+<B><FONT COLOR="PURPLE">	E771: Old spell file, needs to be updated </FONT></B>
 This <A HREF="#spell">spell</A> file is older than your Vim.  You need to update the .spl file.
 
-<B><FONT color="#54A23D">	E772: Spell file is for newer version of Vim </FONT></B>
+<B><FONT COLOR="PURPLE">	E772: Spell file is for newer version of Vim </FONT></B>
 This means the <A HREF="#spell">spell</A> file was made for a later version of Vim.  You need to
 update Vim.
 
-<B><FONT color="#54A23D">	E770: Unsupported section in spell file </FONT></B>
+<B><FONT COLOR="PURPLE">	E770: Unsupported section in spell file </FONT></B>
 This means the <A HREF="#spell">spell</A> file was made for a later version of Vim and contains a
 section that is required for the <A HREF="#spell">spell</A> file to work.  In this <A HREF="change.html#case">case</A> it's
 probably a good idea to upgrade your Vim.
@@ -829,16 +757,16 @@ Additionally the following items are recognized:
 
 - Empty and blank lines are ignored.
 
-<B><FONT color="#54A23D">	# comment </FONT></B>
+<B><FONT COLOR="PURPLE">	# comment </FONT></B>
 - Lines starting with a # are ignored (comment lines).
 
-<B><FONT color="#54A23D">	/encoding=utf-8 </FONT></B>
+<B><FONT COLOR="PURPLE">	/encoding=utf-8 </FONT></B>
 - A line starting with &quot;/encoding=&quot;, before any <A HREF="motion.html#word">word</A>, specifies the encoding
   of the file.  After the second '<A HREF="change.html#=">=</A>' comes an encoding name.  This tells Vim
   to setup conversion from the specified encoding to <A HREF="options.html#'encoding'">'encoding'</A>.  Thus you can
   use one <A HREF="motion.html#word">word</A> <A HREF="eval.html#list">list</A> for several target encodings.
 
-<B><FONT color="#54A23D">	/regions=usca </FONT></B>
+<B><FONT COLOR="PURPLE">	/regions=usca </FONT></B>
 - A line starting with &quot;/regions=&quot; specifies the region names that are
   supported.  Each region name must be two ASCII letters.  The first one is
   region 1.  Thus &quot;/regions=usca&quot; has region 1 &quot;us&quot; and region 2 &quot;ca&quot;.
@@ -893,7 +821,7 @@ them before the Vim <A HREF="motion.html#word">word</A> <A HREF="eval.html#list"
 The format for the affix and <A HREF="motion.html#word">word</A> <A HREF="eval.html#list">list</A> files is based on what <A HREF="#Myspell">Myspell</A> uses
 (the <A HREF="#spell">spell</A> checker of Mozilla and OpenOffice.org).  A description can be found
 here:
-<B><FONT color="#54A23D">	http://lingucomponent.openoffice.org/affix.readme </FONT></B>
+<B><FONT COLOR="PURPLE">	http://lingucomponent.openoffice.org/affix.readme </FONT></B>
 Note that affixes are <A HREF="change.html#case">case</A> sensitive, this isn't obvious from the description.
 
 Vim supports quite a few extras.  They are described below |<A HREF="#spell-affix-vim">spell-affix-vim</A>|.
@@ -907,19 +835,19 @@ that the same files can often be used.  One other project that offers more
 
 A short example, with line numbers:
 
-<B><FONT color="#54A23D">	1	1234 </FONT></B>
-<B><FONT color="#54A23D">	2	aan </FONT></B>
-<B><FONT color="#54A23D">	3	Als </FONT></B>
-<B><FONT color="#54A23D">	4	Etten-Leur </FONT></B>
-<B><FONT color="#54A23D">	5	et al. </FONT></B>
-<B><FONT color="#54A23D">	6	's-Gravenhage </FONT></B>
-<B><FONT color="#54A23D">	7	's-Gravenhaags </FONT></B>
-<B><FONT color="#54A23D">	8	# word that differs between regions </FONT></B>
-<B><FONT color="#54A23D">	9	kado/1 </FONT></B>
-<B><FONT color="#54A23D">	10	cadeau/2 </FONT></B>
-<B><FONT color="#54A23D">	11	TCP,IP </FONT></B>
-<B><FONT color="#54A23D">	12	/the S affix may add a 's' </FONT></B>
-<B><FONT color="#54A23D">	13	bedel/S </FONT></B>
+<B><FONT COLOR="PURPLE">	1	1234 </FONT></B>
+<B><FONT COLOR="PURPLE">	2	aan </FONT></B>
+<B><FONT COLOR="PURPLE">	3	Als </FONT></B>
+<B><FONT COLOR="PURPLE">	4	Etten-Leur </FONT></B>
+<B><FONT COLOR="PURPLE">	5	et al. </FONT></B>
+<B><FONT COLOR="PURPLE">	6	's-Gravenhage </FONT></B>
+<B><FONT COLOR="PURPLE">	7	's-Gravenhaags </FONT></B>
+<B><FONT COLOR="PURPLE">	8	# word that differs between regions </FONT></B>
+<B><FONT COLOR="PURPLE">	9	kado/1 </FONT></B>
+<B><FONT COLOR="PURPLE">	10	cadeau/2 </FONT></B>
+<B><FONT COLOR="PURPLE">	11	TCP,IP </FONT></B>
+<B><FONT COLOR="PURPLE">	12	/the S affix may add a 's' </FONT></B>
+<B><FONT COLOR="PURPLE">	13	bedel/S </FONT></B>
 
 The first line contains the number of words.  Vim ignores <A HREF="motion.html#it">it</A>, but you <A HREF="diff.html#do">do</A> get
 
@@ -932,7 +860,7 @@ affix file |<A HREF="#spell-SET">spell-SET</A>|.
 Comment lines start with '<A HREF="pattern.html##">#</A>' or '<A HREF="pattern.html#/">/</A>'.  See the example lines 8 and 12.  Note
 that putting a comment after a <A HREF="motion.html#word">word</A> is NOT allowed:
 
-<B><FONT color="#54A23D">		someword   # comment that causes an error! </FONT></B>
+<B><FONT COLOR="PURPLE">		someword   # comment that causes an error! </FONT></B>
 
 After the <A HREF="motion.html#word">word</A> there is an optional slash and flags.  Most of these flags are
 letters that indicate the affixes that can be used with this <A HREF="motion.html#word">word</A>.  These are
@@ -950,7 +878,7 @@ not match either.
 
 The <A HREF="motion.html#word">word</A> with all upper-case characters will always be OK,
 
-<B><FONT color="#54A23D">	word list	matches			does not match </FONT></B>
+<B><FONT COLOR="PURPLE">	word list	matches			does not match </FONT></B>
 	als		als Als ALS		ALs AlS aLs aLS
 	Als		Als  ALS		als ALs AlS aLs aLS
 	ALS		ALS			als Als ALs AlS aLs aLS
@@ -977,13 +905,13 @@ AFFIX FILE FORMAT			*<A NAME="spell-aff-format"></A><B>spell-aff-format</B>* *<A
 							*<A NAME="spell-affix-comment"></A><B>spell-affix-comment</B>*
 Comment lines in the <A HREF="#.aff">.aff</A> file start with a '<A HREF="pattern.html##">#</A>':
 
-<B><FONT color="#54A23D">	# comment line </FONT></B>
+<B><FONT COLOR="PURPLE">	# comment line </FONT></B>
 
 Items with a fixed number of arguments can be followed by a comment.  But only
 if none of the arguments can contain white space.  The comment must start with
 a &quot;<A HREF="pattern.html##">#</A>&quot; character.  Example:
 
-<B><FONT color="#54A23D">	KEEPCASE =  # fix case for words with this flag </FONT></B>
+<B><FONT COLOR="PURPLE">	KEEPCASE =  # fix case for words with this flag </FONT></B>
 
 
 
@@ -998,7 +926,7 @@ The encoding should be specified before anything where the encoding matters.
 The encoding applies both to the affix file and the dictionary file.  It is
 done with a SET line:
 
-<B><FONT color="#54A23D">	SET utf-8 </FONT></B>
+<B><FONT COLOR="PURPLE">	SET utf-8 </FONT></B>
 
 The encoding can be different from the value of the <A HREF="options.html#'encoding'">'encoding'</A> option at the
 time &quot;<A HREF="#:mkspell">:mkspell</A>&quot; is used.  Vim will then convert everything to <A HREF="options.html#'encoding'">'encoding'</A> and
@@ -1050,9 +978,9 @@ when using &quot;cp1250&quot; on Unix.
 						*<A NAME="spell-LOW"></A><B>spell-LOW</B>* *<A NAME="spell-UPP"></A><B>spell-UPP</B>*
 Three lines in the affix file are needed.  Simplistic example:
 
-<B><FONT color="#54A23D">	FOL  áëñ </FONT></B>
-<B><FONT color="#54A23D">	LOW  áëñ </FONT></B>
-<B><FONT color="#54A23D">	UPP  ÁËÑ </FONT></B>
+<B><FONT COLOR="PURPLE">	FOL  áëñ </FONT></B>
+<B><FONT COLOR="PURPLE">	LOW  áëñ </FONT></B>
+<B><FONT COLOR="PURPLE">	UPP  ÁËÑ </FONT></B>
 
 All three lines must have exactly the same number of characters.
 
@@ -1106,7 +1034,7 @@ go unnoticed.
 
 These characters are defined with MIDWORD in the <A HREF="#.aff">.aff</A> file.  Example:
 
-<B><FONT color="#54A23D">	MIDWORD	'- </FONT></B>
+<B><FONT COLOR="PURPLE">	MIDWORD	'- </FONT></B>
 
 
 
@@ -1144,9 +1072,9 @@ documentation or the Aspell manual:
 	<A HREF="http://aspell.net/man-html/Affix-Compression.html">http://aspell.net/man-html/Affix-Compression.html</A>.
 
 Summary:
-<B><FONT color="#54A23D">	SFX L Y 2 </FONT></B>
-<B><FONT color="#54A23D">	SFX L 0 re [^x] </FONT></B>
-<B><FONT color="#54A23D">	SFX L 0 ro x </FONT></B>
+<B><FONT COLOR="PURPLE">	SFX L Y 2 </FONT></B>
+<B><FONT COLOR="PURPLE">	SFX L 0 re [^x] </FONT></B>
+<B><FONT COLOR="PURPLE">	SFX L 0 ro x </FONT></B>
 
 The first line is a header and has four fields:
 	SFX {flag} {combine} {count}
@@ -1202,8 +1130,8 @@ to the start of the <A HREF="motion.html#word">word</A>.
 Note: <A HREF="#Myspell">Myspell</A> ignores any extra text after the relevant info.  Vim requires
 this text to start with a &quot;<A HREF="pattern.html##">#</A>&quot; so that mistakes don't go unnoticed.  Example:
 
-<B><FONT color="#54A23D">	SFX F 0 in   [^i]n      # Spion &gt; Spionin  </FONT></B>
-<B><FONT color="#54A23D">	SFX F 0 nen  in		# Bauerin &gt; Bauerinnen </FONT></B>
+<B><FONT COLOR="PURPLE">	SFX F 0 in   [^i]n      # Spion &gt; Spionin  </FONT></B>
+<B><FONT COLOR="PURPLE">	SFX F 0 nen  in		# Bauerin &gt; Bauerinnen </FONT></B>
 
 However, to avoid lots of <A HREF="message.html#errors">errors</A> in affix files written for <A HREF="#Myspell">Myspell</A>, you can
 add the IGNOREEXTRA flag.
@@ -1212,12 +1140,12 @@ Apparently <A HREF="#Myspell">Myspell</A> allows an affix name to appear more th
 might also be a mistake, Vim checks for an extra &quot;<A HREF="change.html#S">S</A>&quot;.  The affix files for
 <A HREF="#Myspell">Myspell</A> that use this feature apparently have this flag.  Example:
 
-<B><FONT color="#54A23D">	SFX a Y 1 S </FONT></B>
-<B><FONT color="#54A23D">	SFX a 0 an . </FONT></B>
+<B><FONT COLOR="PURPLE">	SFX a Y 1 S </FONT></B>
+<B><FONT COLOR="PURPLE">	SFX a 0 an . </FONT></B>
 
-<B><FONT color="#54A23D">	SFX a Y 2 S </FONT></B>
-<B><FONT color="#54A23D">	SFX a 0 en . </FONT></B>
-<B><FONT color="#54A23D">	SFX a 0 on . </FONT></B>
+<B><FONT COLOR="PURPLE">	SFX a Y 2 S </FONT></B>
+<B><FONT COLOR="PURPLE">	SFX a 0 en . </FONT></B>
+<B><FONT COLOR="PURPLE">	SFX a 0 on . </FONT></B>
 
 
 
@@ -1227,11 +1155,11 @@ This is a feature that comes from Hunspell: The affix may specify flags.  This
 works similar to flags specified on a basic <A HREF="motion.html#word">word</A>.  The flags apply to the
 basic <A HREF="motion.html#word">word</A> plus the affix (but there are restrictions).  Example:
 
-<B><FONT color="#54A23D">	SFX S Y 1 </FONT></B>
-<B><FONT color="#54A23D">	SFX S 0 s . </FONT></B>
+<B><FONT COLOR="PURPLE">	SFX S Y 1 </FONT></B>
+<B><FONT COLOR="PURPLE">	SFX S 0 s . </FONT></B>
 
-<B><FONT color="#54A23D">	SFX A Y 1 </FONT></B>
-<B><FONT color="#54A23D">	SFX A 0 able/S . </FONT></B>
+<B><FONT COLOR="PURPLE">	SFX A Y 1 </FONT></B>
+<B><FONT COLOR="PURPLE">	SFX A 0 able/S . </FONT></B>
 
 When the dictionary file contains &quot;drink/AS&quot; then these words are possible:
 
@@ -1290,7 +1218,7 @@ possible to build the whole <A HREF="motion.html#word">word</A> <A HREF="eval.ht
 postponed.  This makes <A HREF="#spell">spell</A> checking slower.  It is indicated by this keyword
 in the <A HREF="#.aff">.aff</A> file:
 
-<B><FONT color="#54A23D">	PFXPOSTPONE </FONT></B>
+<B><FONT COLOR="PURPLE">	PFXPOSTPONE </FONT></B>
 
 Only prefixes without a chop <A HREF="eval.html#string">string</A> and without flags can be postponed.
 Prefixes with a chop <A HREF="eval.html#string">string</A> or with flags will still be included in the <A HREF="motion.html#word">word</A>
@@ -1316,13 +1244,13 @@ KEEP-CASE WORDS						*<A NAME="spell-KEEPCASE"></A><B>spell-KEEPCASE</B>*
 In the affix file a KEEPCASE line can be used to define the affix name used
 for keep-case words.  Example:
 
-<B><FONT color="#54A23D">	KEEPCASE = </FONT></B>
+<B><FONT COLOR="PURPLE">	KEEPCASE = </FONT></B>
 
 This flag is not supported by <A HREF="#Myspell">Myspell</A>.  It has the meaning that <A HREF="change.html#case">case</A> matters.
 This can be used if the <A HREF="motion.html#word">word</A> does not have the first <A HREF="print.html#letter">letter</A> in upper <A HREF="change.html#case">case</A> at
 the start of a <A HREF="motion.html#sentence">sentence</A>.  Example:
 
-<B><FONT color="#54A23D">    word list	    matches		    does not match </FONT></B>
+<B><FONT COLOR="PURPLE">    word list	    matches		    does not match </FONT></B>
     's morgens/=    's morgens		    'S morgens 's Morgens 'S MORGENS
     's Morgens	    's Morgens 'S MORGENS   'S morgens 's morgens
 
@@ -1336,7 +1264,7 @@ RARE WORDS						*<A NAME="spell-RARE"></A><B>spell-RARE</B>*
 In the affix file a RARE line can be used to define the affix name used for
 rare words.  Example:
 
-<B><FONT color="#54A23D">	RARE ? </FONT></B>
+<B><FONT COLOR="PURPLE">	RARE ? </FONT></B>
 
 Rare words are highlighted differently from bad words.  This is to be used for
 words that are correct for the language, but are hardly ever used and could be
@@ -1354,12 +1282,12 @@ BAD WORDS						*<A NAME="spell-BAD"></A><B>spell-BAD</B>*
 In the affix file a BAD line can be used to define the affix name used for
 bad words.  Example:
 
-<B><FONT color="#54A23D">	BAD ! </FONT></B>
+<B><FONT COLOR="PURPLE">	BAD ! </FONT></B>
 
 This can be used to exclude words that would otherwise be good.  For example
 &quot;the the&quot; in the <A HREF="#.dic">.dic</A> file:
 
-<B><FONT color="#54A23D">	the the/! </FONT></B>
+<B><FONT COLOR="PURPLE">	the the/! </FONT></B>
 
 Once a <A HREF="motion.html#word">word</A> has been marked <A HREF="motion.html#as">as</A> bad <A HREF="motion.html#it">it</A> won't be undone by encountering the same
 <A HREF="motion.html#word">word</A> <A HREF="motion.html#as">as</A> good.
@@ -1376,7 +1304,7 @@ FORBIDDENWORD can be used just like BAD.  For compatibility with Hunspell.
 The NEEDAFFIX flag is used to require that a <A HREF="motion.html#word">word</A> is used with an affix.  The
 <A HREF="motion.html#word">word</A> itself is not a good <A HREF="motion.html#word">word</A> (unless there is an empty affix).  Example:
 
-<B><FONT color="#54A23D">	NEEDAFFIX + </FONT></B>
+<B><FONT COLOR="PURPLE">	NEEDAFFIX + </FONT></B>
 
 
 
@@ -1393,22 +1321,22 @@ any affix IDs used.
 The <A HREF="#Myspell">Myspell</A> compatible <A HREF="eval.html#method">method</A> uses one flag, specified with COMPOUNDFLAG.  All
 words with this flag combine in any order.  This means there is no <A HREF="intro.html#control">control</A>
 over which <A HREF="motion.html#word">word</A> comes first.  Example:
-<B><FONT color="#54A23D">	COMPOUNDFLAG c </FONT></B>
+<B><FONT COLOR="PURPLE">	COMPOUNDFLAG c </FONT></B>
 
 
 							*<A NAME="spell-COMPOUNDRULE"></A><B>spell-COMPOUNDRULE</B>*
 A more advanced <A HREF="eval.html#method">method</A> to specify how compound words can be formed uses
 multiple items with multiple flags.  This is not compatible with <A HREF="#Myspell">Myspell</A> 3.0.
 Let's start with an example:
-<B><FONT color="#54A23D">	COMPOUNDRULE c+ </FONT></B>
-<B><FONT color="#54A23D">	COMPOUNDRULE se </FONT></B>
+<B><FONT COLOR="PURPLE">	COMPOUNDRULE c+ </FONT></B>
+<B><FONT COLOR="PURPLE">	COMPOUNDRULE se </FONT></B>
 
 The first line defines that words with the &quot;<A HREF="change.html#c">c</A>&quot; flag can be concatenated in any
 order.  The second line defines compound words that are made of one <A HREF="motion.html#word">word</A> with
 the &quot;<A HREF="change.html#s">s</A>&quot; flag and one <A HREF="motion.html#word">word</A> with the &quot;<A HREF="motion.html#e">e</A>&quot; flag.  With this dictionary:
-<B><FONT color="#54A23D">	bork/c </FONT></B>
-<B><FONT color="#54A23D">	onion/s </FONT></B>
-<B><FONT color="#54A23D">	soup/e </FONT></B>
+<B><FONT COLOR="PURPLE">	bork/c </FONT></B>
+<B><FONT COLOR="PURPLE">	onion/s </FONT></B>
+<B><FONT COLOR="PURPLE">	soup/e </FONT></B>
 
 You can make these words:
 	bork
@@ -1444,14 +1372,14 @@ examples with the sequence of <A HREF="motion.html#word">word</A> flags they req
 
 A specific example: Allow a compound to be made of two words and a dash:
 	In the <A HREF="#.aff">.aff</A> file:
-<B><FONT color="#54A23D">	    COMPOUNDRULE sde </FONT></B>
-<B><FONT color="#54A23D">	    NEEDAFFIX x </FONT></B>
-<B><FONT color="#54A23D">	    COMPOUNDWORDMAX 3 </FONT></B>
-<B><FONT color="#54A23D">	    COMPOUNDMIN 1 </FONT></B>
+<B><FONT COLOR="PURPLE">	    COMPOUNDRULE sde </FONT></B>
+<B><FONT COLOR="PURPLE">	    NEEDAFFIX x </FONT></B>
+<B><FONT COLOR="PURPLE">	    COMPOUNDWORDMAX 3 </FONT></B>
+<B><FONT COLOR="PURPLE">	    COMPOUNDMIN 1 </FONT></B>
 	In the <A HREF="#.dic">.dic</A> file:
-<B><FONT color="#54A23D">	    start/s </FONT></B>
-<B><FONT color="#54A23D">	    end/e </FONT></B>
-<B><FONT color="#54A23D">	    -/xd </FONT></B>
+<B><FONT COLOR="PURPLE">	    start/s </FONT></B>
+<B><FONT COLOR="PURPLE">	    end/e </FONT></B>
+<B><FONT COLOR="PURPLE">	    -/xd </FONT></B>
 
 This allows for the <A HREF="motion.html#word">word</A> &quot;start-end&quot;, but not &quot;startend&quot;.
 
@@ -1466,7 +1394,7 @@ on the inside of a compound <A HREF="motion.html#word">word</A>.  This can be ch
 The NEEDCOMPOUND flag is used to require that a <A HREF="motion.html#word">word</A> is used <A HREF="motion.html#as">as</A> part of a
 compound <A HREF="motion.html#word">word</A>.  The <A HREF="motion.html#word">word</A> itself is not a good <A HREF="motion.html#word">word</A>.  Example:
 
-<B><FONT color="#54A23D">	NEEDCOMPOUND &amp; </FONT></B>
+<B><FONT COLOR="PURPLE">	NEEDCOMPOUND &amp; </FONT></B>
 
 
 							*<A NAME="spell-ONLYINCOMPOUND"></A><B>spell-ONLYINCOMPOUND</B>*
@@ -1477,7 +1405,7 @@ compatibility with Hunspell.
 							*<A NAME="spell-COMPOUNDMIN"></A><B>spell-COMPOUNDMIN</B>*
 The minimal character length of a <A HREF="motion.html#word">word</A> used for compounding is specified with
 COMPOUNDMIN.  Example:
-<B><FONT color="#54A23D">	COMPOUNDMIN 5 </FONT></B>
+<B><FONT COLOR="PURPLE">	COMPOUNDMIN 5 </FONT></B>
 
 When omitted there is no minimal length.  Obviously you could just leave out
 the compound flag from short words instead, this feature is present for
@@ -1487,7 +1415,7 @@ compatibility with <A HREF="#Myspell">Myspell</A>.
 							*<A NAME="spell-COMPOUNDWORDMAX"></A><B>spell-COMPOUNDWORDMAX</B>*
 The maximum number of words that can be concatenated into a compound <A HREF="motion.html#word">word</A> is
 specified with COMPOUNDWORDMAX.  Example:
-<B><FONT color="#54A23D">	COMPOUNDWORDMAX 3 </FONT></B>
+<B><FONT COLOR="PURPLE">	COMPOUNDWORDMAX 3 </FONT></B>
 
 When omitted there is no maximum.  It applies to all compound words.
 
@@ -1498,7 +1426,7 @@ COMPOUNDRULE where they appear don't allow too many words.
 							*<A NAME="spell-COMPOUNDSYLMAX"></A><B>spell-COMPOUNDSYLMAX</B>*
 The maximum number of syllables that a compound <A HREF="motion.html#word">word</A> may contain is specified
 with COMPOUNDSYLMAX.  Example:
-<B><FONT color="#54A23D">	COMPOUNDSYLMAX 6 </FONT></B>
+<B><FONT COLOR="PURPLE">	COMPOUNDSYLMAX 6 </FONT></B>
 
 This has no effect if there is no SYLLABLE item.  Without COMPOUNDSYLMAX there
 is no limit on the number of syllables.
@@ -1512,14 +1440,14 @@ COMPOUNDWORDMAX words or contains up to COMPOUNDSYLMAX syllables.
 The COMPOUNDFORBIDFLAG specifies a flag that can be used on an affix.  It
 means that the <A HREF="motion.html#word">word</A> plus affix cannot be used in a compound <A HREF="motion.html#word">word</A>.  Example:
 	affix file:
-<B><FONT color="#54A23D">		COMPOUNDFLAG c </FONT></B>
-<B><FONT color="#54A23D">		COMPOUNDFORBIDFLAG x </FONT></B>
-<B><FONT color="#54A23D">		SFX a Y 2 </FONT></B>
-<B><FONT color="#54A23D">		SFX a 0 s   . </FONT></B>
-<B><FONT color="#54A23D">		SFX a 0 ize/x . </FONT></B>
+<B><FONT COLOR="PURPLE">		COMPOUNDFLAG c </FONT></B>
+<B><FONT COLOR="PURPLE">		COMPOUNDFORBIDFLAG x </FONT></B>
+<B><FONT COLOR="PURPLE">		SFX a Y 2 </FONT></B>
+<B><FONT COLOR="PURPLE">		SFX a 0 s   . </FONT></B>
+<B><FONT COLOR="PURPLE">		SFX a 0 ize/x . </FONT></B>
 	dictionary:
-<B><FONT color="#54A23D">		word/c </FONT></B>
-<B><FONT color="#54A23D">		util/ac </FONT></B>
+<B><FONT COLOR="PURPLE">		word/c </FONT></B>
+<B><FONT COLOR="PURPLE">		util/ac </FONT></B>
 
 This allows for &quot;wordutil&quot; and &quot;wordutils&quot; but not &quot;wordutilize&quot;.
 Note: this doesn't work for postponed prefixes yet.
@@ -1544,7 +1472,7 @@ rules.  Can also be used for an affix to <A HREF="intro.html#count">count</A> th
 CHECKCOMPOUNDPATTERN is used to define patterns that, when matching at the
 position where two words are compounded together forbids the compound.
 For example:
-<B><FONT color="#54A23D">	CHECKCOMPOUNDPATTERN o e </FONT></B>
+<B><FONT COLOR="PURPLE">	CHECKCOMPOUNDPATTERN o e </FONT></B>
 
 This forbids compounding if the first <A HREF="motion.html#word">word</A> ends in &quot;<A HREF="insert.html#o">o</A>&quot; and the second <A HREF="motion.html#word">word</A>
 starts with &quot;<A HREF="motion.html#e">e</A>&quot;.
@@ -1561,13 +1489,13 @@ idea.  Use this when compounding is used with very short or one-character
 words.  E.g. to make numbers out of digits.  Without this flag creating
 suggestions would spend most time trying all kind of weird compound words.
 
-<B><FONT color="#54A23D">	NOCOMPOUNDSUGS </FONT></B>
+<B><FONT COLOR="PURPLE">	NOCOMPOUNDSUGS </FONT></B>
 
 
 							*<A NAME="spell-SYLLABLE"></A><B>spell-SYLLABLE</B>*
 The SYLLABLE item defines characters or character sequences that are used to
 <A HREF="intro.html#count">count</A> the number of syllables in a <A HREF="motion.html#word">word</A>.  Example:
-<B><FONT color="#54A23D">	SYLLABLE aáeéiíoóöõuúüûy/aa/au/ea/ee/ei/ie/oa/oe/oo/ou/uu/ui </FONT></B>
+<B><FONT COLOR="PURPLE">	SYLLABLE aáeéiíoóöõuúüûy/aa/au/ea/ee/ei/ie/oa/oe/oo/ou/uu/ui </FONT></B>
 
 Before the first slash is the set of characters that are counted for one
 syllable, also when repeated and mixed, until the next character that is not
@@ -1588,7 +1516,7 @@ UNLIMITED COMPOUNDING					*<A NAME="spell-NOBREAK"></A><B>spell-NOBREAK</B>*
 For some languages, such <A HREF="motion.html#as">as</A> Thai, there is no space in between words.  This
 looks like all words are compounded.  To specify this use the NOBREAK item in
 the affix file, without arguments:
-<B><FONT color="#54A23D">	NOBREAK </FONT></B>
+<B><FONT COLOR="PURPLE">	NOBREAK </FONT></B>
 
 Vim will try to figure out where one <A HREF="motion.html#word">word</A> ends and a next starts.  When there
 are spelling mistakes this may not be quite right.
@@ -1599,7 +1527,7 @@ are spelling mistakes this may not be quite right.
 Common words can be specified with the COMMON item.  This will give better
 suggestions when editing a short file.  Example:
 
-<B><FONT color="#54A23D">	COMMON  the of to and a in is it you that he she was for on are </FONT></B>
+<B><FONT COLOR="PURPLE">	COMMON  the of to and a in is it you that he she was for on are </FONT></B>
 
 The words must be separated by white space, up to 25 per line.
 When multiple regions are specified in a &quot;<A HREF="#:mkspell">:mkspell</A>&quot; command the common words
@@ -1611,14 +1539,14 @@ This item indicates that splitting a <A HREF="motion.html#word">word</A> to make
 idea.  Split-word suggestions will appear only when there are few similar
 words.
 
-<B><FONT color="#54A23D">	NOSPLITSUGS </FONT></B>
+<B><FONT COLOR="PURPLE">	NOSPLITSUGS </FONT></B>
 
 
 							*<A NAME="spell-NOSUGGEST"></A><B>spell-NOSUGGEST</B>*
 The flag specified with NOSUGGEST can be used for words that will not be
 suggested.  Can be used for obscene words.
 
-<B><FONT color="#54A23D">	NOSUGGEST % </FONT></B>
+<B><FONT COLOR="PURPLE">	NOSUGGEST % </FONT></B>
 
 
 
@@ -1628,11 +1556,11 @@ In the affix file REP items can be used to define common mistakes.  This is
 used to make spelling suggestions.  The items define the &quot;from&quot; text and the
 &quot;to&quot; replacement.  Example:
 
-<B><FONT color="#54A23D">	REP 4 </FONT></B>
-<B><FONT color="#54A23D">	REP f ph </FONT></B>
-<B><FONT color="#54A23D">	REP ph f </FONT></B>
-<B><FONT color="#54A23D">	REP k ch </FONT></B>
-<B><FONT color="#54A23D">	REP ch k </FONT></B>
+<B><FONT COLOR="PURPLE">	REP 4 </FONT></B>
+<B><FONT COLOR="PURPLE">	REP f ph </FONT></B>
+<B><FONT COLOR="PURPLE">	REP ph f </FONT></B>
+<B><FONT COLOR="PURPLE">	REP k ch </FONT></B>
+<B><FONT COLOR="PURPLE">	REP ch k </FONT></B>
 
 The first line specifies the number of REP lines following.  Vim ignores the
 number, but <A HREF="motion.html#it">it</A> must be there (for compatibility with <A HREF="#Myspell">Myspell</A>).
@@ -1643,7 +1571,7 @@ the &quot;file:&quot; item in <A HREF="options.html#'spellsuggest'">'spellsugges
 
 You can include a space by using an underscore:
 
-<B><FONT color="#54A23D">	REP the_the the </FONT></B>
+<B><FONT COLOR="PURPLE">	REP the_the the </FONT></B>
 
 
 
@@ -1653,9 +1581,9 @@ In the affix file MAP items can be used to define letters that are very much
 alike.  This is mostly used for a <A HREF="print.html#letter">letter</A> with different accents.  This is used
 to prefer suggestions with these letters substituted.  Example:
 
-<B><FONT color="#54A23D">	MAP 2 </FONT></B>
-<B><FONT color="#54A23D">	MAP eéëêè </FONT></B>
-<B><FONT color="#54A23D">	MAP uüùúû </FONT></B>
+<B><FONT COLOR="PURPLE">	MAP 2 </FONT></B>
+<B><FONT COLOR="PURPLE">	MAP eéëêè </FONT></B>
+<B><FONT COLOR="PURPLE">	MAP uüùúû </FONT></B>
 
 The first line specifies the number of MAP lines following.  Vim ignores the
 number, but the line must be there.
@@ -1675,7 +1603,7 @@ estimate when it's done).
 
 To avoid producing a .sug file use this item in the affix file:
 
-<B><FONT color="#54A23D">	NOSUGFILE </FONT></B>
+<B><FONT COLOR="PURPLE">	NOSUGFILE </FONT></B>
 
 Users can simply omit the .sug file if they don't want to use <A HREF="motion.html#it">it</A>.
 
@@ -1687,10 +1615,10 @@ In the affix file SAL items can be used to define the sounds-a-like mechanism
 to be used.  The main items define the &quot;from&quot; text and the &quot;to&quot; replacement.
 Simplistic example:
 
-<B><FONT color="#54A23D">	SAL CIA			 X </FONT></B>
-<B><FONT color="#54A23D">	SAL CH			 X </FONT></B>
-<B><FONT color="#54A23D">	SAL C			 K </FONT></B>
-<B><FONT color="#54A23D">	SAL K			 K </FONT></B>
+<B><FONT COLOR="PURPLE">	SAL CIA			 X </FONT></B>
+<B><FONT COLOR="PURPLE">	SAL CH			 X </FONT></B>
+<B><FONT COLOR="PURPLE">	SAL C			 K </FONT></B>
+<B><FONT COLOR="PURPLE">	SAL K			 K </FONT></B>
 
 There are a few rules and this can become quite complicated.  An explanation
 how <A HREF="motion.html#it">it</A> works can be found in the Aspell manual:
@@ -1698,9 +1626,9 @@ how <A HREF="motion.html#it">it</A> works can be found in the Aspell manual:
 
 There are a few special items:
 
-<B><FONT color="#54A23D">	SAL followup		true </FONT></B>
-<B><FONT color="#54A23D">	SAL collapse_result	true </FONT></B>
-<B><FONT color="#54A23D">	SAL remove_accents	true </FONT></B>
+<B><FONT COLOR="PURPLE">	SAL followup		true </FONT></B>
+<B><FONT COLOR="PURPLE">	SAL collapse_result	true </FONT></B>
+<B><FONT COLOR="PURPLE">	SAL remove_accents	true </FONT></B>
 
 &quot;1&quot; has the same meaning <A HREF="motion.html#as">as</A> &quot;true&quot;.  Any other value means &quot;false&quot;.
 
@@ -1717,8 +1645,8 @@ There are two items required: one to specify the characters that are mapped
 and one that specifies the characters they are mapped to.  They must have
 exactly the same number of characters.  Example:
 
-<B><FONT color="#54A23D">    SOFOFROM abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ </FONT></B>
-<B><FONT color="#54A23D">    SOFOTO   ebctefghejklnnepkrstevvkesebctefghejklnnepkrstevvkes </FONT></B>
+<B><FONT COLOR="PURPLE">    SOFOFROM abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ </FONT></B>
+<B><FONT COLOR="PURPLE">    SOFOTO   ebctefghejklnnepkrstevvkesebctefghejklnnepkrstevvkes </FONT></B>
 
 In the example all vowels are mapped to the same character '<A HREF="motion.html#e">e</A>'.  Another
 <A HREF="eval.html#method">method</A> would be to leave out all vowels.  Some characters that sound nearly
@@ -1975,12 +1903,7 @@ become.  But in practice <A HREF="motion.html#it">it</A> is a noticeable improve
 
 <A HREF="#top">top</A> - <A HREF="index.html">main help file</A>
 </PRE>
-    </div>
+</BODY>
 
-    <footer>
-      <div class="container">
-        Generated Thu Jun  2 10:56:13 UTC 2022 from <a href="https://github.com/neovim/neovim/commit/d93ba03c717bee05fe6d239fd7faefe6e9698c85"><code>d93ba03</code></a>.
-      </div>
-    </footer>
-  </body>
-</html>
+
+</HTML>
