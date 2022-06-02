@@ -152,7 +152,7 @@ $(function() {
 <div class="ttc" id="astructmap__arguments_html_a83b1b2efead24fabcfafcb2fd567e01b"><div class="ttname"><a href="structmap__arguments.html#a83b1b2efead24fabcfafcb2fd567e01b">map_arguments::alt_lhs</a></div><div class="ttdeci">char_u alt_lhs[MAXMAPLEN+1]</div><div class="ttdoc">Unsimplifed {lhs} of the mapping. If no simplification has been done then alt_lhs_len is 0.</div><div class="ttdef"><b>Definition:</b> getchar.h:52</div></div>
 <div class="ttc" id="agetchar_8h_html_a01ac9105ecb3fb95b7a9a8ead9f526db"><div class="ttname"><a href="getchar_8h.html#a01ac9105ecb3fb95b7a9a8ead9f526db">scriptin</a></div><div class="ttdeci">FileDescriptor * scriptin[NSCRIPT]</div><div class="ttdoc">Streams to read script from.</div><div class="ttdef"><b>Definition:</b> getchar.c:59</div></div>
 <div class="ttc" id="astructmap__arguments_html_afcda254d54c2c3e63a6c6930f32ece30"><div class="ttname"><a href="structmap__arguments.html#afcda254d54c2c3e63a6c6930f32ece30">map_arguments::nowait</a></div><div class="ttdeci">bool nowait</div><div class="ttdef"><b>Definition:</b> getchar.h:38</div></div>
-<div class="ttc" id="astructmap__arguments_html_a3d17202802762d48f897ea078560272d"><div class="ttname"><a href="structmap__arguments.html#a3d17202802762d48f897ea078560272d">map_arguments::orig_rhs</a></div><div class="ttdeci">char_u * orig_rhs</div><div class="ttdoc">True when the {orig_rhs} is &lt;nop&gt;.</div><div class="ttdef"><b>Definition:</b> getchar.h:60</div></div>
+<div class="ttc" id="astructmap__arguments_html_a3d17202802762d48f897ea078560272d"><div class="ttname"><a href="structmap__arguments.html#a3d17202802762d48f897ea078560272d">map_arguments::orig_rhs</a></div><div class="ttdeci">char_u * orig_rhs</div><div class="ttdoc">True when the {rhs} should be &lt;Nop&gt;.</div><div class="ttdef"><b>Definition:</b> getchar.h:60</div></div>
 <div class="ttc" id="astructmap__arguments_html_a400e1cc3b94d0e447e512b6a29471e5c"><div class="ttname"><a href="structmap__arguments.html#a400e1cc3b94d0e447e512b6a29471e5c">map_arguments::lhs_len</a></div><div class="ttdeci">size_t lhs_len</div><div class="ttdef"><b>Definition:</b> getchar.h:49</div></div>
 <div class="ttc" id="agetchar_8h_html_a77e2fa7734929ca945d8725364530951abad2f1e187f05176d572f51f3fe78600"><div class="ttname"><a href="getchar_8h.html#a77e2fa7734929ca945d8725364530951abad2f1e187f05176d572f51f3fe78600">REMAP_YES</a></div><div class="ttdeci">@ REMAP_YES</div><div class="ttdoc">Allow remapping.</div><div class="ttdef"><b>Definition:</b> getchar.h:14</div></div>
 <div class="ttc" id="aos_2fileio_8h_html"><div class="ttname"><a href="os_2fileio_8h.html">fileio.h</a></div></div>
@@ -170,13 +170,13 @@ $(function() {
 <div class="ttc" id="astructmap__arguments_html_af60761893c9a08e397b0575118979610"><div class="ttname"><a href="structmap__arguments.html#af60761893c9a08e397b0575118979610">map_arguments::rhs</a></div><div class="ttdeci">char_u * rhs</div><div class="ttdef"><b>Definition:</b> getchar.h:55</div></div>
 <div class="ttc" id="astructmap__arguments_html_a0acec9be14af6fe87ea5b4abf7ac2a50"><div class="ttname"><a href="structmap__arguments.html#a0acec9be14af6fe87ea5b4abf7ac2a50">map_arguments::unique</a></div><div class="ttdeci">bool unique</div><div class="ttdef"><b>Definition:</b> getchar.h:41</div></div>
 <div class="ttc" id="agetchar_8h_html_a0fc829eaf562a22fd32c5a90c5a942f8"><div class="ttname"><a href="getchar_8h.html#a0fc829eaf562a22fd32c5a90c5a942f8">flush_buffers_T</a></div><div class="ttdeci">flush_buffers_T</div><div class="ttdef"><b>Definition:</b> getchar.h:21</div></div>
-<div class="ttc" id="astructmap__arguments_html_a6121a384c48ea55cb1bb43edc1c2a2e1"><div class="ttname"><a href="structmap__arguments.html#a6121a384c48ea55cb1bb43edc1c2a2e1">map_arguments::rhs_is_noop</a></div><div class="ttdeci">bool rhs_is_noop</div><div class="ttdoc">lua function as rhs</div><div class="ttdef"><b>Definition:</b> getchar.h:58</div></div>
+<div class="ttc" id="astructmap__arguments_html_a6121a384c48ea55cb1bb43edc1c2a2e1"><div class="ttname"><a href="structmap__arguments.html#a6121a384c48ea55cb1bb43edc1c2a2e1">map_arguments::rhs_is_noop</a></div><div class="ttdeci">bool rhs_is_noop</div><div class="ttdoc">lua function as {rhs}</div><div class="ttdef"><b>Definition:</b> getchar.h:58</div></div>
 <div class="ttc" id="astructmap__arguments_html_aa1daf911e0565b56fe332980d3988562"><div class="ttname"><a href="structmap__arguments.html#aa1daf911e0565b56fe332980d3988562">map_arguments::expr</a></div><div class="ttdeci">bool expr</div><div class="ttdef"><b>Definition:</b> getchar.h:36</div></div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <footer>
   <div class="container">
-    Generated on Wed Jun 1 2022 11:19:18 for Neovim by
+    Generated on Thu Jun 2 2022 10:56:17 for Neovim by
     <a href="http://www.doxygen.org/index.html">Doxygen</a>
     1.8.17
   </div>

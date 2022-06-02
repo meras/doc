@@ -2118,7 +2118,7 @@ Variables</h2></td></tr>
 <p>Replace termcodes in the given LHS and RHS and store the results into the <code>lhs</code> and <code>rhs</code> of the given <a class="el" href="getchar_8h.html#a75f05630da376b1559b567dd863eb322">MapArguments</a> struct.</p>
 <p><code>rhs</code> and <code>orig_rhs</code> will both point to new allocated buffers. <code>orig_rhs</code> will hold a copy of the given <code>orig_rhs</code>.</p>
 <p>The <code>*_len</code> variables will be set appropriately. If the length of the final <code>lhs</code> exceeds <code>MAXMAPLEN</code>, <code>lhs_len</code> will be set equal to the original larger length and <code>lhs</code> will be truncated.</p>
-<p>If RHS is equal to "&lt;Nop&gt;", <code>rhs</code> will be the empty string, <code>rhs_len</code> will be zero, and <code>rhs_is_noop</code> will be set to true.</p>
+<p>If RHS should be &lt;Nop&gt;, <code>rhs</code> will be an empty string, <code>rhs_len</code> will be zero, and <code>rhs_is_noop</code> will be set to true.</p>
 <p>Any memory allocated by <a class="el" href="keycodes_8c.html#a2858aafaea12972c798f48a690c842e3">replace_termcodes</a> is freed before this function returns.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2641,7 +2641,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <footer>
   <div class="container">
-    Generated on Wed Jun 1 2022 11:19:19 for Neovim by
+    Generated on Thu Jun 2 2022 10:56:18 for Neovim by
     <a href="http://www.doxygen.org/index.html">Doxygen</a>
     1.8.17
   </div>
